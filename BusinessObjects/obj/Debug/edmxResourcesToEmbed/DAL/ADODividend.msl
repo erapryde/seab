@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LiveShareRegistrationSystemModelStoreContainer" CdmEntityContainer="DividendEntities">
+    <EntitySetMapping Name="vwDividendLists">
+      <EntityTypeMapping TypeName="LiveShareRegistrationSystemModel.vwDividendList">
+        <MappingFragment StoreEntitySet="vwDividendList">
+          <ScalarProperty Name="CoyName" ColumnName="CoyName" />
+          <ScalarProperty Name="DivCoy" ColumnName="DivCoy" />
+          <ScalarProperty Name="Div__No_" ColumnName="Div. No." />
+          <ScalarProperty Name="Record_Date" ColumnName="Record Date" />
+          <ScalarProperty Name="Paying_Date" ColumnName="Paying Date" />
+          <ScalarProperty Name="Div__Type_1" ColumnName="Div. Type 1" />
+          <ScalarProperty Name="Rate_1" ColumnName="Rate 1" />
+          <ScalarProperty Name="Rate_Type_1" ColumnName="Rate Type 1" />
+          <ScalarProperty Name="Tax_Rate_1" ColumnName="Tax Rate 1" />
+          <ScalarProperty Name="Last_Warrant" ColumnName="Last Warrant" />
+          <ScalarProperty Name="Last_Cheque" ColumnName="Last Cheque" />
+          <ScalarProperty Name="Year_Ending" ColumnName="Year Ending" />
+          <ScalarProperty Name="Scrip_Price" ColumnName="Scrip Price" />
+          <ScalarProperty Name="Bank_Account" ColumnName="Bank Account" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwDividendPayments">
+      <EntityTypeMapping TypeName="LiveShareRegistrationSystemModel.vwDividendPayment">
+        <MappingFragment StoreEntitySet="vwDividendPayment">
+          <ScalarProperty Name="dWno" ColumnName="dWno" />
+          <ScalarProperty Name="ClearedRef" ColumnName="ClearedRef" />
+          <ScalarProperty Name="dChqno" ColumnName="dChqno" />
+          <ScalarProperty Name="DAcno" ColumnName="DAcno" />
+          <ScalarProperty Name="DvdName1" ColumnName="DvdName1" />
+          <ScalarProperty Name="DvdName2" ColumnName="DvdName2" />
+          <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="Addr3" ColumnName="Addr3" />
+          <ScalarProperty Name="DZip" ColumnName="DZip" />
+          <ScalarProperty Name="DShare" ColumnName="DShare" />
+          <ScalarProperty Name="dRecID" ColumnName="dRecID" />
+          <ScalarProperty Name="mNetAmount" ColumnName="mNetAmount" />
+          <ScalarProperty Name="BankAccNo" ColumnName="BankAccNo" />
+          <ScalarProperty Name="DivPaidDate" ColumnName="DivPaidDate" />
+          <ScalarProperty Name="DvdBanker" ColumnName="DvdBanker" />
+          <ScalarProperty Name="DvdBankAcc" ColumnName="DvdBankAcc" />
+          <ScalarProperty Name="PayCurrency" ColumnName="PayCurrency" />
+          <ScalarProperty Name="OverFlow" ColumnName="OverFlow" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="DvdRecType" ColumnName="DvdRecType" />
+          <ScalarProperty Name="DvdKey" ColumnName="DvdKey" />
+          <ScalarProperty Name="DvdCtryRes" ColumnName="DvdCtryRes" />
+          <ScalarProperty Name="DvdEmail" ColumnName="DvdEmail" />
+          <ScalarProperty Name="DvdTel" ColumnName="DvdTel" />
+          <ScalarProperty Name="DvdCheqNo" ColumnName="DvdCheqNo" />
+          <ScalarProperty Name="DvdDeliveryMethod" ColumnName="DvdDeliveryMethod" />
+          <ScalarProperty Name="DvdPaymentMode" ColumnName="DvdPaymentMode" />
+          <ScalarProperty Name="DvdNewPaymentDate" ColumnName="DvdNewPaymentDate" />
+          <ScalarProperty Name="DvdMEPSCode" ColumnName="DvdMEPSCode" />
+          <ScalarProperty Name="DvdJointBankAccInd" ColumnName="DvdJointBankAccInd" />
+          <ScalarProperty Name="DvdSWIFTCode" ColumnName="DvdSWIFTCode" />
+          <ScalarProperty Name="DvdStateID" ColumnName="DvdStateID" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="CtryResidence" ColumnName="CtryResidence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShrCompanyMasters">
+      <EntityTypeMapping TypeName="LiveShareRegistrationSystemModel.ShrCompanyMaster">
+        <MappingFragment StoreEntitySet="ShrCompanyMaster">
+          <ScalarProperty Name="CoyForeignRegister" ColumnName="CoyForeignRegister" />
+          <ScalarProperty Name="CoyBankAcctDetails" ColumnName="CoyBankAcctDetails" />
+          <ScalarProperty Name="CoyISINCode" ColumnName="CoyISINCode" />
+          <ScalarProperty Name="CoyExpiryDate" ColumnName="CoyExpiryDate" />
+          <ScalarProperty Name="CoyIPOClosingDate" ColumnName="CoyIPOClosingDate" />
+          <ScalarProperty Name="CoyCoyRecID" ColumnName="CoyCoyRecID" />
+          <ScalarProperty Name="CoyFax" ColumnName="CoyFax" />
+          <ScalarProperty Name="CoyTel" ColumnName="CoyTel" />
+          <ScalarProperty Name="CoyContactPerson" ColumnName="CoyContactPerson" />
+          <ScalarProperty Name="CoySuspended" ColumnName="CoySuspended" />
+          <ScalarProperty Name="CoyListed" ColumnName="CoyListed" />
+          <ScalarProperty Name="CoyWarrantInAmount" ColumnName="CoyWarrantInAmount" />
+          <ScalarProperty Name="CoyLAnnualRtu" ColumnName="CoyLAnnualRtu" />
+          <ScalarProperty Name="CoyCAnnualRtu" ColumnName="CoyCAnnualRtu" />
+          <ScalarProperty Name="CoyComboUTUnit2Name" ColumnName="CoyComboUTUnit2Name" />
+          <ScalarProperty Name="CoyComboUTUnit2" ColumnName="CoyComboUTUnit2" />
+          <ScalarProperty Name="CoyComboUTUnit1Name" ColumnName="CoyComboUTUnit1Name" />
+          <ScalarProperty Name="CoyComboUTUnit1" ColumnName="CoyComboUTUnit1" />
+          <ScalarProperty Name="CoyDecimals" ColumnName="CoyDecimals" />
+          <ScalarProperty Name="CoySeries" ColumnName="CoySeries" />
+          <ScalarProperty Name="CoySGXName" ColumnName="CoySGXName" />
+          <ScalarProperty Name="CoyCtryInc" ColumnName="CoyCtryInc" />
+          <ScalarProperty Name="CoyClass" ColumnName="CoyClass" />
+          <ScalarProperty Name="CoyBoardLotSize" ColumnName="CoyBoardLotSize" />
+          <ScalarProperty Name="CoyLocRecID" ColumnName="CoyLocRecID" />
+          <ScalarProperty Name="CoyLastCertNo2" ColumnName="CoyLastCertNo2" />
+          <ScalarProperty Name="CoyCertLimit2" ColumnName="CoyCertLimit2" />
+          <ScalarProperty Name="CoyCertLen" ColumnName="CoyCertLen" />
+          <ScalarProperty Name="CoyAcnoLen" ColumnName="CoyAcnoLen" />
+          <ScalarProperty Name="CoyRegNumber" ColumnName="CoyRegNumber" />
+          <ScalarProperty Name="CoyProfile" ColumnName="CoyProfile" />
+          <ScalarProperty Name="CoySecurityName" ColumnName="CoySecurityName" />
+          <ScalarProperty Name="CoyBenfAcCodeLimit" ColumnName="CoyBenfAcCodeLimit" />
+          <ScalarProperty Name="CoyCertLimit" ColumnName="CoyCertLimit" />
+          <ScalarProperty Name="CoyAcnoLimit" ColumnName="CoyAcnoLimit" />
+          <ScalarProperty Name="CoyRemark" ColumnName="CoyRemark" />
+          <ScalarProperty Name="CoyPosting" ColumnName="CoyPosting" />
+          <ScalarProperty Name="CoyIPOPrice" ColumnName="CoyIPOPrice" />
+          <ScalarProperty Name="CoyRecID" ColumnName="CoyRecID" />
+          <ScalarProperty Name="CoyCallID" ColumnName="CoyCallID" />
+          <ScalarProperty Name="CoyDel" ColumnName="CoyDel" />
+          <ScalarProperty Name="CoyLastBenfAcCode" ColumnName="CoyLastBenfAcCode" />
+          <ScalarProperty Name="CoyLastAcno" ColumnName="CoyLastAcno" />
+          <ScalarProperty Name="CoyLastCertNo" ColumnName="CoyLastCertNo" />
+          <ScalarProperty Name="CoyLastPostedBatch" ColumnName="CoyLastPostedBatch" />
+          <ScalarProperty Name="CoyLastGeneratedBatch" ColumnName="CoyLastGeneratedBatch" />
+          <ScalarProperty Name="CoyFormat" ColumnName="CoyFormat" />
+          <ScalarProperty Name="CoyShare" ColumnName="CoyShare" />
+          <ScalarProperty Name="CoyParValue" ColumnName="CoyParValue" />
+          <ScalarProperty Name="CoyCurr" ColumnName="CoyCurr" />
+          <ScalarProperty Name="CoyFinYear" ColumnName="CoyFinYear" />
+          <ScalarProperty Name="CoyAddress" ColumnName="CoyAddress" />
+          <ScalarProperty Name="CoyRegName" ColumnName="CoyRegName" />
+          <ScalarProperty Name="CoyName" ColumnName="CoyName" />
+          <ScalarProperty Name="CoyCoy" ColumnName="CoyCoy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

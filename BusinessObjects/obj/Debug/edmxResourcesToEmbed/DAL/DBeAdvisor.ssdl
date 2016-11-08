@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pdtmasterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_Agency">
+    <Key>
+      <PropertyRef Name="AgencyCode" />
+    </Key>
+    <Property Name="AgencyCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgencyShortName" Type="varchar" MaxLength="10" />
+    <Property Name="AgencyName" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'pdtmaster.dbo.Tbl_AgencyQuestionaire' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Tbl_AgencyQuestionaire">
+          <Property Name="QID" Type="int" />
+          <Property Name="AgencyName" Type="varchar" MaxLength="200" />
+          <Property Name="Questionaire" Type="varchar(max)" />
+        </EntityType>-->
+  <EntityType Name="Tbl_Application">
+    <Key>
+      <PropertyRef Name="ApplicationID" />
+    </Key>
+    <Property Name="ApplicationID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AgencyCode" Type="varchar" MaxLength="20" />
+    <Property Name="LicenceCode" Type="varchar" MaxLength="20" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="LastUpdatedOn" Type="datetime" />
+    <Property Name="LastUpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'pdtmaster.dbo.Tbl_BusinessIntent' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Tbl_BusinessIntent">
+          <Property Name="BID" Type="int" />
+          <Property Name="BusinessIntent" Type="varchar(max)" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'pdtmaster.dbo.Tbl_IntentQuestionaire' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tbl_IntentQuestionaire">
+    <Key>
+      <PropertyRef Name="Intent" />
+    </Key>
+    <Property Name="Sector" Type="varchar" MaxLength="200" />
+    <Property Name="Intent" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Q1" Type="varchar(max)" />
+    <Property Name="Q2" Type="varchar(max)" />
+    <Property Name="Q3" Type="varchar(max)" />
+    <Property Name="Q4" Type="varchar(max)" />
+    <Property Name="Q5" Type="varchar(max)" />
+    <Property Name="Q6" Type="varchar(max)" />
+    <Property Name="Q7" Type="varchar(max)" />
+    <Property Name="Q8" Type="varchar(max)" />
+    <Property Name="Q9" Type="varchar(max)" />
+    <Property Name="Q10" Type="varchar(max)" />
+    <Property Name="Q11" Type="varchar(max)" />
+    <Property Name="Q12" Type="varchar(max)" />
+    <Property Name="Q13" Type="varchar(max)" />
+    <Property Name="Q14" Type="varchar(max)" />
+    <Property Name="Q15" Type="varchar(max)" />
+    <Property Name="Q16" Type="varchar(max)" />
+    <Property Name="Q17" Type="varchar(max)" />
+    <Property Name="Q18" Type="varchar(max)" />
+    <Property Name="Q19" Type="varchar(max)" />
+    <Property Name="Q20" Type="varchar(max)" />
+    <Property Name="Industry" Type="varchar" MaxLength="200" />
+    <Property Name="BusinessNature" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Tbl_Licence">
+    <Key>
+      <PropertyRef Name="LicenceID" />
+    </Key>
+    <Property Name="LicenceID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AgencyCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LicenceCode" Type="varchar" MaxLength="50" />
+    <Property Name="LicenceName" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="ActiveFrom" Type="date" />
+    <Property Name="ActiveTo" Type="date" />
+  </EntityType>
+  <EntityType Name="Tbl_LicenceAgency">
+    <Key>
+      <PropertyRef Name="LicenceName" />
+      <PropertyRef Name="Agency" />
+    </Key>
+    <Property Name="LicenceName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Agency" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="LicenceURL" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyURL" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'pdtmaster.dbo.Tbl_LicenceKeyword' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tbl_LicenceKeyword">
+    <Key>
+      <PropertyRef Name="LicenceName" />
+    </Key>
+    <Property Name="LicenceName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keywords" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'pdtmaster.dbo.Tbl_LicenceQuestionaire' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tbl_LicenceQuestionaire">
+    <Key>
+      <PropertyRef Name="Questionaire" />
+      <PropertyRef Name="LicenceName" />
+    </Key>
+    <Property Name="Questionaire" Type="varchar(max)" Nullable="false" />
+    <Property Name="Answer" Type="varchar(max)" />
+    <Property Name="LicenceName" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ServiceName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="AgencyCode" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyName" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastUpdatedOn" Type="datetime" />
+    <Property Name="LastUpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="pdtmasterModelStoreContainer">
+    <EntitySet Name="Tbl_Agency" EntityType="Self.Tbl_Agency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Application" EntityType="Self.Tbl_Application" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Licence" EntityType="Self.Tbl_Licence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_LicenceAgency" EntityType="Self.Tbl_LicenceAgency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Services" EntityType="Self.Tbl_Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_IntentQuestionaire" EntityType="Self.Tbl_IntentQuestionaire" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_IntentQuestionaire].[Sector] AS [Sector], 
+    [Tbl_IntentQuestionaire].[Intent] AS [Intent], 
+    [Tbl_IntentQuestionaire].[Q1] AS [Q1], 
+    [Tbl_IntentQuestionaire].[Q2] AS [Q2], 
+    [Tbl_IntentQuestionaire].[Q3] AS [Q3], 
+    [Tbl_IntentQuestionaire].[Q4] AS [Q4], 
+    [Tbl_IntentQuestionaire].[Q5] AS [Q5], 
+    [Tbl_IntentQuestionaire].[Q6] AS [Q6], 
+    [Tbl_IntentQuestionaire].[Q7] AS [Q7], 
+    [Tbl_IntentQuestionaire].[Q8] AS [Q8], 
+    [Tbl_IntentQuestionaire].[Q9] AS [Q9], 
+    [Tbl_IntentQuestionaire].[Q10] AS [Q10], 
+    [Tbl_IntentQuestionaire].[Q11] AS [Q11], 
+    [Tbl_IntentQuestionaire].[Q12] AS [Q12], 
+    [Tbl_IntentQuestionaire].[Q13] AS [Q13], 
+    [Tbl_IntentQuestionaire].[Q14] AS [Q14], 
+    [Tbl_IntentQuestionaire].[Q15] AS [Q15], 
+    [Tbl_IntentQuestionaire].[Q16] AS [Q16], 
+    [Tbl_IntentQuestionaire].[Q17] AS [Q17], 
+    [Tbl_IntentQuestionaire].[Q18] AS [Q18], 
+    [Tbl_IntentQuestionaire].[Q19] AS [Q19], 
+    [Tbl_IntentQuestionaire].[Q20] AS [Q20], 
+    [Tbl_IntentQuestionaire].[Industry] AS [Industry], 
+    [Tbl_IntentQuestionaire].[BusinessNature] AS [BusinessNature]
+    FROM [dbo].[Tbl_IntentQuestionaire] AS [Tbl_IntentQuestionaire]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tbl_LicenceKeyword" EntityType="Self.Tbl_LicenceKeyword" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_LicenceKeyword].[LicenceName] AS [LicenceName], 
+    [Tbl_LicenceKeyword].[Keywords] AS [Keywords]
+    FROM [dbo].[Tbl_LicenceKeyword] AS [Tbl_LicenceKeyword]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tbl_LicenceQuestionaire" EntityType="Self.Tbl_LicenceQuestionaire" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_LicenceQuestionaire].[Questionaire] AS [Questionaire], 
+    [Tbl_LicenceQuestionaire].[Answer] AS [Answer], 
+    [Tbl_LicenceQuestionaire].[LicenceName] AS [LicenceName]
+    FROM [dbo].[Tbl_LicenceQuestionaire] AS [Tbl_LicenceQuestionaire]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

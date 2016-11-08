@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LiveShareRegistrationSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="vwDividendList">
+    <Key>
+      <PropertyRef Name="CoyName" />
+      <PropertyRef Name="DivCoy" />
+      <PropertyRef Name="Div__No_" />
+      <PropertyRef Name="Div__Type_1" />
+      <PropertyRef Name="Rate_1" />
+      <PropertyRef Name="Rate_Type_1" />
+      <PropertyRef Name="Tax_Rate_1" />
+      <PropertyRef Name="Year_Ending" />
+      <PropertyRef Name="Scrip_Price" />
+      <PropertyRef Name="IID" />
+    </Key>
+    <Property Name="CoyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DivCoy" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Div__No_" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Record_Date" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="Paying_Date" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="Div__Type_1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rate_1" Type="Decimal" Precision="13" Scale="9" Nullable="false" />
+    <Property Name="Rate_Type_1" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Tax_Rate_1" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Last_Warrant" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Cheque" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Year_Ending" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Scrip_Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Bank_Account" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vwDividendPayment">
+    <Key>
+      <PropertyRef Name="dWno" />
+      <PropertyRef Name="ClearedRef" />
+      <PropertyRef Name="dChqno" />
+      <PropertyRef Name="DAcno" />
+      <PropertyRef Name="DvdName1" />
+      <PropertyRef Name="DvdName2" />
+      <PropertyRef Name="Addr1" />
+      <PropertyRef Name="Addr2" />
+      <PropertyRef Name="Addr3" />
+      <PropertyRef Name="DZip" />
+      <PropertyRef Name="DShare" />
+      <PropertyRef Name="dRecID" />
+      <PropertyRef Name="BankAccNo" />
+      <PropertyRef Name="DvdBanker" />
+      <PropertyRef Name="DvdBankAcc" />
+      <PropertyRef Name="OverFlow" />
+      <PropertyRef Name="BatchNo" />
+      <PropertyRef Name="DvdRecType" />
+      <PropertyRef Name="DvdKey" />
+      <PropertyRef Name="DvdCheqNo" />
+      <PropertyRef Name="DvdJointBankAccInd" />
+    </Key>
+    <Property Name="dWno" Type="Int32" Nullable="false" />
+    <Property Name="ClearedRef" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dChqno" Type="Int32" Nullable="false" />
+    <Property Name="DAcno" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DvdName1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DvdName2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Addr1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Addr2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Addr3" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DZip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DShare" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="dRecID" Type="Int32" Nullable="false" />
+    <Property Name="mNetAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BankAccNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DivPaidDate" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="DvdBanker" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DvdBankAcc" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PayCurrency" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="OverFlow" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BatchNo" Type="Int32" Nullable="false" />
+    <Property Name="DvdRecType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DvdKey" Type="Int32" Nullable="false" />
+    <Property Name="DvdCtryRes" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="DvdEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DvdTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DvdCheqNo" Type="Int32" Nullable="false" />
+    <Property Name="DvdDeliveryMethod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DvdPaymentMode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DvdNewPaymentDate" Type="DateTime" Precision="0" />
+    <Property Name="DvdMEPSCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DvdJointBankAccInd" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DvdSWIFTCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DvdStateID" Type="Int32" />
+    <Property Name="NetAmount" Type="Decimal" Precision="38" Scale="6" />
+    <Property Name="CtryResidence" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DividendEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vwDividendLists" EntityType="Self.vwDividendList" />
+    <EntitySet Name="vwDividendPayments" EntityType="Self.vwDividendPayment" />
+    <EntitySet Name="ShrCompanyMasters" EntityType="LiveShareRegistrationSystemModel.ShrCompanyMaster" />
+    <AssociationSet Name="FK__ShrCompan__CoyCo__5B70D302" Association="LiveShareRegistrationSystemModel.FK__ShrCompan__CoyCo__5B70D302">
+      <End Role="ShrCompanyMaster" EntitySet="ShrCompanyMasters" />
+      <End Role="ShrCompanyMaster1" EntitySet="ShrCompanyMasters" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ShrCompanyMaster">
+    <Key>
+      <PropertyRef Name="CoyRecID" />
+    </Key>
+    <Property Name="CoyCoy" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="CoyName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CoyRegName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyAddress" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="CoyFinYear" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="CoyCurr" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="CoyParValue" Type="Decimal" Nullable="false" Precision="8" Scale="1" />
+    <Property Name="CoyShare" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CoyFormat" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoyLastGeneratedBatch" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="CoyLastPostedBatch" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="CoyLastCertNo" Type="Int32" Nullable="false" />
+    <Property Name="CoyLastAcno" Type="Int32" Nullable="false" />
+    <Property Name="CoyLastBenfAcCode" Type="Int32" Nullable="false" />
+    <Property Name="CoyDel" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoyCallID" Type="Int32" Nullable="false" />
+    <Property Name="CoyRecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoyIPOPrice" Type="Decimal" Nullable="false" Precision="8" Scale="1" />
+    <Property Name="CoyPosting" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CoyRemark" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="CoyAcnoLimit" Type="Int32" Nullable="false" />
+    <Property Name="CoyCertLimit" Type="Int32" Nullable="false" />
+    <Property Name="CoyBenfAcCodeLimit" Type="Int32" Nullable="false" />
+    <Property Name="CoySecurityName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyProfile" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyRegNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoyAcnoLen" Type="Int32" Nullable="false" />
+    <Property Name="CoyCertLen" Type="Int32" Nullable="false" />
+    <Property Name="CoyCertLimit2" Type="Int32" Nullable="false" />
+    <Property Name="CoyLastCertNo2" Type="Int32" Nullable="false" />
+    <Property Name="CoyLocRecID" Type="Int32" />
+    <Property Name="CoyBoardLotSize" Type="Int32" Nullable="false" />
+    <Property Name="CoyClass" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoyCtryInc" Type="Int32" />
+    <Property Name="CoySGXName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CoySeries" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoyDecimals" Type="Byte" Nullable="false" />
+    <Property Name="CoyComboUTUnit1" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CoyComboUTUnit1Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyComboUTUnit2" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CoyComboUTUnit2Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyCAnnualRtu" Type="DateTime" Precision="0" />
+    <Property Name="CoyLAnnualRtu" Type="DateTime" Precision="0" />
+    <Property Name="CoyWarrantInAmount" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoyListed" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoySuspended" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CoyContactPerson" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CoyTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoyFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoyCoyRecID" Type="Int32" />
+    <Property Name="CoyIPOClosingDate" Type="DateTime" Precision="0" />
+    <Property Name="CoyExpiryDate" Type="DateTime" Precision="0" />
+    <Property Name="CoyISINCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CoyBankAcctDetails" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="CoyForeignRegister" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="ShrCompanyMaster1" Relationship="LiveShareRegistrationSystemModel.FK__ShrCompan__CoyCo__5B70D302" FromRole="ShrCompanyMaster" ToRole="ShrCompanyMaster1" />
+    <NavigationProperty Name="ShrCompanyMaster2" Relationship="LiveShareRegistrationSystemModel.FK__ShrCompan__CoyCo__5B70D302" FromRole="ShrCompanyMaster1" ToRole="ShrCompanyMaster" />
+  </EntityType>
+  <Association Name="FK__ShrCompan__CoyCo__5B70D302">
+    <End Type="LiveShareRegistrationSystemModel.ShrCompanyMaster" Role="ShrCompanyMaster" Multiplicity="0..1" />
+    <End Type="LiveShareRegistrationSystemModel.ShrCompanyMaster" Role="ShrCompanyMaster1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShrCompanyMaster">
+        <PropertyRef Name="CoyRecID" />
+      </Principal>
+      <Dependent Role="ShrCompanyMaster1">
+        <PropertyRef Name="CoyCoyRecID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

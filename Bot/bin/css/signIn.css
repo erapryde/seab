@@ -1,0 +1,140 @@
+.close {
+	margin-right: 5px
+}
+
+.foreignPassCol form {
+	margin-bottom: 0px;
+}
+
+#popover-content {
+	width: 340px;
+}
+
+.signInDialogIframe {
+	padding: 10px;
+}
+
+.signInDialogIframe .bt
+{
+	color: white;
+}
+
+
+.loginHdr {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 1.6em;
+	color: #50a2f5;
+}
+
+.loginHdr span
+{
+	color: grey;
+	display:inline !important;
+}
+
+
+.passwordCapsLockSpan
+{
+	display:inline-block;
+}
+
+.login_form {
+	padding: 8px;
+}
+
+.innerLinks
+{
+	padding:10px;
+}
+
+.signInDialogIframe {
+	width: 278px;
+}
+
+
+.nonMax .orCol {
+	display: none;
+}
+
+.nonMax .popupBottom {
+	max-width: none !important;
+}
+
+
+.max.signInDialogIframe
+{
+	display:table;
+	width: 765px;
+	margin: auto;
+}
+
+.max.signInDialogIframe > div 
+{
+	display:table-cell;
+	vertical-align: top;
+	padding: 0px 15px;
+}
+
+.max.signInDialogIframe .signPassCol
+{
+	width: 385px;
+	vertical-align : middle;
+}
+
+.max.signInDialogIframe .orCol
+{
+	width: 30px;
+	vertical-align: middle;
+}
+
+.max.signInDialogIframe .orCol img
+{
+	max-width: 56px;
+	width: 56px;
+}
+
+.popupBottom span
+{
+	display: block;
+}
+
+.max.signInDialogIframe #loginPopOver, .max.signInDialogIframe .close , .max.signInDialogIframe .arrow {
+	display: none;
+}
+
+
+.max.signInDialogIframe input[type="text"], .max.signInDialogIframe input[type="password"] {
+	font-size: 14px !important;
+}
+
+.max.signInDialogIframe .btn {
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.max #popover-content, .max .login_form
+{
+	padding:0px;
+}
+
+
+.signInDialogIframe button.bt-next {
+    background: url("../frontier-theme/images/custom/button_aro_right.png") no-repeat scroll right center #333;
+    
+    font-size: 14px;
+    height: 40px;
+    width: auto;
+    background-color: #333;
+    color: #FFF !important;
+    padding: 10px 20px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border: medium none;
+    cursor: pointer;
+}
+
+.error
+{
+	color: red;
+}

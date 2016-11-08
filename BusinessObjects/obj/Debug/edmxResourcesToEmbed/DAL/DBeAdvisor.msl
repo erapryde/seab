@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pdtmasterModelStoreContainer" CdmEntityContainer="pdtmasterEntities1">
+    <EntitySetMapping Name="Tbl_IntentQuestionaire">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_IntentQuestionaire">
+        <MappingFragment StoreEntitySet="Tbl_IntentQuestionaire">
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Intent" ColumnName="Intent" />
+          <ScalarProperty Name="Q1" ColumnName="Q1" />
+          <ScalarProperty Name="Q2" ColumnName="Q2" />
+          <ScalarProperty Name="Q3" ColumnName="Q3" />
+          <ScalarProperty Name="Q4" ColumnName="Q4" />
+          <ScalarProperty Name="Q5" ColumnName="Q5" />
+          <ScalarProperty Name="Q6" ColumnName="Q6" />
+          <ScalarProperty Name="Q7" ColumnName="Q7" />
+          <ScalarProperty Name="Q8" ColumnName="Q8" />
+          <ScalarProperty Name="Q9" ColumnName="Q9" />
+          <ScalarProperty Name="Q10" ColumnName="Q10" />
+          <ScalarProperty Name="Q11" ColumnName="Q11" />
+          <ScalarProperty Name="Q12" ColumnName="Q12" />
+          <ScalarProperty Name="Q13" ColumnName="Q13" />
+          <ScalarProperty Name="Q14" ColumnName="Q14" />
+          <ScalarProperty Name="Q15" ColumnName="Q15" />
+          <ScalarProperty Name="Q16" ColumnName="Q16" />
+          <ScalarProperty Name="Q17" ColumnName="Q17" />
+          <ScalarProperty Name="Q18" ColumnName="Q18" />
+          <ScalarProperty Name="Q19" ColumnName="Q19" />
+          <ScalarProperty Name="Q20" ColumnName="Q20" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+          <ScalarProperty Name="BusinessNature" ColumnName="BusinessNature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_LicenceKeyword">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_LicenceKeyword">
+        <MappingFragment StoreEntitySet="Tbl_LicenceKeyword">
+          <ScalarProperty Name="LicenceName" ColumnName="LicenceName" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_LicenceQuestionaire">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_LicenceQuestionaire">
+        <MappingFragment StoreEntitySet="Tbl_LicenceQuestionaire">
+          <ScalarProperty Name="Questionaire" ColumnName="Questionaire" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="LicenceName" ColumnName="LicenceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_LicenceAgency">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_LicenceAgency">
+        <MappingFragment StoreEntitySet="Tbl_LicenceAgency">
+          <ScalarProperty Name="AgencyURL" ColumnName="AgencyURL" />
+          <ScalarProperty Name="LicenceURL" ColumnName="LicenceURL" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="LicenceName" ColumnName="LicenceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Application">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_Application">
+        <MappingFragment StoreEntitySet="Tbl_Application">
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LicenceCode" ColumnName="LicenceCode" />
+          <ScalarProperty Name="AgencyCode" ColumnName="AgencyCode" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Services">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_Services">
+        <MappingFragment StoreEntitySet="Tbl_Services">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="AgencyCode" ColumnName="AgencyCode" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Agency">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_Agency">
+        <MappingFragment StoreEntitySet="Tbl_Agency">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="AgencyShortName" ColumnName="AgencyShortName" />
+          <ScalarProperty Name="AgencyCode" ColumnName="AgencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Licence">
+      <EntityTypeMapping TypeName="pdtmasterModel.Tbl_Licence">
+        <MappingFragment StoreEntitySet="Tbl_Licence">
+          <ScalarProperty Name="ActiveTo" ColumnName="ActiveTo" />
+          <ScalarProperty Name="ActiveFrom" ColumnName="ActiveFrom" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LicenceName" ColumnName="LicenceName" />
+          <ScalarProperty Name="LicenceCode" ColumnName="LicenceCode" />
+          <ScalarProperty Name="AgencyCode" ColumnName="AgencyCode" />
+          <ScalarProperty Name="LicenceID" ColumnName="LicenceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

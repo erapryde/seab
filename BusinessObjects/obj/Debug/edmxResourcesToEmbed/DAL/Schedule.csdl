@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Schedule" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ScheduleContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Task" EntityType="Schedule.Task" />
+  </EntityContainer>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Start" Type="DateTime" Nullable="false" />
+    <Property Name="End" Type="DateTime" Nullable="false" />
+    <Property Name="StartTimezone" Type="String" Nullable="false" />
+    <Property Name="EndTimezone" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="IsAllDay" Type="Boolean" Nullable="false" />
+    <Property Name="RecurrenceRule" Type="String" Nullable="false" />
+    <Property Name="RecurrenceException" Type="String" Nullable="false" />
+    <Property Name="RecurrenceID" Type="String" Nullable="false" />
+    <Property Name="OwnerID" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>

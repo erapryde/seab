@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pdtmasterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_IntentQuestionaire">
+    <Key>
+      <PropertyRef Name="Intent" />
+    </Key>
+    <Property Name="Intent" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Q1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q11" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q13" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q14" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q15" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q16" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q17" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q18" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q19" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Q20" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Industry" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BusinessNature" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Sector" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_LicenceKeyword">
+    <Key>
+      <PropertyRef Name="LicenceName" />
+    </Key>
+    <Property Name="LicenceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Keywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_LicenceQuestionaire">
+    <Key>
+      <PropertyRef Name="Questionaire" />
+      <PropertyRef Name="LicenceName" />
+    </Key>
+    <Property Name="Questionaire" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LicenceName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="pdtmasterEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_IntentQuestionaire" EntityType="Self.Tbl_IntentQuestionaire" />
+    <EntitySet Name="Tbl_LicenceKeyword" EntityType="Self.Tbl_LicenceKeyword" />
+    <EntitySet Name="Tbl_LicenceQuestionaire" EntityType="Self.Tbl_LicenceQuestionaire" />
+    <EntitySet Name="Tbl_LicenceAgency" EntityType="pdtmasterModel.Tbl_LicenceAgency" />
+    <EntitySet Name="Tbl_Application" EntityType="pdtmasterModel.Tbl_Application" />
+    <EntitySet Name="Tbl_Services" EntityType="pdtmasterModel.Tbl_Services" />
+    <EntitySet Name="Tbl_Agency" EntityType="pdtmasterModel.Tbl_Agency" />
+    <EntitySet Name="Tbl_Licence" EntityType="pdtmasterModel.Tbl_Licence" />
+  </EntityContainer>
+  <EntityType Name="Tbl_LicenceAgency">
+    <Key>
+      <PropertyRef Name="LicenceName" />
+      <PropertyRef Name="Agency" />
+    </Key>
+    <Property Name="LicenceName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Agency" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LicenceURL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyURL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Application">
+    <Key>
+      <PropertyRef Name="ApplicationID" />
+    </Key>
+    <Property Name="ApplicationID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LicenceCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastUpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ServiceName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AgencyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LastUpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Agency">
+    <Key>
+      <PropertyRef Name="AgencyCode" />
+    </Key>
+    <Property Name="AgencyCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyShortName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Licence">
+    <Key>
+      <PropertyRef Name="LicenceID" />
+    </Key>
+    <Property Name="LicenceID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LicenceCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LicenceName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ActiveFrom" Type="DateTime" Precision="0" />
+    <Property Name="ActiveTo" Type="DateTime" Precision="0" />
+  </EntityType>
+</Schema>

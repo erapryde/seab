@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SRSJOBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="bugs">
+      <EntityTypeMapping TypeName="SRSJOBModel.bug">
+        <MappingFragment StoreEntitySet="bugs">
+          <ScalarProperty Name="bg_id" ColumnName="bg_id" />
+          <ScalarProperty Name="bg_short_desc" ColumnName="bg_short_desc" />
+          <ScalarProperty Name="bg_reported_user" ColumnName="bg_reported_user" />
+          <ScalarProperty Name="bg_reported_date" ColumnName="bg_reported_date" />
+          <ScalarProperty Name="bg_status" ColumnName="bg_status" />
+          <ScalarProperty Name="bg_priority" ColumnName="bg_priority" />
+          <ScalarProperty Name="bg_org" ColumnName="bg_org" />
+          <ScalarProperty Name="bg_category" ColumnName="bg_category" />
+          <ScalarProperty Name="bg_project" ColumnName="bg_project" />
+          <ScalarProperty Name="bg_assigned_to_user" ColumnName="bg_assigned_to_user" />
+          <ScalarProperty Name="bg_last_updated_user" ColumnName="bg_last_updated_user" />
+          <ScalarProperty Name="bg_last_updated_date" ColumnName="bg_last_updated_date" />
+          <ScalarProperty Name="bg_user_defined_attribute" ColumnName="bg_user_defined_attribute" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value1" ColumnName="bg_project_custom_dropdown_value1" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value2" ColumnName="bg_project_custom_dropdown_value2" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value3" ColumnName="bg_project_custom_dropdown_value3" />
+          <ScalarProperty Name="bg_tags" ColumnName="bg_tags" />
+          <ScalarProperty Name="Process_Category" ColumnName="Process Category" />
+          <ScalarProperty Name="Billing_Required" ColumnName="Billing Required" />
+          <ScalarProperty Name="Bill_Schedule_Updated" ColumnName="Bill Schedule Updated" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client Name" />
+          <ScalarProperty Name="Type_of_Work" ColumnName="Type of Work" />
+          <ScalarProperty Name="Details_of_Work" ColumnName="Details of Work" />
+          <ScalarProperty Name="Completion_Date" ColumnName="Completion Date" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SD_Manager" ColumnName="SD Manager" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Work_Completed_On" ColumnName="Work Completed On" />
+          <ScalarProperty Name="Informed_CS_Date" ColumnName="Informed CS Date" />
+          <ScalarProperty Name="SD_Officer" ColumnName="SD Officer" />
+          <ScalarProperty Name="Bill_Comment" ColumnName="Bill Comment" />
+          <ScalarProperty Name="Completion_Time__hhmm_" ColumnName="Completion Time (hhmm)" />
+          <ScalarProperty Name="Completion_Date_2" ColumnName="Completion Date 2" />
+          <ScalarProperty Name="Completion_Date_3" ColumnName="Completion Date 3" />
+          <ScalarProperty Name="Completion_Time_2__hhmm_" ColumnName="Completion Time 2 (hhmm)" />
+          <ScalarProperty Name="Completion_Time_3__hhmm_" ColumnName="Completion Time 3 (hhmm)" />
+          <ScalarProperty Name="Date_Docs_Received_from_CS" ColumnName="Date Docs Received from CS" />
+          <ScalarProperty Name="Time_Docs_Received__hhmm_" ColumnName="Time Docs Received (hhmm)" />
+          <ScalarProperty Name="SD_Officer_2" ColumnName="SD Officer 2" />
+          <ScalarProperty Name="SD_Officer_3" ColumnName="SD Officer 3" />
+          <ScalarProperty Name="Special_Instruction" ColumnName="Special Instruction" />
+          <ScalarProperty Name="ChargeCode" ColumnName="ChargeCode" />
+          <ScalarProperty Name="SubCategory" ColumnName="SubCategory" />
+          <ScalarProperty Name="OTStart" ColumnName="OTStart" />
+          <ScalarProperty Name="OTEnd" ColumnName="OTEnd" />
+          <ScalarProperty Name="OTRemarks" ColumnName="OTRemarks" />
+          <ScalarProperty Name="OTDetails" ColumnName="OTDetails" />
+          <ScalarProperty Name="OTApprover" ColumnName="OTApprover" />
+          <ScalarProperty Name="OTApprovalDt" ColumnName="OTApprovalDt" />
+          <ScalarProperty Name="OTPH" ColumnName="OTPH" />
+          <ScalarProperty Name="OTNormal" ColumnName="OTNormal" />
+          <ScalarProperty Name="OTSun" ColumnName="OTSun" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="SRSJOBModel.category">
+        <MappingFragment StoreEntitySet="categories">
+          <ScalarProperty Name="ct_id" ColumnName="ct_id" />
+          <ScalarProperty Name="ct_name" ColumnName="ct_name" />
+          <ScalarProperty Name="ct_sort_seq" ColumnName="ct_sort_seq" />
+          <ScalarProperty Name="ct_default" ColumnName="ct_default" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staff_info">
+      <EntityTypeMapping TypeName="SRSJOBModel.staff_info">
+        <MappingFragment StoreEntitySet="staff_info">
+          <ScalarProperty Name="vcName" ColumnName="vcName" />
+          <ScalarProperty Name="vcStaffID" ColumnName="vcStaffID" />
+          <ScalarProperty Name="vcDesignation" ColumnName="vcDesignation" />
+          <ScalarProperty Name="vcApprover" ColumnName="vcApprover" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="SRSJOBModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="us_id" ColumnName="us_id" />
+          <ScalarProperty Name="us_username" ColumnName="us_username" />
+          <ScalarProperty Name="us_salt" ColumnName="us_salt" />
+          <ScalarProperty Name="us_password" ColumnName="us_password" />
+          <ScalarProperty Name="us_firstname" ColumnName="us_firstname" />
+          <ScalarProperty Name="us_lastname" ColumnName="us_lastname" />
+          <ScalarProperty Name="us_email" ColumnName="us_email" />
+          <ScalarProperty Name="us_admin" ColumnName="us_admin" />
+          <ScalarProperty Name="us_default_query" ColumnName="us_default_query" />
+          <ScalarProperty Name="us_enable_notifications" ColumnName="us_enable_notifications" />
+          <ScalarProperty Name="us_auto_subscribe" ColumnName="us_auto_subscribe" />
+          <ScalarProperty Name="us_auto_subscribe_own_bugs" ColumnName="us_auto_subscribe_own_bugs" />
+          <ScalarProperty Name="us_auto_subscribe_reported_bugs" ColumnName="us_auto_subscribe_reported_bugs" />
+          <ScalarProperty Name="us_send_notifications_to_self" ColumnName="us_send_notifications_to_self" />
+          <ScalarProperty Name="us_active" ColumnName="us_active" />
+          <ScalarProperty Name="us_bugs_per_page" ColumnName="us_bugs_per_page" />
+          <ScalarProperty Name="us_forced_project" ColumnName="us_forced_project" />
+          <ScalarProperty Name="us_reported_notifications" ColumnName="us_reported_notifications" />
+          <ScalarProperty Name="us_assigned_notifications" ColumnName="us_assigned_notifications" />
+          <ScalarProperty Name="us_subscribed_notifications" ColumnName="us_subscribed_notifications" />
+          <ScalarProperty Name="us_signature" ColumnName="us_signature" />
+          <ScalarProperty Name="us_use_fckeditor" ColumnName="us_use_fckeditor" />
+          <ScalarProperty Name="us_enable_bug_list_popups" ColumnName="us_enable_bug_list_popups" />
+          <ScalarProperty Name="us_created_user" ColumnName="us_created_user" />
+          <ScalarProperty Name="us_org" ColumnName="us_org" />
+          <ScalarProperty Name="us_most_recent_login_datetime" ColumnName="us_most_recent_login_datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwStaffInfoes">
+      <EntityTypeMapping TypeName="SRSJOBModel.vwStaffInfo">
+        <MappingFragment StoreEntitySet="vwStaffInfo">
+          <ScalarProperty Name="vcStaffID" ColumnName="vcStaffID" />
+          <ScalarProperty Name="vcDesignation" ColumnName="vcDesignation" />
+          <ScalarProperty Name="vcApprover" ColumnName="vcApprover" />
+          <ScalarProperty Name="vcName" ColumnName="vcName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

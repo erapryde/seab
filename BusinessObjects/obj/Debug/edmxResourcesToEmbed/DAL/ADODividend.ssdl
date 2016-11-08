@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LiveShareRegistrationSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ShrCompanyMaster">
+    <Key>
+      <PropertyRef Name="CoyRecID" />
+    </Key>
+    <Property Name="CoyCoy" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CoyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CoyRegName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CoyAddress" Type="varchar" MaxLength="300" />
+    <Property Name="CoyFinYear" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="CoyCurr" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CoyParValue" Type="numeric" Precision="8" Scale="1" Nullable="false" />
+    <Property Name="CoyShare" Type="money" Nullable="false" />
+    <Property Name="CoyFormat" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CoyLastGeneratedBatch" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="CoyLastPostedBatch" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="CoyLastCertNo" Type="int" Nullable="false" />
+    <Property Name="CoyLastAcno" Type="int" Nullable="false" />
+    <Property Name="CoyLastBenfAcCode" Type="int" Nullable="false" />
+    <Property Name="CoyDel" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CoyCallID" Type="int" Nullable="false" />
+    <Property Name="CoyRecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CoyIPOPrice" Type="numeric" Precision="8" Scale="1" Nullable="false" />
+    <Property Name="CoyPosting" Type="smalldatetime" Nullable="false" />
+    <Property Name="CoyRemark" Type="varchar" MaxLength="2000" />
+    <Property Name="CoyAcnoLimit" Type="int" Nullable="false" />
+    <Property Name="CoyCertLimit" Type="int" Nullable="false" />
+    <Property Name="CoyBenfAcCodeLimit" Type="int" Nullable="false" />
+    <Property Name="CoySecurityName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CoyProfile" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CoyRegNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CoyAcnoLen" Type="int" Nullable="false" />
+    <Property Name="CoyCertLen" Type="int" Nullable="false" />
+    <Property Name="CoyCertLimit2" Type="int" Nullable="false" />
+    <Property Name="CoyLastCertNo2" Type="int" Nullable="false" />
+    <Property Name="CoyLocRecID" Type="int" />
+    <Property Name="CoyBoardLotSize" Type="int" Nullable="false" />
+    <Property Name="CoyClass" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CoyCtryInc" Type="int" />
+    <Property Name="CoySGXName" Type="varchar" MaxLength="30" />
+    <Property Name="CoySeries" Type="char" MaxLength="1" />
+    <Property Name="CoyDecimals" Type="tinyint" Nullable="false" />
+    <Property Name="CoyComboUTUnit1" Type="money" Nullable="false" />
+    <Property Name="CoyComboUTUnit1Name" Type="varchar" MaxLength="20" />
+    <Property Name="CoyComboUTUnit2" Type="money" Nullable="false" />
+    <Property Name="CoyComboUTUnit2Name" Type="varchar" MaxLength="20" />
+    <Property Name="CoyCAnnualRtu" Type="smalldatetime" />
+    <Property Name="CoyLAnnualRtu" Type="smalldatetime" />
+    <Property Name="CoyWarrantInAmount" Type="char" MaxLength="1" />
+    <Property Name="CoyListed" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CoySuspended" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CoyContactPerson" Type="varchar" MaxLength="100" />
+    <Property Name="CoyTel" Type="varchar" MaxLength="50" />
+    <Property Name="CoyFax" Type="varchar" MaxLength="50" />
+    <Property Name="CoyCoyRecID" Type="int" />
+    <Property Name="CoyIPOClosingDate" Type="smalldatetime" />
+    <Property Name="CoyExpiryDate" Type="smalldatetime" />
+    <Property Name="CoyISINCode" Type="varchar" MaxLength="20" />
+    <Property Name="CoyBankAcctDetails" Type="varchar" MaxLength="2000" />
+    <Property Name="CoyForeignRegister" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LiveShareRegistrationSystem.dbo.vwDividendList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwDividendList">
+    <Key>
+      <PropertyRef Name="CoyName" />
+      <PropertyRef Name="DivCoy" />
+      <PropertyRef Name="Div. No." />
+      <PropertyRef Name="Div. Type 1" />
+      <PropertyRef Name="Rate 1" />
+      <PropertyRef Name="Rate Type 1" />
+      <PropertyRef Name="Tax Rate 1" />
+      <PropertyRef Name="Year Ending" />
+      <PropertyRef Name="Scrip Price" />
+      <PropertyRef Name="IID" />
+    </Key>
+    <Property Name="CoyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DivCoy" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="Div. No." Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Record Date" Type="char" MaxLength="11" />
+    <Property Name="Paying Date" Type="char" MaxLength="11" />
+    <Property Name="Div. Type 1" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Rate 1" Type="numeric" Precision="13" Scale="9" Nullable="false" />
+    <Property Name="Rate Type 1" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Tax Rate 1" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Last Warrant" Type="varchar" MaxLength="6" />
+    <Property Name="Last Cheque" Type="varchar" MaxLength="6" />
+    <Property Name="Year Ending" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Scrip Price" Type="money" Nullable="false" />
+    <Property Name="Bank Account" Type="varchar" MaxLength="100" />
+    <Property Name="IID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LiveShareRegistrationSystem.dbo.vwDividendPayment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwDividendPayment">
+    <Key>
+      <PropertyRef Name="dWno" />
+      <PropertyRef Name="ClearedRef" />
+      <PropertyRef Name="dChqno" />
+      <PropertyRef Name="DAcno" />
+      <PropertyRef Name="DvdName1" />
+      <PropertyRef Name="DvdName2" />
+      <PropertyRef Name="Addr1" />
+      <PropertyRef Name="Addr2" />
+      <PropertyRef Name="Addr3" />
+      <PropertyRef Name="DZip" />
+      <PropertyRef Name="DShare" />
+      <PropertyRef Name="dRecID" />
+      <PropertyRef Name="BankAccNo" />
+      <PropertyRef Name="DvdBanker" />
+      <PropertyRef Name="DvdBankAcc" />
+      <PropertyRef Name="OverFlow" />
+      <PropertyRef Name="BatchNo" />
+      <PropertyRef Name="DvdRecType" />
+      <PropertyRef Name="DvdKey" />
+      <PropertyRef Name="DvdCheqNo" />
+      <PropertyRef Name="DvdJointBankAccInd" />
+    </Key>
+    <Property Name="dWno" Type="int" Nullable="false" />
+    <Property Name="ClearedRef" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="dChqno" Type="int" Nullable="false" />
+    <Property Name="DAcno" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="DvdName1" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="DvdName2" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Addr1" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Addr2" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Addr3" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="DZip" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DShare" Type="money" Nullable="false" />
+    <Property Name="dRecID" Type="int" Nullable="false" />
+    <Property Name="mNetAmount" Type="money" />
+    <Property Name="BankAccNo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DivPaidDate" Type="varchar" MaxLength="11" />
+    <Property Name="DvdBanker" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="DvdBankAcc" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="PayCurrency" Type="varchar" MaxLength="3" />
+    <Property Name="OverFlow" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="BatchNo" Type="int" Nullable="false" />
+    <Property Name="DvdRecType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DvdKey" Type="int" Nullable="false" />
+    <Property Name="DvdCtryRes" Type="char" MaxLength="3" />
+    <Property Name="DvdEmail" Type="varchar" MaxLength="200" />
+    <Property Name="DvdTel" Type="varchar" MaxLength="50" />
+    <Property Name="DvdCheqNo" Type="int" Nullable="false" />
+    <Property Name="DvdDeliveryMethod" Type="varchar" MaxLength="20" />
+    <Property Name="DvdPaymentMode" Type="varchar" MaxLength="20" />
+    <Property Name="DvdNewPaymentDate" Type="smalldatetime" />
+    <Property Name="DvdMEPSCode" Type="varchar" MaxLength="20" />
+    <Property Name="DvdJointBankAccInd" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DvdSWIFTCode" Type="varchar" MaxLength="20" />
+    <Property Name="DvdStateID" Type="int" />
+    <Property Name="NetAmount" Type="numeric" Precision="38" Scale="6" />
+    <Property Name="CtryResidence" Type="char" MaxLength="3" />
+  </EntityType>
+  <Association Name="FK__ShrCompan__CoyCo__5B70D302">
+    <End Role="ShrCompanyMaster" Type="Self.ShrCompanyMaster" Multiplicity="0..1" />
+    <End Role="ShrCompanyMaster1" Type="Self.ShrCompanyMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShrCompanyMaster">
+        <PropertyRef Name="CoyRecID" />
+      </Principal>
+      <Dependent Role="ShrCompanyMaster1">
+        <PropertyRef Name="CoyCoyRecID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LiveShareRegistrationSystemModelStoreContainer">
+    <EntitySet Name="ShrCompanyMaster" EntityType="Self.ShrCompanyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vwDividendList" EntityType="Self.vwDividendList" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwDividendList].[CoyName] AS [CoyName], 
+    [vwDividendList].[DivCoy] AS [DivCoy], 
+    [vwDividendList].[Div. No.] AS [Div. No.], 
+    [vwDividendList].[Record Date] AS [Record Date], 
+    [vwDividendList].[Paying Date] AS [Paying Date], 
+    [vwDividendList].[Div. Type 1] AS [Div. Type 1], 
+    [vwDividendList].[Rate 1] AS [Rate 1], 
+    [vwDividendList].[Rate Type 1] AS [Rate Type 1], 
+    [vwDividendList].[Tax Rate 1] AS [Tax Rate 1], 
+    [vwDividendList].[Last Warrant] AS [Last Warrant], 
+    [vwDividendList].[Last Cheque] AS [Last Cheque], 
+    [vwDividendList].[Year Ending] AS [Year Ending], 
+    [vwDividendList].[Scrip Price] AS [Scrip Price], 
+    [vwDividendList].[Bank Account] AS [Bank Account], 
+    [vwDividendList].[IID] AS [IID]
+    FROM [dbo].[vwDividendList] AS [vwDividendList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwDividendPayment" EntityType="Self.vwDividendPayment" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwDividendPayment].[dWno] AS [dWno], 
+    [vwDividendPayment].[ClearedRef] AS [ClearedRef], 
+    [vwDividendPayment].[dChqno] AS [dChqno], 
+    [vwDividendPayment].[DAcno] AS [DAcno], 
+    [vwDividendPayment].[DvdName1] AS [DvdName1], 
+    [vwDividendPayment].[DvdName2] AS [DvdName2], 
+    [vwDividendPayment].[Addr1] AS [Addr1], 
+    [vwDividendPayment].[Addr2] AS [Addr2], 
+    [vwDividendPayment].[Addr3] AS [Addr3], 
+    [vwDividendPayment].[DZip] AS [DZip], 
+    [vwDividendPayment].[DShare] AS [DShare], 
+    [vwDividendPayment].[dRecID] AS [dRecID], 
+    [vwDividendPayment].[mNetAmount] AS [mNetAmount], 
+    [vwDividendPayment].[BankAccNo] AS [BankAccNo], 
+    [vwDividendPayment].[DivPaidDate] AS [DivPaidDate], 
+    [vwDividendPayment].[DvdBanker] AS [DvdBanker], 
+    [vwDividendPayment].[DvdBankAcc] AS [DvdBankAcc], 
+    [vwDividendPayment].[PayCurrency] AS [PayCurrency], 
+    [vwDividendPayment].[OverFlow] AS [OverFlow], 
+    [vwDividendPayment].[BatchNo] AS [BatchNo], 
+    [vwDividendPayment].[DvdRecType] AS [DvdRecType], 
+    [vwDividendPayment].[DvdKey] AS [DvdKey], 
+    [vwDividendPayment].[DvdCtryRes] AS [DvdCtryRes], 
+    [vwDividendPayment].[DvdEmail] AS [DvdEmail], 
+    [vwDividendPayment].[DvdTel] AS [DvdTel], 
+    [vwDividendPayment].[DvdCheqNo] AS [DvdCheqNo], 
+    [vwDividendPayment].[DvdDeliveryMethod] AS [DvdDeliveryMethod], 
+    [vwDividendPayment].[DvdPaymentMode] AS [DvdPaymentMode], 
+    [vwDividendPayment].[DvdNewPaymentDate] AS [DvdNewPaymentDate], 
+    [vwDividendPayment].[DvdMEPSCode] AS [DvdMEPSCode], 
+    [vwDividendPayment].[DvdJointBankAccInd] AS [DvdJointBankAccInd], 
+    [vwDividendPayment].[DvdSWIFTCode] AS [DvdSWIFTCode], 
+    [vwDividendPayment].[DvdStateID] AS [DvdStateID], 
+    [vwDividendPayment].[NetAmount] AS [NetAmount], 
+    [vwDividendPayment].[CtryResidence] AS [CtryResidence]
+    FROM [dbo].[vwDividendPayment] AS [vwDividendPayment]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__ShrCompan__CoyCo__5B70D302" Association="Self.FK__ShrCompan__CoyCo__5B70D302">
+      <End Role="ShrCompanyMaster" EntitySet="ShrCompanyMaster" />
+      <End Role="ShrCompanyMaster1" EntitySet="ShrCompanyMaster" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

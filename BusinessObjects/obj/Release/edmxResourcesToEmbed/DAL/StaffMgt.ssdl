@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRSJOBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bugs">
+    <Key>
+      <PropertyRef Name="bg_id" />
+    </Key>
+    <Property Name="bg_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bg_short_desc" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="bg_reported_user" Type="int" Nullable="false" />
+    <Property Name="bg_reported_date" Type="datetime" Nullable="false" />
+    <Property Name="bg_status" Type="int" Nullable="false" />
+    <Property Name="bg_priority" Type="int" Nullable="false" />
+    <Property Name="bg_org" Type="int" Nullable="false" />
+    <Property Name="bg_category" Type="int" Nullable="false" />
+    <Property Name="bg_project" Type="int" Nullable="false" />
+    <Property Name="bg_assigned_to_user" Type="int" />
+    <Property Name="bg_last_updated_user" Type="int" />
+    <Property Name="bg_last_updated_date" Type="datetime" />
+    <Property Name="bg_user_defined_attribute" Type="int" />
+    <Property Name="bg_project_custom_dropdown_value1" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value2" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value3" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_tags" Type="nvarchar" MaxLength="200" />
+    <Property Name="Process Category" Type="varchar" MaxLength="30" />
+    <Property Name="Billing Required" Type="varchar" MaxLength="1" />
+    <Property Name="Bill Schedule Updated" Type="varchar" MaxLength="4" />
+    <Property Name="Client Name" Type="varchar" MaxLength="100" />
+    <Property Name="Type of Work" Type="varchar" MaxLength="255" />
+    <Property Name="Details of Work" Type="varchar" MaxLength="2000" />
+    <Property Name="Completion Date" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="255" />
+    <Property Name="SD Manager" Type="int" />
+    <Property Name="Comments" Type="varchar" MaxLength="2000" />
+    <Property Name="Work Completed On" Type="datetime" />
+    <Property Name="Informed CS Date" Type="datetime" />
+    <Property Name="SD Officer" Type="varchar" MaxLength="20" />
+    <Property Name="Bill Comment" Type="varchar" MaxLength="100" />
+    <Property Name="Completion Time (hhmm)" Type="varchar" MaxLength="4" />
+    <Property Name="Completion Date 2" Type="datetime" />
+    <Property Name="Completion Date 3" Type="datetime" />
+    <Property Name="Completion Time 2 (hhmm)" Type="varchar" MaxLength="4" />
+    <Property Name="Completion Time 3 (hhmm)" Type="varchar" MaxLength="4" />
+    <Property Name="Date Docs Received from CS" Type="datetime" />
+    <Property Name="Time Docs Received (hhmm)" Type="varchar" MaxLength="4" />
+    <Property Name="SD Officer 2" Type="varchar" MaxLength="20" />
+    <Property Name="SD Officer 3" Type="varchar" MaxLength="20" />
+    <Property Name="Special Instruction" Type="varchar" MaxLength="1000" />
+    <Property Name="ChargeCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="SubCategory" Type="varchar" MaxLength="50" />
+    <Property Name="OTStart" Type="datetime" />
+    <Property Name="OTEnd" Type="datetime" />
+    <Property Name="OTRemarks" Type="varchar" MaxLength="500" />
+    <Property Name="OTDetails" Type="varchar" MaxLength="500" />
+    <Property Name="OTApprover" Type="varchar" MaxLength="50" />
+    <Property Name="OTApprovalDt" Type="datetime" />
+    <Property Name="OTPH" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OTNormal" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OTSun" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="categories">
+    <Key>
+      <PropertyRef Name="ct_id" />
+    </Key>
+    <Property Name="ct_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ct_name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="ct_sort_seq" Type="int" Nullable="false" />
+    <Property Name="ct_default" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'SRSJOB.dbo.holidays' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="holidays">
+          <Property Name="dtDate" Type="date" />
+          <Property Name="vcDescription" Type="varchar" MaxLength="200" />
+          <Property Name="dtStartTime" Type="datetime" />
+          <Property Name="dtEndTime" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="projects">
+    <Key>
+      <PropertyRef Name="pj_id" />
+    </Key>
+    <Property Name="pj_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pj_name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="pj_active" Type="int" Nullable="false" />
+    <Property Name="pj_default_user" Type="int" />
+    <Property Name="pj_auto_assign_default_user" Type="int" />
+    <Property Name="pj_auto_subscribe_default_user" Type="int" />
+    <Property Name="pj_enable_pop3" Type="int" />
+    <Property Name="pj_pop3_username" Type="varchar" MaxLength="50" />
+    <Property Name="pj_pop3_password" Type="nvarchar" MaxLength="20" />
+    <Property Name="pj_pop3_email_from" Type="nvarchar" MaxLength="120" />
+    <Property Name="pj_enable_custom_dropdown1" Type="int" Nullable="false" />
+    <Property Name="pj_enable_custom_dropdown2" Type="int" Nullable="false" />
+    <Property Name="pj_enable_custom_dropdown3" Type="int" Nullable="false" />
+    <Property Name="pj_custom_dropdown_label1" Type="nvarchar" MaxLength="80" />
+    <Property Name="pj_custom_dropdown_label2" Type="nvarchar" MaxLength="80" />
+    <Property Name="pj_custom_dropdown_label3" Type="nvarchar" MaxLength="80" />
+    <Property Name="pj_custom_dropdown_values1" Type="nvarchar" MaxLength="800" />
+    <Property Name="pj_custom_dropdown_values2" Type="nvarchar" MaxLength="800" />
+    <Property Name="pj_custom_dropdown_values3" Type="nvarchar" MaxLength="800" />
+    <Property Name="pj_default" Type="int" Nullable="false" />
+    <Property Name="pj_description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'SRSJOB.dbo.staff_info' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="staff_info">
+          <Property Name="vcName" Type="varchar" MaxLength="50" />
+          <Property Name="vcStaffID" Type="varchar" MaxLength="8" />
+          <Property Name="vcDesignation" Type="varchar" MaxLength="50" />
+          <Property Name="vcApprover" Type="varchar" MaxLength="1" />
+        </EntityType>-->
+  <EntityType Name="statuses">
+    <Key>
+      <PropertyRef Name="st_id" />
+    </Key>
+    <Property Name="st_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="st_name" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="st_sort_seq" Type="int" Nullable="false" />
+    <Property Name="st_style" Type="nvarchar" MaxLength="30" />
+    <Property Name="st_default" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="us_id" />
+    </Key>
+    <Property Name="us_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="us_username" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="us_salt" Type="int" />
+    <Property Name="us_password" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="us_firstname" Type="nvarchar" MaxLength="60" />
+    <Property Name="us_lastname" Type="nvarchar" MaxLength="60" />
+    <Property Name="us_email" Type="nvarchar" MaxLength="120" />
+    <Property Name="us_admin" Type="int" Nullable="false" />
+    <Property Name="us_default_query" Type="int" Nullable="false" />
+    <Property Name="us_enable_notifications" Type="int" Nullable="false" />
+    <Property Name="us_auto_subscribe" Type="int" Nullable="false" />
+    <Property Name="us_auto_subscribe_own_bugs" Type="int" />
+    <Property Name="us_auto_subscribe_reported_bugs" Type="int" />
+    <Property Name="us_send_notifications_to_self" Type="int" />
+    <Property Name="us_active" Type="int" Nullable="false" />
+    <Property Name="us_bugs_per_page" Type="int" />
+    <Property Name="us_forced_project" Type="int" />
+    <Property Name="us_reported_notifications" Type="int" Nullable="false" />
+    <Property Name="us_assigned_notifications" Type="int" Nullable="false" />
+    <Property Name="us_subscribed_notifications" Type="int" Nullable="false" />
+    <Property Name="us_signature" Type="nvarchar" MaxLength="1000" />
+    <Property Name="us_use_fckeditor" Type="int" Nullable="false" />
+    <Property Name="us_enable_bug_list_popups" Type="int" Nullable="false" />
+    <Property Name="us_created_user" Type="int" Nullable="false" />
+    <Property Name="us_org" Type="int" Nullable="false" />
+    <Property Name="us_most_recent_login_datetime" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="SRSJOBModelStoreContainer">
+    <EntitySet Name="bugs" EntityType="Self.bugs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="categories" EntityType="Self.categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="projects" EntityType="Self.projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="statuses" EntityType="Self.statuses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRSGEMMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bugs">
+    <Key>
+      <PropertyRef Name="bg_id" />
+    </Key>
+    <Property Name="bg_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bg_short_desc" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="bg_reported_user" Type="int" Nullable="false" />
+    <Property Name="bg_reported_date" Type="datetime" Nullable="false" />
+    <Property Name="bg_status" Type="int" Nullable="false" />
+    <Property Name="bg_priority" Type="int" Nullable="false" />
+    <Property Name="bg_org" Type="int" Nullable="false" />
+    <Property Name="bg_category" Type="int" Nullable="false" />
+    <Property Name="bg_project" Type="int" Nullable="false" />
+    <Property Name="bg_assigned_to_user" Type="int" />
+    <Property Name="bg_last_updated_user" Type="int" />
+    <Property Name="bg_last_updated_date" Type="datetime" />
+    <Property Name="bg_user_defined_attribute" Type="int" />
+    <Property Name="bg_project_custom_dropdown_value1" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value2" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value3" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_tags" Type="nvarchar" MaxLength="200" />
+    <Property Name="CorpFirm" Type="varchar" MaxLength="50" />
+    <Property Name="ClientSeniorMgr" Type="int" />
+    <Property Name="ClientMgr" Type="int" />
+    <Property Name="MeetingDate" Type="datetime" />
+    <Property Name="MeetingTime" Type="varchar" MaxLength="5" />
+    <Property Name="MeetingTime2" Type="varchar" MaxLength="5" />
+    <Property Name="MeetingTime3" Type="varchar" MaxLength="5" />
+    <Property Name="ReportingTime" Type="varchar" MaxLength="5" />
+    <Property Name="ReportingVenue" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryMgr" Type="int" />
+    <Property Name="DeliveryOfficer" Type="int" />
+    <Property Name="StatisticsOIC" Type="int" />
+    <Property Name="BusinessDev" Type="nvarchar" MaxLength="20" />
+    <Property Name="ScripHolders" Type="int" />
+    <Property Name="CDPHolders" Type="int" />
+    <Property Name="CPFHolders" Type="int" />
+    <Property Name="AnnualReportDate" Type="datetime" />
+    <Property Name="DespatchDate" Type="datetime" />
+    <Property Name="NoticeCircular" Type="nvarchar" MaxLength="30" />
+    <Property Name="MailingbyBR" Type="varchar" MaxLength="3" />
+    <Property Name="MailingAgent" Type="nvarchar" MaxLength="30" />
+    <Property Name="MailingAgentOthers" Type="nvarchar" MaxLength="30" />
+    <Property Name="PrintingbyBR" Type="nvarchar" MaxLength="3" />
+    <Property Name="PrintingHouseOthers" Type="nvarchar" MaxLength="30" />
+    <Property Name="IsContentious" Type="varchar" MaxLength="3" />
+    <Property Name="IsSeniorMgtAlerted" Type="varchar" MaxLength="3" />
+    <Property Name="SeniorMgtAlertedDate" Type="datetime" />
+    <Property Name="IsMeetingCorpRequired" Type="varchar" MaxLength="3" />
+    <Property Name="MeetingwithCorpDate" Type="datetime" />
+    <Property Name="MeetingProcessing" Type="nvarchar" MaxLength="50" />
+    <Property Name="VotingSystem" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChargeCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="EstimatedAttendees" Type="int" />
+    <Property Name="NoofResolution" Type="int" />
+    <Property Name="HandsetsRequired" Type="int" />
+    <Property Name="ExtraHandset" Type="int" />
+    <Property Name="MeetingProposal" Type="nvarchar" MaxLength="20" />
+    <Property Name="ProposalDate" Type="datetime" />
+    <Property Name="RegistrationCounters" Type="int" />
+    <Property Name="StaffRequired" Type="int" />
+    <Property Name="LoEDate" Type="datetime" />
+    <Property Name="ScrutineerFirm" Type="nvarchar" MaxLength="30" />
+    <Property Name="ScrutineerStaff" Type="nvarchar" MaxLength="20" />
+    <Property Name="VideoConferencing" Type="varchar" MaxLength="3" />
+    <Property Name="VideoConferencingVenue" Type="nvarchar" MaxLength="20" />
+    <Property Name="VideoConferencingSupplier" Type="nvarchar" MaxLength="20" />
+    <Property Name="RegistrationFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="StandByFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="CateringFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="PollingFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="ScrutineeringFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="VideoConferencingFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="IsITSupportRequired" Type="varchar" MaxLength="3" />
+    <Property Name="ITStaffInCharge" Type="int" />
+    <Property Name="ITStaffSupportNames" Type="nvarchar" MaxLength="30" />
+    <Property Name="Laptops" Type="int" />
+    <Property Name="PowerExtensions" Type="int" />
+    <Property Name="SignaturePads" Type="int" />
+    <Property Name="BarcodeScanners" Type="int" />
+    <Property Name="NetworkSwitchs" Type="int" />
+    <Property Name="LANCables" Type="int" />
+    <Property Name="LabelPrinters" Type="int" />
+    <Property Name="LaserPrinters" Type="int" />
+    <Property Name="LCDMonitors" Type="int" />
+    <Property Name="VGASwitchs" Type="int" />
+    <Property Name="VGASplitters" Type="int" />
+    <Property Name="OtherITEquipments" Type="nvarchar" MaxLength="100" />
+    <Property Name="ShareholderAttended" Type="int" />
+    <Property Name="ProxyGuest" Type="int" />
+    <Property Name="ProxyObserver" Type="int" />
+    <Property Name="ValidProxy" Type="int" />
+    <Property Name="InvalidProxy" Type="int" />
+    <Property Name="AttendManager" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AttendSRSStaff" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AttendContract" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AdditionalStaff" Type="int" />
+    <Property Name="ProxyAttended" Type="int" />
+    <Property Name="BillingRequired" Type="varchar" MaxLength="3" />
+    <Property Name="AnnualReport" Type="nvarchar" MaxLength="100" />
+    <Property Name="PrintingHouse" Type="nvarchar" MaxLength="100" />
+    <Property Name="MeetingVenue" Type="nvarchar" MaxLength="500" />
+    <Property Name="NoteToIT" Type="nvarchar" MaxLength="500" />
+    <Property Name="CorpStaff" Type="nvarchar" MaxLength="200" />
+    <Property Name="LodgementPlace" Type="nvarchar" MaxLength="50" />
+    <Property Name="LodgementPlaceOthers" Type="nvarchar" MaxLength="50" />
+    <Property Name="CutoffDate" Type="datetime" />
+    <Property Name="CutoffTime" Type="varchar" MaxLength="5" />
+    <Property Name="CutoffTime2" Type="varchar" MaxLength="5" />
+    <Property Name="CutoffTime3" Type="varchar" MaxLength="5" />
+    <Property Name="LoESerialNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="BillingScheduleUpdated" Type="varchar" MaxLength="5" />
+    <Property Name="QuestionCategoryA1" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA1" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryA2" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA2" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryA3" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA3" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB1" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB1" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB2" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB2" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB3" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB3" Type="nvarchar" MaxLength="255" />
+    <Property Name="ClaimType1" Type="nvarchar" MaxLength="60" />
+    <Property Name="ClaimAmount1" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ClaimType2" Type="nvarchar" MaxLength="60" />
+    <Property Name="ClaimAmount2" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ScriptReader" Type="int" />
+    <Property Name="BillingRemarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="Market" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sponsor" Type="nvarchar" MaxLength="150" />
+    <Property Name="MeetingNotes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="SRSGEMMSModelStoreContainer">
+    <EntitySet Name="bugs" EntityType="Self.bugs" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

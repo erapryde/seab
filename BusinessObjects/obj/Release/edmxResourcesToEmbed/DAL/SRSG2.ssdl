@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRSG2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CdeBank">
+    <Key>
+      <PropertyRef Name="BankCode" />
+    </Key>
+    <Property Name="BankCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CdeCountry">
+    <Key>
+      <PropertyRef Name="vcCode" />
+    </Key>
+    <Property Name="vcCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="vcDescription" Type="varchar" MaxLength="200" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CdeCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CdePayment">
+    <Key>
+      <PropertyRef Name="vcType" />
+      <PropertyRef Name="vcCode" />
+    </Key>
+    <Property Name="vcType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="vcDescription" Type="varchar" MaxLength="200" />
+    <Property Name="vcBankCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="vcLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="intCompanyID" />
+    </Key>
+    <Property Name="intCompanyID" Type="int" Nullable="false" />
+    <Property Name="vcName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="vcISINCode" Type="varchar" MaxLength="12" />
+    <Property Name="vcStockCode" Type="varchar" MaxLength="50" />
+    <Property Name="vcShortName" Type="varchar" MaxLength="50" />
+    <Property Name="vcSecurityName" Type="varchar" MaxLength="200" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dashboard">
+    <Key>
+      <PropertyRef Name="intRequestID" />
+    </Key>
+    <Property Name="intRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="intTableID" Type="int" Nullable="false" />
+    <Property Name="vcRequestType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcDescription" Type="varchar" MaxLength="200" />
+    <Property Name="vcStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vcInformation" Type="varchar(max)" />
+    <Property Name="vcRequestedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtRequestedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DivPayment">
+    <Key>
+      <PropertyRef Name="vcCounterCode" />
+      <PropertyRef Name="intDivNo" />
+      <PropertyRef Name="intDivHolderID" />
+    </Key>
+    <Property Name="vcCounterCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="vcCounterName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="intDivNo" Type="int" Nullable="false" />
+    <Property Name="intDivHolderID" Type="int" Nullable="false" />
+    <Property Name="intBatch" Type="int" />
+    <Property Name="intCheqNo" Type="int" />
+    <Property Name="DShare" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="vcBankCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcBankBranch" Type="varchar" MaxLength="50" />
+    <Property Name="vcBankAcct" Type="varchar" MaxLength="100" />
+    <Property Name="vcCreditCurrency" Type="varchar" MaxLength="10" />
+    <Property Name="intPaymentType" Type="int" Nullable="false" />
+    <Property Name="intDeliveryType" Type="int" Nullable="false" />
+    <Property Name="dtValueDate" Type="datetime" />
+    <Property Name="dtPaymentDate" Type="datetime" />
+    <Property Name="mPaymentAmt" Type="money" />
+    <Property Name="intPaymtStatus" Type="int" />
+    <Property Name="vcBankRefNo" Type="varchar" MaxLength="50" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DivShareHolders">
+    <Key>
+      <PropertyRef Name="intDivHolderID" />
+    </Key>
+    <Property Name="intDivHolderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="intSRSAcctNo" Type="int" Nullable="false" />
+    <Property Name="vcSalutation" Type="int" Nullable="false" />
+    <Property Name="vcName1_1" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcName2_1" Type="varchar" MaxLength="50" />
+    <Property Name="vcName1_2" Type="varchar" MaxLength="50" />
+    <Property Name="vcName2_2" Type="varchar" MaxLength="50" />
+    <Property Name="vcResAddr1" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="vcResAddr2" Type="varchar" MaxLength="200" />
+    <Property Name="vcResAddr3" Type="varchar" MaxLength="200" />
+    <Property Name="vcResZipCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="vcResCtryCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vcResCityCode" Type="varchar" MaxLength="20" />
+    <Property Name="vcResPrefCode" Type="varchar" MaxLength="20" />
+    <Property Name="vcResStateCode" Type="varchar" MaxLength="20" />
+    <Property Name="vcBankCode" Type="varchar" MaxLength="50" />
+    <Property Name="vcBankBranch" Type="varchar" MaxLength="50" />
+    <Property Name="vcBankAcct" Type="varchar" MaxLength="100" />
+    <Property Name="vcCurrencyCode1" Type="varchar" MaxLength="10" />
+    <Property Name="vcNRIC" Type="varchar" MaxLength="20" />
+    <Property Name="vcPassportNo" Type="varchar" MaxLength="50" />
+    <Property Name="vcEmail" Type="varchar" MaxLength="200" />
+    <Property Name="vcResDID" Type="varchar" MaxLength="50" />
+    <Property Name="vcMobileDID" Type="varchar" MaxLength="50" />
+    <Property Name="vcFax" Type="varchar" MaxLength="50" />
+    <Property Name="vcJointAcctInd" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InvMgtInvestment">
+    <Key>
+      <PropertyRef Name="intInvMgtInvestorID" />
+      <PropertyRef Name="intCompanyID" />
+    </Key>
+    <Property Name="intInvMgtInvestorID" Type="int" Nullable="false" />
+    <Property Name="intCompanyID" Type="int" Nullable="false" />
+    <Property Name="dScriplessShares" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="dScripShares" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InvMgtInvestor">
+    <Key>
+      <PropertyRef Name="intInvMgtInvestorID" />
+    </Key>
+    <Property Name="intInvMgtInvestorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vcName1" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="vcName2" Type="varchar" MaxLength="40" />
+    <Property Name="vcNatID" Type="varchar" MaxLength="14" />
+    <Property Name="vcResAddr1" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="vcResAddr2" Type="varchar" MaxLength="40" />
+    <Property Name="vcResAddr3" Type="varchar" MaxLength="40" />
+    <Property Name="vcResPostalCode" Type="varchar" MaxLength="40" />
+    <Property Name="vcResPrefCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcResCityCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcResStateCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcResCtryCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="vcNationality" Type="varchar" MaxLength="100" />
+    <Property Name="vcPassportNo" Type="varchar" MaxLength="20" />
+    <Property Name="vcOriginCtryCode" Type="varchar" MaxLength="10" />
+    <Property Name="vcEmail" Type="varchar" MaxLength="50" />
+    <Property Name="vcResDID" Type="varchar" MaxLength="30" />
+    <Property Name="vcMobileDID" Type="varchar" MaxLength="30" />
+    <Property Name="vcJointInd" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRpt">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dtAsAtDate" Type="date" Nullable="false" />
+    <Property Name="vcISINCode" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="vcSecurityName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="vcShortName" Type="varchar" MaxLength="100" />
+    <Property Name="vcStockCode" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="vcSRSStockCode" Type="varchar" MaxLength="4" />
+    <Property Name="vcFileName" Type="varchar" MaxLength="200" />
+    <Property Name="vcUploadedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRptDtl">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptDtlID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptDtlID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="intInvMgtUpldCDPRptID" Type="int" Nullable="false" />
+    <Property Name="vcName1" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="vcName2" Type="varchar" MaxLength="40" />
+    <Property Name="vcNatID" Type="varchar" MaxLength="14" />
+    <Property Name="vcNationality" Type="varchar" MaxLength="100" />
+    <Property Name="vcCtryOfOrigin" Type="varchar" MaxLength="100" />
+    <Property Name="vcAddress1" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="vcAddress2" Type="varchar" MaxLength="40" />
+    <Property Name="vcAddress3" Type="varchar" MaxLength="40" />
+    <Property Name="vcPostal" Type="varchar" MaxLength="6" />
+    <Property Name="dShareCt" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="fSharePercent" Type="float" />
+    <Property Name="intCurrentRank" Type="int" />
+    <Property Name="intPriorRank" Type="int" />
+    <Property Name="intVariance" Type="int" />
+    <Property Name="intPriorPosition" Type="int" />
+    <Property Name="intCurrentPosition" Type="int" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRptTag">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptTagID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptTagID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="intUpldCDPRptDtlID" Type="int" Nullable="false" />
+    <Property Name="intInvestorID" Type="int" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ShrReportCfg">
+    <Key>
+      <PropertyRef Name="intRptID" />
+    </Key>
+    <Property Name="intRptID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vcRptDesc" Type="varchar" MaxLength="200" />
+    <Property Name="vcRptFormat" Type="varchar" MaxLength="200" />
+    <Property Name="vcRptExtension" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UserAccess">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserFullName" Type="varchar" MaxLength="200" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Role" Type="varchar" MaxLength="200" />
+    <Property Name="Application" Type="varchar" MaxLength="200" />
+    <Property Name="Department" Type="varchar" MaxLength="200" />
+    <Property Name="Organization" Type="varchar" MaxLength="200" />
+    <Property Name="LastUpdatedDt" Type="datetime" />
+    <Property Name="LastUpdatedBy" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SRSG2.dbo.vwExtMeetingList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwExtMeetingList">
+    <Key>
+      <PropertyRef Name="bg_id" />
+      <PropertyRef Name="bg_short_desc" />
+      <PropertyRef Name="bg_reported_user" />
+      <PropertyRef Name="bg_reported_date" />
+      <PropertyRef Name="bg_status" />
+      <PropertyRef Name="bg_priority" />
+      <PropertyRef Name="bg_org" />
+      <PropertyRef Name="bg_category" />
+      <PropertyRef Name="bg_project" />
+    </Key>
+    <Property Name="bg_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bg_short_desc" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="bg_reported_user" Type="int" Nullable="false" />
+    <Property Name="bg_reported_date" Type="datetime" Nullable="false" />
+    <Property Name="bg_status" Type="int" Nullable="false" />
+    <Property Name="bg_priority" Type="int" Nullable="false" />
+    <Property Name="bg_org" Type="int" Nullable="false" />
+    <Property Name="bg_category" Type="int" Nullable="false" />
+    <Property Name="bg_project" Type="int" Nullable="false" />
+    <Property Name="bg_assigned_to_user" Type="int" />
+    <Property Name="bg_last_updated_user" Type="int" />
+    <Property Name="bg_last_updated_date" Type="datetime" />
+    <Property Name="bg_user_defined_attribute" Type="int" />
+    <Property Name="bg_project_custom_dropdown_value1" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value2" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_project_custom_dropdown_value3" Type="nvarchar" MaxLength="120" />
+    <Property Name="bg_tags" Type="nvarchar" MaxLength="200" />
+    <Property Name="CorpFirm" Type="varchar" MaxLength="50" />
+    <Property Name="ClientSeniorMgr" Type="int" />
+    <Property Name="ClientMgr" Type="int" />
+    <Property Name="MeetingDate" Type="datetime" />
+    <Property Name="MeetingTime" Type="varchar" MaxLength="5" />
+    <Property Name="MeetingTime2" Type="varchar" MaxLength="5" />
+    <Property Name="MeetingTime3" Type="varchar" MaxLength="5" />
+    <Property Name="ReportingTime" Type="varchar" MaxLength="5" />
+    <Property Name="ReportingVenue" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryMgr" Type="int" />
+    <Property Name="DeliveryOfficer" Type="int" />
+    <Property Name="StatisticsOIC" Type="int" />
+    <Property Name="BusinessDev" Type="nvarchar" MaxLength="20" />
+    <Property Name="ScripHolders" Type="int" />
+    <Property Name="CDPHolders" Type="int" />
+    <Property Name="CPFHolders" Type="int" />
+    <Property Name="AnnualReportDate" Type="datetime" />
+    <Property Name="DespatchDate" Type="datetime" />
+    <Property Name="NoticeCircular" Type="nvarchar" MaxLength="30" />
+    <Property Name="MailingbyBR" Type="varchar" MaxLength="3" />
+    <Property Name="MailingAgent" Type="nvarchar" MaxLength="30" />
+    <Property Name="MailingAgentOthers" Type="nvarchar" MaxLength="30" />
+    <Property Name="PrintingbyBR" Type="nvarchar" MaxLength="3" />
+    <Property Name="PrintingHouseOthers" Type="nvarchar" MaxLength="30" />
+    <Property Name="IsContentious" Type="varchar" MaxLength="3" />
+    <Property Name="IsSeniorMgtAlerted" Type="varchar" MaxLength="3" />
+    <Property Name="SeniorMgtAlertedDate" Type="datetime" />
+    <Property Name="IsMeetingCorpRequired" Type="varchar" MaxLength="3" />
+    <Property Name="MeetingwithCorpDate" Type="datetime" />
+    <Property Name="MeetingProcessing" Type="nvarchar" MaxLength="50" />
+    <Property Name="VotingSystem" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChargeCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="EstimatedAttendees" Type="int" />
+    <Property Name="NoofResolution" Type="int" />
+    <Property Name="HandsetsRequired" Type="int" />
+    <Property Name="ExtraHandset" Type="int" />
+    <Property Name="MeetingProposal" Type="nvarchar" MaxLength="20" />
+    <Property Name="ProposalDate" Type="datetime" />
+    <Property Name="RegistrationCounters" Type="int" />
+    <Property Name="StaffRequired" Type="int" />
+    <Property Name="LoEDate" Type="datetime" />
+    <Property Name="ScrutineerFirm" Type="nvarchar" MaxLength="30" />
+    <Property Name="ScrutineerStaff" Type="nvarchar" MaxLength="20" />
+    <Property Name="VideoConferencing" Type="varchar" MaxLength="3" />
+    <Property Name="VideoConferencingVenue" Type="nvarchar" MaxLength="20" />
+    <Property Name="VideoConferencingSupplier" Type="nvarchar" MaxLength="20" />
+    <Property Name="RegistrationFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="StandByFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="CateringFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="PollingFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="ScrutineeringFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="VideoConferencingFee" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="IsITSupportRequired" Type="varchar" MaxLength="3" />
+    <Property Name="ITStaffInCharge" Type="int" />
+    <Property Name="ITStaffSupportNames" Type="nvarchar" MaxLength="30" />
+    <Property Name="Laptops" Type="int" />
+    <Property Name="PowerExtensions" Type="int" />
+    <Property Name="SignaturePads" Type="int" />
+    <Property Name="BarcodeScanners" Type="int" />
+    <Property Name="NetworkSwitchs" Type="int" />
+    <Property Name="LANCables" Type="int" />
+    <Property Name="LabelPrinters" Type="int" />
+    <Property Name="LaserPrinters" Type="int" />
+    <Property Name="LCDMonitors" Type="int" />
+    <Property Name="VGASwitchs" Type="int" />
+    <Property Name="VGASplitters" Type="int" />
+    <Property Name="OtherITEquipments" Type="nvarchar" MaxLength="100" />
+    <Property Name="ShareholderAttended" Type="int" />
+    <Property Name="ProxyGuest" Type="int" />
+    <Property Name="ProxyObserver" Type="int" />
+    <Property Name="ValidProxy" Type="int" />
+    <Property Name="InvalidProxy" Type="int" />
+    <Property Name="AttendManager" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AttendSRSStaff" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AttendContract" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AdditionalStaff" Type="int" />
+    <Property Name="ProxyAttended" Type="int" />
+    <Property Name="BillingRequired" Type="varchar" MaxLength="3" />
+    <Property Name="AnnualReport" Type="nvarchar" MaxLength="100" />
+    <Property Name="PrintingHouse" Type="nvarchar" MaxLength="100" />
+    <Property Name="MeetingVenue" Type="nvarchar" MaxLength="500" />
+    <Property Name="NoteToIT" Type="nvarchar" MaxLength="500" />
+    <Property Name="CorpStaff" Type="nvarchar" MaxLength="200" />
+    <Property Name="LodgementPlace" Type="nvarchar" MaxLength="50" />
+    <Property Name="LodgementPlaceOthers" Type="nvarchar" MaxLength="50" />
+    <Property Name="CutoffDate" Type="datetime" />
+    <Property Name="CutoffTime" Type="varchar" MaxLength="5" />
+    <Property Name="CutoffTime2" Type="varchar" MaxLength="5" />
+    <Property Name="CutoffTime3" Type="varchar" MaxLength="5" />
+    <Property Name="LoESerialNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="BillingScheduleUpdated" Type="varchar" MaxLength="5" />
+    <Property Name="QuestionCategoryA1" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA1" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryA2" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA2" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryA3" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailA3" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB1" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB1" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB2" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB2" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuestionCategoryB3" Type="nvarchar" MaxLength="60" />
+    <Property Name="QuestionDetailB3" Type="nvarchar" MaxLength="255" />
+    <Property Name="ClaimType1" Type="nvarchar" MaxLength="60" />
+    <Property Name="ClaimAmount1" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ClaimType2" Type="nvarchar" MaxLength="60" />
+    <Property Name="ClaimAmount2" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ScriptReader" Type="int" />
+    <Property Name="BillingRemarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="Market" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sponsor" Type="nvarchar" MaxLength="150" />
+    <Property Name="MeetingNotes" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SRSG2.dbo.vwInvMgtCDPRptDashboard' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwInvMgtCDPRptDashboard">
+    <Key>
+      <PropertyRef Name="intRequestID" />
+      <PropertyRef Name="intTableID" />
+      <PropertyRef Name="vcRequestType" />
+      <PropertyRef Name="vcStatus" />
+      <PropertyRef Name="vcRequestedBy" />
+      <PropertyRef Name="dtRequestedDate" />
+      <PropertyRef Name="intInvMgtUpldCDPRptID" />
+      <PropertyRef Name="dtAsAtDate" />
+      <PropertyRef Name="vcISINCode" />
+      <PropertyRef Name="vcSecurityName" />
+      <PropertyRef Name="vcStockCode" />
+      <PropertyRef Name="vcUploadedBy" />
+      <PropertyRef Name="vcLastUpdatedBy" />
+      <PropertyRef Name="dtLastUpdatedOn" />
+    </Key>
+    <Property Name="intRequestID" Type="int" Nullable="false" />
+    <Property Name="intTableID" Type="int" Nullable="false" />
+    <Property Name="vcRequestType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcDescription" Type="varchar" MaxLength="200" />
+    <Property Name="vcStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vcInformation" Type="varchar(max)" />
+    <Property Name="vcRequestedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtRequestedDate" Type="datetime" Nullable="false" />
+    <Property Name="intInvMgtUpldCDPRptID" Type="int" Nullable="false" />
+    <Property Name="dtAsAtDate" Type="date" Nullable="false" />
+    <Property Name="vcISINCode" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="vcSecurityName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="vcStockCode" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="vcUploadedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SRSG2.dbo.vwNews' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwNews">
+    <Key>
+      <PropertyRef Name="intNewsID" />
+    </Key>
+    <Property Name="intNewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vcTitle" Type="varchar" MaxLength="200" />
+    <Property Name="vcDescription" Type="varchar(max)" />
+    <Property Name="dtLastUpdatedOn" Type="datetime" />
+    <Property Name="vcLastUpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="SRSG2StoreContainer">
+    <EntitySet Name="CdeBank" EntityType="Self.CdeBank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CdeCountry" EntityType="Self.CdeCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CdeCurrency" EntityType="Self.CdeCurrency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CdePayment" EntityType="Self.CdePayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dashboard" EntityType="Self.Dashboard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DivPayment" EntityType="Self.DivPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DivShareHolders" EntityType="Self.DivShareHolders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvMgtInvestment" EntityType="Self.InvMgtInvestment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvMgtInvestor" EntityType="Self.InvMgtInvestor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvMgtUpldCDPRpt" EntityType="Self.InvMgtUpldCDPRpt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvMgtUpldCDPRptDtl" EntityType="Self.InvMgtUpldCDPRptDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvMgtUpldCDPRptTag" EntityType="Self.InvMgtUpldCDPRptTag" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShrReportCfg" EntityType="Self.ShrReportCfg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAccess" EntityType="Self.UserAccess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vwExtMeetingList" EntityType="Self.vwExtMeetingList" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwExtMeetingList].[bg_id] AS [bg_id], 
+    [vwExtMeetingList].[bg_short_desc] AS [bg_short_desc], 
+    [vwExtMeetingList].[bg_reported_user] AS [bg_reported_user], 
+    [vwExtMeetingList].[bg_reported_date] AS [bg_reported_date], 
+    [vwExtMeetingList].[bg_status] AS [bg_status], 
+    [vwExtMeetingList].[bg_priority] AS [bg_priority], 
+    [vwExtMeetingList].[bg_org] AS [bg_org], 
+    [vwExtMeetingList].[bg_category] AS [bg_category], 
+    [vwExtMeetingList].[bg_project] AS [bg_project], 
+    [vwExtMeetingList].[bg_assigned_to_user] AS [bg_assigned_to_user], 
+    [vwExtMeetingList].[bg_last_updated_user] AS [bg_last_updated_user], 
+    [vwExtMeetingList].[bg_last_updated_date] AS [bg_last_updated_date], 
+    [vwExtMeetingList].[bg_user_defined_attribute] AS [bg_user_defined_attribute], 
+    [vwExtMeetingList].[bg_project_custom_dropdown_value1] AS [bg_project_custom_dropdown_value1], 
+    [vwExtMeetingList].[bg_project_custom_dropdown_value2] AS [bg_project_custom_dropdown_value2], 
+    [vwExtMeetingList].[bg_project_custom_dropdown_value3] AS [bg_project_custom_dropdown_value3], 
+    [vwExtMeetingList].[bg_tags] AS [bg_tags], 
+    [vwExtMeetingList].[CorpFirm] AS [CorpFirm], 
+    [vwExtMeetingList].[ClientSeniorMgr] AS [ClientSeniorMgr], 
+    [vwExtMeetingList].[ClientMgr] AS [ClientMgr], 
+    [vwExtMeetingList].[MeetingDate] AS [MeetingDate], 
+    [vwExtMeetingList].[MeetingTime] AS [MeetingTime], 
+    [vwExtMeetingList].[MeetingTime2] AS [MeetingTime2], 
+    [vwExtMeetingList].[MeetingTime3] AS [MeetingTime3], 
+    [vwExtMeetingList].[ReportingTime] AS [ReportingTime], 
+    [vwExtMeetingList].[ReportingVenue] AS [ReportingVenue], 
+    [vwExtMeetingList].[DeliveryMgr] AS [DeliveryMgr], 
+    [vwExtMeetingList].[DeliveryOfficer] AS [DeliveryOfficer], 
+    [vwExtMeetingList].[StatisticsOIC] AS [StatisticsOIC], 
+    [vwExtMeetingList].[BusinessDev] AS [BusinessDev], 
+    [vwExtMeetingList].[ScripHolders] AS [ScripHolders], 
+    [vwExtMeetingList].[CDPHolders] AS [CDPHolders], 
+    [vwExtMeetingList].[CPFHolders] AS [CPFHolders], 
+    [vwExtMeetingList].[AnnualReportDate] AS [AnnualReportDate], 
+    [vwExtMeetingList].[DespatchDate] AS [DespatchDate], 
+    [vwExtMeetingList].[NoticeCircular] AS [NoticeCircular], 
+    [vwExtMeetingList].[MailingbyBR] AS [MailingbyBR], 
+    [vwExtMeetingList].[MailingAgent] AS [MailingAgent], 
+    [vwExtMeetingList].[MailingAgentOthers] AS [MailingAgentOthers], 
+    [vwExtMeetingList].[PrintingbyBR] AS [PrintingbyBR], 
+    [vwExtMeetingList].[PrintingHouseOthers] AS [PrintingHouseOthers], 
+    [vwExtMeetingList].[IsContentious] AS [IsContentious], 
+    [vwExtMeetingList].[IsSeniorMgtAlerted] AS [IsSeniorMgtAlerted], 
+    [vwExtMeetingList].[SeniorMgtAlertedDate] AS [SeniorMgtAlertedDate], 
+    [vwExtMeetingList].[IsMeetingCorpRequired] AS [IsMeetingCorpRequired], 
+    [vwExtMeetingList].[MeetingwithCorpDate] AS [MeetingwithCorpDate], 
+    [vwExtMeetingList].[MeetingProcessing] AS [MeetingProcessing], 
+    [vwExtMeetingList].[VotingSystem] AS [VotingSystem], 
+    [vwExtMeetingList].[ChargeCode] AS [ChargeCode], 
+    [vwExtMeetingList].[EstimatedAttendees] AS [EstimatedAttendees], 
+    [vwExtMeetingList].[NoofResolution] AS [NoofResolution], 
+    [vwExtMeetingList].[HandsetsRequired] AS [HandsetsRequired], 
+    [vwExtMeetingList].[ExtraHandset] AS [ExtraHandset], 
+    [vwExtMeetingList].[MeetingProposal] AS [MeetingProposal], 
+    [vwExtMeetingList].[ProposalDate] AS [ProposalDate], 
+    [vwExtMeetingList].[RegistrationCounters] AS [RegistrationCounters], 
+    [vwExtMeetingList].[StaffRequired] AS [StaffRequired], 
+    [vwExtMeetingList].[LoEDate] AS [LoEDate], 
+    [vwExtMeetingList].[ScrutineerFirm] AS [ScrutineerFirm], 
+    [vwExtMeetingList].[ScrutineerStaff] AS [ScrutineerStaff], 
+    [vwExtMeetingList].[VideoConferencing] AS [VideoConferencing], 
+    [vwExtMeetingList].[VideoConferencingVenue] AS [VideoConferencingVenue], 
+    [vwExtMeetingList].[VideoConferencingSupplier] AS [VideoConferencingSupplier], 
+    [vwExtMeetingList].[RegistrationFee] AS [RegistrationFee], 
+    [vwExtMeetingList].[StandByFee] AS [StandByFee], 
+    [vwExtMeetingList].[CateringFee] AS [CateringFee], 
+    [vwExtMeetingList].[PollingFee] AS [PollingFee], 
+    [vwExtMeetingList].[ScrutineeringFee] AS [ScrutineeringFee], 
+    [vwExtMeetingList].[VideoConferencingFee] AS [VideoConferencingFee], 
+    [vwExtMeetingList].[IsITSupportRequired] AS [IsITSupportRequired], 
+    [vwExtMeetingList].[ITStaffInCharge] AS [ITStaffInCharge], 
+    [vwExtMeetingList].[ITStaffSupportNames] AS [ITStaffSupportNames], 
+    [vwExtMeetingList].[Laptops] AS [Laptops], 
+    [vwExtMeetingList].[PowerExtensions] AS [PowerExtensions], 
+    [vwExtMeetingList].[SignaturePads] AS [SignaturePads], 
+    [vwExtMeetingList].[BarcodeScanners] AS [BarcodeScanners], 
+    [vwExtMeetingList].[NetworkSwitchs] AS [NetworkSwitchs], 
+    [vwExtMeetingList].[LANCables] AS [LANCables], 
+    [vwExtMeetingList].[LabelPrinters] AS [LabelPrinters], 
+    [vwExtMeetingList].[LaserPrinters] AS [LaserPrinters], 
+    [vwExtMeetingList].[LCDMonitors] AS [LCDMonitors], 
+    [vwExtMeetingList].[VGASwitchs] AS [VGASwitchs], 
+    [vwExtMeetingList].[VGASplitters] AS [VGASplitters], 
+    [vwExtMeetingList].[OtherITEquipments] AS [OtherITEquipments], 
+    [vwExtMeetingList].[ShareholderAttended] AS [ShareholderAttended], 
+    [vwExtMeetingList].[ProxyGuest] AS [ProxyGuest], 
+    [vwExtMeetingList].[ProxyObserver] AS [ProxyObserver], 
+    [vwExtMeetingList].[ValidProxy] AS [ValidProxy], 
+    [vwExtMeetingList].[InvalidProxy] AS [InvalidProxy], 
+    [vwExtMeetingList].[AttendManager] AS [AttendManager], 
+    [vwExtMeetingList].[AttendSRSStaff] AS [AttendSRSStaff], 
+    [vwExtMeetingList].[AttendContract] AS [AttendContract], 
+    [vwExtMeetingList].[AdditionalStaff] AS [AdditionalStaff], 
+    [vwExtMeetingList].[ProxyAttended] AS [ProxyAttended], 
+    [vwExtMeetingList].[BillingRequired] AS [BillingRequired], 
+    [vwExtMeetingList].[AnnualReport] AS [AnnualReport], 
+    [vwExtMeetingList].[PrintingHouse] AS [PrintingHouse], 
+    [vwExtMeetingList].[MeetingVenue] AS [MeetingVenue], 
+    [vwExtMeetingList].[NoteToIT] AS [NoteToIT], 
+    [vwExtMeetingList].[CorpStaff] AS [CorpStaff], 
+    [vwExtMeetingList].[LodgementPlace] AS [LodgementPlace], 
+    [vwExtMeetingList].[LodgementPlaceOthers] AS [LodgementPlaceOthers], 
+    [vwExtMeetingList].[CutoffDate] AS [CutoffDate], 
+    [vwExtMeetingList].[CutoffTime] AS [CutoffTime], 
+    [vwExtMeetingList].[CutoffTime2] AS [CutoffTime2], 
+    [vwExtMeetingList].[CutoffTime3] AS [CutoffTime3], 
+    [vwExtMeetingList].[LoESerialNo] AS [LoESerialNo], 
+    [vwExtMeetingList].[BillingScheduleUpdated] AS [BillingScheduleUpdated], 
+    [vwExtMeetingList].[QuestionCategoryA1] AS [QuestionCategoryA1], 
+    [vwExtMeetingList].[QuestionDetailA1] AS [QuestionDetailA1], 
+    [vwExtMeetingList].[QuestionCategoryA2] AS [QuestionCategoryA2], 
+    [vwExtMeetingList].[QuestionDetailA2] AS [QuestionDetailA2], 
+    [vwExtMeetingList].[QuestionCategoryA3] AS [QuestionCategoryA3], 
+    [vwExtMeetingList].[QuestionDetailA3] AS [QuestionDetailA3], 
+    [vwExtMeetingList].[QuestionCategoryB1] AS [QuestionCategoryB1], 
+    [vwExtMeetingList].[QuestionDetailB1] AS [QuestionDetailB1], 
+    [vwExtMeetingList].[QuestionCategoryB2] AS [QuestionCategoryB2], 
+    [vwExtMeetingList].[QuestionDetailB2] AS [QuestionDetailB2], 
+    [vwExtMeetingList].[QuestionCategoryB3] AS [QuestionCategoryB3], 
+    [vwExtMeetingList].[QuestionDetailB3] AS [QuestionDetailB3], 
+    [vwExtMeetingList].[ClaimType1] AS [ClaimType1], 
+    [vwExtMeetingList].[ClaimAmount1] AS [ClaimAmount1], 
+    [vwExtMeetingList].[ClaimType2] AS [ClaimType2], 
+    [vwExtMeetingList].[ClaimAmount2] AS [ClaimAmount2], 
+    [vwExtMeetingList].[ScriptReader] AS [ScriptReader], 
+    [vwExtMeetingList].[BillingRemarks] AS [BillingRemarks], 
+    [vwExtMeetingList].[Market] AS [Market], 
+    [vwExtMeetingList].[Sponsor] AS [Sponsor], 
+    [vwExtMeetingList].[MeetingNotes] AS [MeetingNotes]
+    FROM [dbo].[vwExtMeetingList] AS [vwExtMeetingList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwInvMgtCDPRptDashboard" EntityType="Self.vwInvMgtCDPRptDashboard" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwInvMgtCDPRptDashboard].[intRequestID] AS [intRequestID], 
+    [vwInvMgtCDPRptDashboard].[intTableID] AS [intTableID], 
+    [vwInvMgtCDPRptDashboard].[vcRequestType] AS [vcRequestType], 
+    [vwInvMgtCDPRptDashboard].[vcDescription] AS [vcDescription], 
+    [vwInvMgtCDPRptDashboard].[vcStatus] AS [vcStatus], 
+    [vwInvMgtCDPRptDashboard].[vcInformation] AS [vcInformation], 
+    [vwInvMgtCDPRptDashboard].[vcRequestedBy] AS [vcRequestedBy], 
+    [vwInvMgtCDPRptDashboard].[dtRequestedDate] AS [dtRequestedDate], 
+    [vwInvMgtCDPRptDashboard].[intInvMgtUpldCDPRptID] AS [intInvMgtUpldCDPRptID], 
+    [vwInvMgtCDPRptDashboard].[dtAsAtDate] AS [dtAsAtDate], 
+    [vwInvMgtCDPRptDashboard].[vcISINCode] AS [vcISINCode], 
+    [vwInvMgtCDPRptDashboard].[vcSecurityName] AS [vcSecurityName], 
+    [vwInvMgtCDPRptDashboard].[vcStockCode] AS [vcStockCode], 
+    [vwInvMgtCDPRptDashboard].[vcUploadedBy] AS [vcUploadedBy], 
+    [vwInvMgtCDPRptDashboard].[vcLastUpdatedBy] AS [vcLastUpdatedBy], 
+    [vwInvMgtCDPRptDashboard].[dtLastUpdatedOn] AS [dtLastUpdatedOn]
+    FROM [dbo].[vwInvMgtCDPRptDashboard] AS [vwInvMgtCDPRptDashboard]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwNews" EntityType="Self.vwNews" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwNews].[intNewsID] AS [intNewsID], 
+    [vwNews].[vcTitle] AS [vcTitle], 
+    [vwNews].[vcDescription] AS [vcDescription], 
+    [vwNews].[dtLastUpdatedOn] AS [dtLastUpdatedOn], 
+    [vwNews].[vcLastUpdatedBy] AS [vcLastUpdatedBy]
+    FROM [dbo].[vwNews] AS [vwNews]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRSG2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CdeBank">
+    <Key>
+      <PropertyRef Name="BankCode" />
+    </Key>
+    <Property Name="BankCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CdeCountry">
+    <Key>
+      <PropertyRef Name="vcCode" />
+    </Key>
+    <Property Name="vcCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CdeCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Name="CurrencyCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CdePayment">
+    <Key>
+      <PropertyRef Name="vcType" />
+      <PropertyRef Name="vcCode" />
+    </Key>
+    <Property Name="vcType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="intCompanyID" />
+    </Key>
+    <Property Name="intCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="vcName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcISINCode" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="vcStockCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcSecurityName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="DivPayment">
+    <Key>
+      <PropertyRef Name="vcCounterCode" />
+      <PropertyRef Name="intDivNo" />
+      <PropertyRef Name="intDivHolderID" />
+    </Key>
+    <Property Name="vcCounterCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcCounterName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="intDivNo" Type="Int32" Nullable="false" />
+    <Property Name="intDivHolderID" Type="Int32" Nullable="false" />
+    <Property Name="intBatch" Type="Int32" />
+    <Property Name="intCheqNo" Type="Int32" />
+    <Property Name="DShare" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="vcBankCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankBranch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankAcct" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcCreditCurrency" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="intPaymentType" Type="Int32" Nullable="false" />
+    <Property Name="intDeliveryType" Type="Int32" Nullable="false" />
+    <Property Name="dtValueDate" Type="DateTime" Precision="3" />
+    <Property Name="dtPaymentDate" Type="DateTime" Precision="3" />
+    <Property Name="mPaymentAmt" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="intPaymtStatus" Type="Int32" />
+    <Property Name="vcBankRefNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DivShareHolder">
+    <Key>
+      <PropertyRef Name="intDivHolderID" />
+    </Key>
+    <Property Name="intDivHolderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="intSRSAcctNo" Type="Int32" Nullable="false" />
+    <Property Name="vcSalutation" Type="Int32" Nullable="false" />
+    <Property Name="vcName1_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcName2_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcName1_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcName2_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcResAddr1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcResAddr2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcResAddr3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcResZipCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcResCtryCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcResCityCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcResPrefCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcResStateCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankBranch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcBankAcct" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcCurrencyCode1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcNRIC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcPassportNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcResDID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcMobileDID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcJointAcctInd" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ShrReportCfg">
+    <Key>
+      <PropertyRef Name="intRptID" />
+    </Key>
+    <Property Name="intRptID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vcRptDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcRptFormat" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcRptExtension" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UserAccess">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Application" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Organization" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LastUpdatedDt" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CdeBanks" EntityType="Self.CdeBank" />
+    <EntitySet Name="CdeCountries" EntityType="Self.CdeCountry" />
+    <EntitySet Name="CdeCurrencies" EntityType="Self.CdeCurrency" />
+    <EntitySet Name="CdePayments" EntityType="Self.CdePayment" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="DivPayments" EntityType="Self.DivPayment" />
+    <EntitySet Name="DivShareHolders" EntityType="Self.DivShareHolder" />
+    <EntitySet Name="ShrReportCfgs" EntityType="Self.ShrReportCfg" />
+    <EntitySet Name="UserAccesses" EntityType="Self.UserAccess" />
+    <EntitySet Name="InvMgtInvestments" EntityType="SRSG2.InvMgtInvestment" />
+    <EntitySet Name="InvMgtInvestors" EntityType="SRSG2.InvMgtInvestor" />
+    <EntitySet Name="InvMgtUpldCDPRptDtls" EntityType="SRSG2.InvMgtUpldCDPRptDtl" />
+    <EntitySet Name="InvMgtUpldCDPRptTags" EntityType="SRSG2.InvMgtUpldCDPRptTag" />
+    <EntitySet Name="vwInvMgtCDPRptDashboards" EntityType="SRSG2.vwInvMgtCDPRptDashboard" />
+    <EntitySet Name="Dashboards" EntityType="SRSG2.Dashboard" />
+    <EntitySet Name="InvMgtUpldCDPRpts" EntityType="SRSG2.InvMgtUpldCDPRpt" />
+    <EntitySet Name="vwExtMeetingLists" EntityType="SRSG2.vwExtMeetingList" />
+    <EntitySet Name="vwNews" EntityType="SRSG2.vwNew" />
+  </EntityContainer>
+  <EntityType Name="InvMgtInvestment">
+    <Key>
+      <PropertyRef Name="intInvMgtInvestorID" />
+      <PropertyRef Name="intCompanyID" />
+    </Key>
+    <Property Name="intInvMgtInvestorID" Type="Int32" Nullable="false" />
+    <Property Name="intCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="dScriplessShares" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="dScripShares" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="vcLastUpdatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="InvMgtInvestor">
+    <Key>
+      <PropertyRef Name="intInvMgtInvestorID" />
+    </Key>
+    <Property Name="intInvMgtInvestorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vcName1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcName2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcNatID" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="vcResAddr1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcResAddr2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcResAddr3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcResPostalCode" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcResPrefCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcResCityCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcResStateCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcResCtryCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcNationality" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcPassportNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcOriginCtryCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vcEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcResDID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="vcMobileDID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="vcJointInd" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRptDtl">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptDtlID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptDtlID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="intInvMgtUpldCDPRptID" Type="Int32" Nullable="false" />
+    <Property Name="vcName1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcName2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcNatID" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="vcNationality" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcCtryOfOrigin" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcAddress1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcAddress2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcAddress3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="vcPostal" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="dShareCt" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="fSharePercent" Type="Double" />
+    <Property Name="intCurrentRank" Type="Int32" />
+    <Property Name="intPriorRank" Type="Int32" />
+    <Property Name="intVariance" Type="Int32" />
+    <Property Name="intPriorPosition" Type="Int32" />
+    <Property Name="intCurrentPosition" Type="Int32" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRptTag">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptTagID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptTagID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="intUpldCDPRptDtlID" Type="Int32" Nullable="false" />
+    <Property Name="intInvestorID" Type="Int32" Nullable="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwInvMgtCDPRptDashboard">
+    <Key>
+      <PropertyRef Name="intRequestID" />
+      <PropertyRef Name="intTableID" />
+      <PropertyRef Name="vcRequestType" />
+      <PropertyRef Name="vcStatus" />
+      <PropertyRef Name="vcRequestedBy" />
+      <PropertyRef Name="dtRequestedDate" />
+      <PropertyRef Name="intInvMgtUpldCDPRptID" />
+      <PropertyRef Name="dtAsAtDate" />
+      <PropertyRef Name="vcISINCode" />
+      <PropertyRef Name="vcSecurityName" />
+      <PropertyRef Name="vcStockCode" />
+      <PropertyRef Name="vcUploadedBy" />
+      <PropertyRef Name="vcLastUpdatedBy" />
+      <PropertyRef Name="dtLastUpdatedOn" />
+    </Key>
+    <Property Name="intRequestID" Type="Int32" Nullable="false" />
+    <Property Name="intTableID" Type="Int32" Nullable="false" />
+    <Property Name="vcRequestType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcStatus" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="vcRequestedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtRequestedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="intInvMgtUpldCDPRptID" Type="Int32" Nullable="false" />
+    <Property Name="dtAsAtDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="vcISINCode" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="vcSecurityName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcStockCode" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="vcUploadedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dashboard">
+    <Key>
+      <PropertyRef Name="intRequestID" />
+    </Key>
+    <Property Name="intRequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="intTableID" Type="Int32" Nullable="false" />
+    <Property Name="vcRequestType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcStatus" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vcInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="vcRequestedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtRequestedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="InvMgtUpldCDPRpt">
+    <Key>
+      <PropertyRef Name="intInvMgtUpldCDPRptID" />
+    </Key>
+    <Property Name="intInvMgtUpldCDPRptID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dtAsAtDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="vcISINCode" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="vcSecurityName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcShortName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="vcStockCode" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="vcSRSStockCode" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="vcFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcUploadedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcLastUpdatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwExtMeetingList">
+    <Key>
+      <PropertyRef Name="bg_id" />
+      <PropertyRef Name="bg_short_desc" />
+      <PropertyRef Name="bg_reported_user" />
+      <PropertyRef Name="bg_reported_date" />
+      <PropertyRef Name="bg_status" />
+      <PropertyRef Name="bg_priority" />
+      <PropertyRef Name="bg_org" />
+      <PropertyRef Name="bg_category" />
+      <PropertyRef Name="bg_project" />
+    </Key>
+    <Property Name="bg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bg_short_desc" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="bg_reported_user" Type="Int32" Nullable="false" />
+    <Property Name="bg_reported_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="bg_status" Type="Int32" Nullable="false" />
+    <Property Name="bg_priority" Type="Int32" Nullable="false" />
+    <Property Name="bg_org" Type="Int32" Nullable="false" />
+    <Property Name="bg_category" Type="Int32" Nullable="false" />
+    <Property Name="bg_project" Type="Int32" Nullable="false" />
+    <Property Name="bg_assigned_to_user" Type="Int32" />
+    <Property Name="bg_last_updated_user" Type="Int32" />
+    <Property Name="bg_last_updated_date" Type="DateTime" Precision="3" />
+    <Property Name="bg_user_defined_attribute" Type="Int32" />
+    <Property Name="bg_project_custom_dropdown_value1" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_project_custom_dropdown_value2" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_project_custom_dropdown_value3" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_tags" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CorpFirm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ClientSeniorMgr" Type="Int32" />
+    <Property Name="ClientMgr" Type="Int32" />
+    <Property Name="MeetingDate" Type="DateTime" Precision="3" />
+    <Property Name="MeetingTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="MeetingTime2" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="MeetingTime3" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ReportingTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ReportingVenue" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DeliveryMgr" Type="Int32" />
+    <Property Name="DeliveryOfficer" Type="Int32" />
+    <Property Name="StatisticsOIC" Type="Int32" />
+    <Property Name="BusinessDev" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ScripHolders" Type="Int32" />
+    <Property Name="CDPHolders" Type="Int32" />
+    <Property Name="CPFHolders" Type="Int32" />
+    <Property Name="AnnualReportDate" Type="DateTime" Precision="3" />
+    <Property Name="DespatchDate" Type="DateTime" Precision="3" />
+    <Property Name="NoticeCircular" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MailingbyBR" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="MailingAgent" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MailingAgentOthers" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="PrintingbyBR" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="PrintingHouseOthers" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="IsContentious" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="IsSeniorMgtAlerted" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SeniorMgtAlertedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsMeetingCorpRequired" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="MeetingwithCorpDate" Type="DateTime" Precision="3" />
+    <Property Name="MeetingProcessing" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VotingSystem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ChargeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EstimatedAttendees" Type="Int32" />
+    <Property Name="NoofResolution" Type="Int32" />
+    <Property Name="HandsetsRequired" Type="Int32" />
+    <Property Name="ExtraHandset" Type="Int32" />
+    <Property Name="MeetingProposal" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ProposalDate" Type="DateTime" Precision="3" />
+    <Property Name="RegistrationCounters" Type="Int32" />
+    <Property Name="StaffRequired" Type="Int32" />
+    <Property Name="LoEDate" Type="DateTime" Precision="3" />
+    <Property Name="ScrutineerFirm" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ScrutineerStaff" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VideoConferencing" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="VideoConferencingVenue" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VideoConferencingSupplier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RegistrationFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="StandByFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="CateringFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="PollingFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="ScrutineeringFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="VideoConferencingFee" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="IsITSupportRequired" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ITStaffInCharge" Type="Int32" />
+    <Property Name="ITStaffSupportNames" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Laptops" Type="Int32" />
+    <Property Name="PowerExtensions" Type="Int32" />
+    <Property Name="SignaturePads" Type="Int32" />
+    <Property Name="BarcodeScanners" Type="Int32" />
+    <Property Name="NetworkSwitchs" Type="Int32" />
+    <Property Name="LANCables" Type="Int32" />
+    <Property Name="LabelPrinters" Type="Int32" />
+    <Property Name="LaserPrinters" Type="Int32" />
+    <Property Name="LCDMonitors" Type="Int32" />
+    <Property Name="VGASwitchs" Type="Int32" />
+    <Property Name="VGASplitters" Type="Int32" />
+    <Property Name="OtherITEquipments" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ShareholderAttended" Type="Int32" />
+    <Property Name="ProxyGuest" Type="Int32" />
+    <Property Name="ProxyObserver" Type="Int32" />
+    <Property Name="ValidProxy" Type="Int32" />
+    <Property Name="InvalidProxy" Type="Int32" />
+    <Property Name="AttendManager" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="AttendSRSStaff" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="AttendContract" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="AdditionalStaff" Type="Int32" />
+    <Property Name="ProxyAttended" Type="Int32" />
+    <Property Name="BillingRequired" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="AnnualReport" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PrintingHouse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MeetingVenue" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NoteToIT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CorpStaff" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LodgementPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LodgementPlaceOthers" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CutoffDate" Type="DateTime" Precision="3" />
+    <Property Name="CutoffTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CutoffTime2" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CutoffTime3" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="LoESerialNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BillingScheduleUpdated" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="QuestionCategoryA1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailA1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionCategoryA2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailA2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionCategoryA3" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailA3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionCategoryB1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailB1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionCategoryB2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailB2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionCategoryB3" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionDetailB3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimAmount1" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ClaimType2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimAmount2" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ScriptReader" Type="Int32" />
+    <Property Name="BillingRemarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Market" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="MeetingNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwNew">
+    <Key>
+      <PropertyRef Name="intNewsID" />
+    </Key>
+    <Property Name="intNewsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vcTitle" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vcDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="dtLastUpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="vcLastUpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

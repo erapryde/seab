@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRSJOBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bug">
+    <Key>
+      <PropertyRef Name="bg_id" />
+    </Key>
+    <Property Name="bg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bg_short_desc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bg_reported_user" Type="Int32" Nullable="false" />
+    <Property Name="bg_reported_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="bg_status" Type="Int32" Nullable="false" />
+    <Property Name="bg_priority" Type="Int32" Nullable="false" />
+    <Property Name="bg_org" Type="Int32" Nullable="false" />
+    <Property Name="bg_category" Type="Int32" Nullable="false" />
+    <Property Name="bg_project" Type="Int32" Nullable="false" />
+    <Property Name="bg_assigned_to_user" Type="Int32" />
+    <Property Name="bg_last_updated_user" Type="Int32" />
+    <Property Name="bg_last_updated_date" Type="DateTime" Precision="3" />
+    <Property Name="bg_user_defined_attribute" Type="Int32" />
+    <Property Name="bg_project_custom_dropdown_value1" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_project_custom_dropdown_value2" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_project_custom_dropdown_value3" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="bg_tags" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Process_Category" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Billing_Required" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Bill_Schedule_Updated" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Type_of_Work" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Details_of_Work" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Completion_Date" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SD_Manager" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Work_Completed_On" Type="DateTime" Precision="3" />
+    <Property Name="Informed_CS_Date" Type="DateTime" Precision="3" />
+    <Property Name="SD_Officer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Bill_Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Completion_Time__hhmm_" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Completion_Date_2" Type="DateTime" Precision="3" />
+    <Property Name="Completion_Date_3" Type="DateTime" Precision="3" />
+    <Property Name="Completion_Time_2__hhmm_" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Completion_Time_3__hhmm_" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Docs_Received_from_CS" Type="DateTime" Precision="3" />
+    <Property Name="Time_Docs_Received__hhmm_" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="SD_Officer_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SD_Officer_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Special_Instruction" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ChargeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SubCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OTStart" Type="DateTime" Precision="3" />
+    <Property Name="OTEnd" Type="DateTime" Precision="3" />
+    <Property Name="OTRemarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="OTDetails" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="OTApprover" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OTApprovalDt" Type="DateTime" Precision="3" />
+    <Property Name="OTPH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="OTNormal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="OTSun" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="ct_id" />
+    </Key>
+    <Property Name="ct_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ct_name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ct_sort_seq" Type="Int32" Nullable="false" />
+    <Property Name="ct_default" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="staff_info">
+    <Key>
+      <PropertyRef Name="vcStaffID" />
+    </Key>
+    <Property Name="vcName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcStaffID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcApprover" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="us_id" />
+    </Key>
+    <Property Name="us_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="us_username" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="us_salt" Type="Int32" />
+    <Property Name="us_password" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="us_firstname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="us_lastname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="us_email" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="us_admin" Type="Int32" Nullable="false" />
+    <Property Name="us_default_query" Type="Int32" Nullable="false" />
+    <Property Name="us_enable_notifications" Type="Int32" Nullable="false" />
+    <Property Name="us_auto_subscribe" Type="Int32" Nullable="false" />
+    <Property Name="us_auto_subscribe_own_bugs" Type="Int32" />
+    <Property Name="us_auto_subscribe_reported_bugs" Type="Int32" />
+    <Property Name="us_send_notifications_to_self" Type="Int32" />
+    <Property Name="us_active" Type="Int32" Nullable="false" />
+    <Property Name="us_bugs_per_page" Type="Int32" />
+    <Property Name="us_forced_project" Type="Int32" />
+    <Property Name="us_reported_notifications" Type="Int32" Nullable="false" />
+    <Property Name="us_assigned_notifications" Type="Int32" Nullable="false" />
+    <Property Name="us_subscribed_notifications" Type="Int32" Nullable="false" />
+    <Property Name="us_signature" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="us_use_fckeditor" Type="Int32" Nullable="false" />
+    <Property Name="us_enable_bug_list_popups" Type="Int32" Nullable="false" />
+    <Property Name="us_created_user" Type="Int32" Nullable="false" />
+    <Property Name="us_org" Type="Int32" Nullable="false" />
+    <Property Name="us_most_recent_login_datetime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwStaffInfo">
+    <Key>
+      <PropertyRef Name="vcStaffID" />
+    </Key>
+    <Property Name="vcStaffID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vcDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vcApprover" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="vcName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bugs" EntityType="Self.bug" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="staff_info" EntityType="Self.staff_info" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="vwStaffInfoes" EntityType="Self.vwStaffInfo" />
+  </EntityContainer>
+</Schema>

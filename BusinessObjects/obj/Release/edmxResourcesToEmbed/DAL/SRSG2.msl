@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SRSG2StoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="CdeBanks">
+      <EntityTypeMapping TypeName="SRSG2.CdeBank">
+        <MappingFragment StoreEntitySet="CdeBank">
+          <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CdeCountries">
+      <EntityTypeMapping TypeName="SRSG2.CdeCountry">
+        <MappingFragment StoreEntitySet="CdeCountry">
+          <ScalarProperty Name="vcCode" ColumnName="vcCode" />
+          <ScalarProperty Name="vcDescription" ColumnName="vcDescription" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CdeCurrencies">
+      <EntityTypeMapping TypeName="SRSG2.CdeCurrency">
+        <MappingFragment StoreEntitySet="CdeCurrency">
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CdePayments">
+      <EntityTypeMapping TypeName="SRSG2.CdePayment">
+        <MappingFragment StoreEntitySet="CdePayment">
+          <ScalarProperty Name="vcType" ColumnName="vcType" />
+          <ScalarProperty Name="vcCode" ColumnName="vcCode" />
+          <ScalarProperty Name="vcDescription" ColumnName="vcDescription" />
+          <ScalarProperty Name="vcBankCode" ColumnName="vcBankCode" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="vcLastUpdatedOn" ColumnName="vcLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="SRSG2.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="intCompanyID" ColumnName="intCompanyID" />
+          <ScalarProperty Name="vcName" ColumnName="vcName" />
+          <ScalarProperty Name="vcISINCode" ColumnName="vcISINCode" />
+          <ScalarProperty Name="vcStockCode" ColumnName="vcStockCode" />
+          <ScalarProperty Name="vcShortName" ColumnName="vcShortName" />
+          <ScalarProperty Name="vcSecurityName" ColumnName="vcSecurityName" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DivPayments">
+      <EntityTypeMapping TypeName="SRSG2.DivPayment">
+        <MappingFragment StoreEntitySet="DivPayment">
+          <ScalarProperty Name="vcCounterCode" ColumnName="vcCounterCode" />
+          <ScalarProperty Name="vcCounterName" ColumnName="vcCounterName" />
+          <ScalarProperty Name="intDivNo" ColumnName="intDivNo" />
+          <ScalarProperty Name="intDivHolderID" ColumnName="intDivHolderID" />
+          <ScalarProperty Name="intBatch" ColumnName="intBatch" />
+          <ScalarProperty Name="intCheqNo" ColumnName="intCheqNo" />
+          <ScalarProperty Name="DShare" ColumnName="DShare" />
+          <ScalarProperty Name="vcBankCode" ColumnName="vcBankCode" />
+          <ScalarProperty Name="vcBankBranch" ColumnName="vcBankBranch" />
+          <ScalarProperty Name="vcBankAcct" ColumnName="vcBankAcct" />
+          <ScalarProperty Name="vcCreditCurrency" ColumnName="vcCreditCurrency" />
+          <ScalarProperty Name="intPaymentType" ColumnName="intPaymentType" />
+          <ScalarProperty Name="intDeliveryType" ColumnName="intDeliveryType" />
+          <ScalarProperty Name="dtValueDate" ColumnName="dtValueDate" />
+          <ScalarProperty Name="dtPaymentDate" ColumnName="dtPaymentDate" />
+          <ScalarProperty Name="mPaymentAmt" ColumnName="mPaymentAmt" />
+          <ScalarProperty Name="intPaymtStatus" ColumnName="intPaymtStatus" />
+          <ScalarProperty Name="vcBankRefNo" ColumnName="vcBankRefNo" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DivShareHolders">
+      <EntityTypeMapping TypeName="SRSG2.DivShareHolder">
+        <MappingFragment StoreEntitySet="DivShareHolders">
+          <ScalarProperty Name="intDivHolderID" ColumnName="intDivHolderID" />
+          <ScalarProperty Name="intSRSAcctNo" ColumnName="intSRSAcctNo" />
+          <ScalarProperty Name="vcSalutation" ColumnName="vcSalutation" />
+          <ScalarProperty Name="vcName1_1" ColumnName="vcName1_1" />
+          <ScalarProperty Name="vcName2_1" ColumnName="vcName2_1" />
+          <ScalarProperty Name="vcName1_2" ColumnName="vcName1_2" />
+          <ScalarProperty Name="vcName2_2" ColumnName="vcName2_2" />
+          <ScalarProperty Name="vcResAddr1" ColumnName="vcResAddr1" />
+          <ScalarProperty Name="vcResAddr2" ColumnName="vcResAddr2" />
+          <ScalarProperty Name="vcResAddr3" ColumnName="vcResAddr3" />
+          <ScalarProperty Name="vcResZipCode" ColumnName="vcResZipCode" />
+          <ScalarProperty Name="vcResCtryCode" ColumnName="vcResCtryCode" />
+          <ScalarProperty Name="vcResCityCode" ColumnName="vcResCityCode" />
+          <ScalarProperty Name="vcResPrefCode" ColumnName="vcResPrefCode" />
+          <ScalarProperty Name="vcResStateCode" ColumnName="vcResStateCode" />
+          <ScalarProperty Name="vcBankCode" ColumnName="vcBankCode" />
+          <ScalarProperty Name="vcBankBranch" ColumnName="vcBankBranch" />
+          <ScalarProperty Name="vcBankAcct" ColumnName="vcBankAcct" />
+          <ScalarProperty Name="vcCurrencyCode1" ColumnName="vcCurrencyCode1" />
+          <ScalarProperty Name="vcNRIC" ColumnName="vcNRIC" />
+          <ScalarProperty Name="vcPassportNo" ColumnName="vcPassportNo" />
+          <ScalarProperty Name="vcEmail" ColumnName="vcEmail" />
+          <ScalarProperty Name="vcResDID" ColumnName="vcResDID" />
+          <ScalarProperty Name="vcMobileDID" ColumnName="vcMobileDID" />
+          <ScalarProperty Name="vcFax" ColumnName="vcFax" />
+          <ScalarProperty Name="vcJointAcctInd" ColumnName="vcJointAcctInd" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShrReportCfgs">
+      <EntityTypeMapping TypeName="SRSG2.ShrReportCfg">
+        <MappingFragment StoreEntitySet="ShrReportCfg">
+          <ScalarProperty Name="intRptID" ColumnName="intRptID" />
+          <ScalarProperty Name="vcRptDesc" ColumnName="vcRptDesc" />
+          <ScalarProperty Name="vcRptFormat" ColumnName="vcRptFormat" />
+          <ScalarProperty Name="vcRptExtension" ColumnName="vcRptExtension" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccesses">
+      <EntityTypeMapping TypeName="SRSG2.UserAccess">
+        <MappingFragment StoreEntitySet="UserAccess">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Organization" ColumnName="Organization" />
+          <ScalarProperty Name="LastUpdatedDt" ColumnName="LastUpdatedDt" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvMgtInvestments">
+      <EntityTypeMapping TypeName="SRSG2.InvMgtInvestment">
+        <MappingFragment StoreEntitySet="InvMgtInvestment">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dScripShares" ColumnName="dScripShares" />
+          <ScalarProperty Name="dScriplessShares" ColumnName="dScriplessShares" />
+          <ScalarProperty Name="intCompanyID" ColumnName="intCompanyID" />
+          <ScalarProperty Name="intInvMgtInvestorID" ColumnName="intInvMgtInvestorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvMgtInvestors">
+      <EntityTypeMapping TypeName="SRSG2.InvMgtInvestor">
+        <MappingFragment StoreEntitySet="InvMgtInvestor">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="vcJointInd" ColumnName="vcJointInd" />
+          <ScalarProperty Name="vcMobileDID" ColumnName="vcMobileDID" />
+          <ScalarProperty Name="vcResDID" ColumnName="vcResDID" />
+          <ScalarProperty Name="vcEmail" ColumnName="vcEmail" />
+          <ScalarProperty Name="vcOriginCtryCode" ColumnName="vcOriginCtryCode" />
+          <ScalarProperty Name="vcPassportNo" ColumnName="vcPassportNo" />
+          <ScalarProperty Name="vcNationality" ColumnName="vcNationality" />
+          <ScalarProperty Name="vcResCtryCode" ColumnName="vcResCtryCode" />
+          <ScalarProperty Name="vcResStateCode" ColumnName="vcResStateCode" />
+          <ScalarProperty Name="vcResCityCode" ColumnName="vcResCityCode" />
+          <ScalarProperty Name="vcResPrefCode" ColumnName="vcResPrefCode" />
+          <ScalarProperty Name="vcResPostalCode" ColumnName="vcResPostalCode" />
+          <ScalarProperty Name="vcResAddr3" ColumnName="vcResAddr3" />
+          <ScalarProperty Name="vcResAddr2" ColumnName="vcResAddr2" />
+          <ScalarProperty Name="vcResAddr1" ColumnName="vcResAddr1" />
+          <ScalarProperty Name="vcNatID" ColumnName="vcNatID" />
+          <ScalarProperty Name="vcName2" ColumnName="vcName2" />
+          <ScalarProperty Name="vcName1" ColumnName="vcName1" />
+          <ScalarProperty Name="intInvMgtInvestorID" ColumnName="intInvMgtInvestorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvMgtUpldCDPRptDtls">
+      <EntityTypeMapping TypeName="SRSG2.InvMgtUpldCDPRptDtl">
+        <MappingFragment StoreEntitySet="InvMgtUpldCDPRptDtl">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="intCurrentPosition" ColumnName="intCurrentPosition" />
+          <ScalarProperty Name="intPriorPosition" ColumnName="intPriorPosition" />
+          <ScalarProperty Name="intVariance" ColumnName="intVariance" />
+          <ScalarProperty Name="intPriorRank" ColumnName="intPriorRank" />
+          <ScalarProperty Name="intCurrentRank" ColumnName="intCurrentRank" />
+          <ScalarProperty Name="fSharePercent" ColumnName="fSharePercent" />
+          <ScalarProperty Name="dShareCt" ColumnName="dShareCt" />
+          <ScalarProperty Name="vcPostal" ColumnName="vcPostal" />
+          <ScalarProperty Name="vcAddress3" ColumnName="vcAddress3" />
+          <ScalarProperty Name="vcAddress2" ColumnName="vcAddress2" />
+          <ScalarProperty Name="vcAddress1" ColumnName="vcAddress1" />
+          <ScalarProperty Name="vcCtryOfOrigin" ColumnName="vcCtryOfOrigin" />
+          <ScalarProperty Name="vcNationality" ColumnName="vcNationality" />
+          <ScalarProperty Name="vcNatID" ColumnName="vcNatID" />
+          <ScalarProperty Name="vcName2" ColumnName="vcName2" />
+          <ScalarProperty Name="vcName1" ColumnName="vcName1" />
+          <ScalarProperty Name="intInvMgtUpldCDPRptID" ColumnName="intInvMgtUpldCDPRptID" />
+          <ScalarProperty Name="intInvMgtUpldCDPRptDtlID" ColumnName="intInvMgtUpldCDPRptDtlID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvMgtUpldCDPRptTags">
+      <EntityTypeMapping TypeName="SRSG2.InvMgtUpldCDPRptTag">
+        <MappingFragment StoreEntitySet="InvMgtUpldCDPRptTag">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="intInvestorID" ColumnName="intInvestorID" />
+          <ScalarProperty Name="intUpldCDPRptDtlID" ColumnName="intUpldCDPRptDtlID" />
+          <ScalarProperty Name="intInvMgtUpldCDPRptTagID" ColumnName="intInvMgtUpldCDPRptTagID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwInvMgtCDPRptDashboards">
+      <EntityTypeMapping TypeName="SRSG2.vwInvMgtCDPRptDashboard">
+        <MappingFragment StoreEntitySet="vwInvMgtCDPRptDashboard">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="vcUploadedBy" ColumnName="vcUploadedBy" />
+          <ScalarProperty Name="vcStockCode" ColumnName="vcStockCode" />
+          <ScalarProperty Name="vcSecurityName" ColumnName="vcSecurityName" />
+          <ScalarProperty Name="vcISINCode" ColumnName="vcISINCode" />
+          <ScalarProperty Name="dtAsAtDate" ColumnName="dtAsAtDate" />
+          <ScalarProperty Name="intInvMgtUpldCDPRptID" ColumnName="intInvMgtUpldCDPRptID" />
+          <ScalarProperty Name="dtRequestedDate" ColumnName="dtRequestedDate" />
+          <ScalarProperty Name="vcRequestedBy" ColumnName="vcRequestedBy" />
+          <ScalarProperty Name="vcInformation" ColumnName="vcInformation" />
+          <ScalarProperty Name="vcStatus" ColumnName="vcStatus" />
+          <ScalarProperty Name="vcDescription" ColumnName="vcDescription" />
+          <ScalarProperty Name="vcRequestType" ColumnName="vcRequestType" />
+          <ScalarProperty Name="intTableID" ColumnName="intTableID" />
+          <ScalarProperty Name="intRequestID" ColumnName="intRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dashboards">
+      <EntityTypeMapping TypeName="SRSG2.Dashboard">
+        <MappingFragment StoreEntitySet="Dashboard">
+          <ScalarProperty Name="dtRequestedDate" ColumnName="dtRequestedDate" />
+          <ScalarProperty Name="vcRequestedBy" ColumnName="vcRequestedBy" />
+          <ScalarProperty Name="vcInformation" ColumnName="vcInformation" />
+          <ScalarProperty Name="vcStatus" ColumnName="vcStatus" />
+          <ScalarProperty Name="vcDescription" ColumnName="vcDescription" />
+          <ScalarProperty Name="vcRequestType" ColumnName="vcRequestType" />
+          <ScalarProperty Name="intTableID" ColumnName="intTableID" />
+          <ScalarProperty Name="intRequestID" ColumnName="intRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvMgtUpldCDPRpts">
+      <EntityTypeMapping TypeName="SRSG2.InvMgtUpldCDPRpt">
+        <MappingFragment StoreEntitySet="InvMgtUpldCDPRpt">
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="vcUploadedBy" ColumnName="vcUploadedBy" />
+          <ScalarProperty Name="vcFileName" ColumnName="vcFileName" />
+          <ScalarProperty Name="vcSRSStockCode" ColumnName="vcSRSStockCode" />
+          <ScalarProperty Name="vcStockCode" ColumnName="vcStockCode" />
+          <ScalarProperty Name="vcShortName" ColumnName="vcShortName" />
+          <ScalarProperty Name="vcSecurityName" ColumnName="vcSecurityName" />
+          <ScalarProperty Name="vcISINCode" ColumnName="vcISINCode" />
+          <ScalarProperty Name="dtAsAtDate" ColumnName="dtAsAtDate" />
+          <ScalarProperty Name="intInvMgtUpldCDPRptID" ColumnName="intInvMgtUpldCDPRptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwExtMeetingLists">
+      <EntityTypeMapping TypeName="SRSG2.vwExtMeetingList">
+        <MappingFragment StoreEntitySet="vwExtMeetingList">
+          <ScalarProperty Name="MeetingNotes" ColumnName="MeetingNotes" />
+          <ScalarProperty Name="Sponsor" ColumnName="Sponsor" />
+          <ScalarProperty Name="Market" ColumnName="Market" />
+          <ScalarProperty Name="BillingRemarks" ColumnName="BillingRemarks" />
+          <ScalarProperty Name="ScriptReader" ColumnName="ScriptReader" />
+          <ScalarProperty Name="ClaimAmount2" ColumnName="ClaimAmount2" />
+          <ScalarProperty Name="ClaimType2" ColumnName="ClaimType2" />
+          <ScalarProperty Name="ClaimAmount1" ColumnName="ClaimAmount1" />
+          <ScalarProperty Name="ClaimType1" ColumnName="ClaimType1" />
+          <ScalarProperty Name="QuestionDetailB3" ColumnName="QuestionDetailB3" />
+          <ScalarProperty Name="QuestionCategoryB3" ColumnName="QuestionCategoryB3" />
+          <ScalarProperty Name="QuestionDetailB2" ColumnName="QuestionDetailB2" />
+          <ScalarProperty Name="QuestionCategoryB2" ColumnName="QuestionCategoryB2" />
+          <ScalarProperty Name="QuestionDetailB1" ColumnName="QuestionDetailB1" />
+          <ScalarProperty Name="QuestionCategoryB1" ColumnName="QuestionCategoryB1" />
+          <ScalarProperty Name="QuestionDetailA3" ColumnName="QuestionDetailA3" />
+          <ScalarProperty Name="QuestionCategoryA3" ColumnName="QuestionCategoryA3" />
+          <ScalarProperty Name="QuestionDetailA2" ColumnName="QuestionDetailA2" />
+          <ScalarProperty Name="QuestionCategoryA2" ColumnName="QuestionCategoryA2" />
+          <ScalarProperty Name="QuestionDetailA1" ColumnName="QuestionDetailA1" />
+          <ScalarProperty Name="QuestionCategoryA1" ColumnName="QuestionCategoryA1" />
+          <ScalarProperty Name="BillingScheduleUpdated" ColumnName="BillingScheduleUpdated" />
+          <ScalarProperty Name="LoESerialNo" ColumnName="LoESerialNo" />
+          <ScalarProperty Name="CutoffTime3" ColumnName="CutoffTime3" />
+          <ScalarProperty Name="CutoffTime2" ColumnName="CutoffTime2" />
+          <ScalarProperty Name="CutoffTime" ColumnName="CutoffTime" />
+          <ScalarProperty Name="CutoffDate" ColumnName="CutoffDate" />
+          <ScalarProperty Name="LodgementPlaceOthers" ColumnName="LodgementPlaceOthers" />
+          <ScalarProperty Name="LodgementPlace" ColumnName="LodgementPlace" />
+          <ScalarProperty Name="CorpStaff" ColumnName="CorpStaff" />
+          <ScalarProperty Name="NoteToIT" ColumnName="NoteToIT" />
+          <ScalarProperty Name="MeetingVenue" ColumnName="MeetingVenue" />
+          <ScalarProperty Name="PrintingHouse" ColumnName="PrintingHouse" />
+          <ScalarProperty Name="AnnualReport" ColumnName="AnnualReport" />
+          <ScalarProperty Name="BillingRequired" ColumnName="BillingRequired" />
+          <ScalarProperty Name="ProxyAttended" ColumnName="ProxyAttended" />
+          <ScalarProperty Name="AdditionalStaff" ColumnName="AdditionalStaff" />
+          <ScalarProperty Name="AttendContract" ColumnName="AttendContract" />
+          <ScalarProperty Name="AttendSRSStaff" ColumnName="AttendSRSStaff" />
+          <ScalarProperty Name="AttendManager" ColumnName="AttendManager" />
+          <ScalarProperty Name="InvalidProxy" ColumnName="InvalidProxy" />
+          <ScalarProperty Name="ValidProxy" ColumnName="ValidProxy" />
+          <ScalarProperty Name="ProxyObserver" ColumnName="ProxyObserver" />
+          <ScalarProperty Name="ProxyGuest" ColumnName="ProxyGuest" />
+          <ScalarProperty Name="ShareholderAttended" ColumnName="ShareholderAttended" />
+          <ScalarProperty Name="OtherITEquipments" ColumnName="OtherITEquipments" />
+          <ScalarProperty Name="VGASplitters" ColumnName="VGASplitters" />
+          <ScalarProperty Name="VGASwitchs" ColumnName="VGASwitchs" />
+          <ScalarProperty Name="LCDMonitors" ColumnName="LCDMonitors" />
+          <ScalarProperty Name="LaserPrinters" ColumnName="LaserPrinters" />
+          <ScalarProperty Name="LabelPrinters" ColumnName="LabelPrinters" />
+          <ScalarProperty Name="LANCables" ColumnName="LANCables" />
+          <ScalarProperty Name="NetworkSwitchs" ColumnName="NetworkSwitchs" />
+          <ScalarProperty Name="BarcodeScanners" ColumnName="BarcodeScanners" />
+          <ScalarProperty Name="SignaturePads" ColumnName="SignaturePads" />
+          <ScalarProperty Name="PowerExtensions" ColumnName="PowerExtensions" />
+          <ScalarProperty Name="Laptops" ColumnName="Laptops" />
+          <ScalarProperty Name="ITStaffSupportNames" ColumnName="ITStaffSupportNames" />
+          <ScalarProperty Name="ITStaffInCharge" ColumnName="ITStaffInCharge" />
+          <ScalarProperty Name="IsITSupportRequired" ColumnName="IsITSupportRequired" />
+          <ScalarProperty Name="VideoConferencingFee" ColumnName="VideoConferencingFee" />
+          <ScalarProperty Name="ScrutineeringFee" ColumnName="ScrutineeringFee" />
+          <ScalarProperty Name="PollingFee" ColumnName="PollingFee" />
+          <ScalarProperty Name="CateringFee" ColumnName="CateringFee" />
+          <ScalarProperty Name="StandByFee" ColumnName="StandByFee" />
+          <ScalarProperty Name="RegistrationFee" ColumnName="RegistrationFee" />
+          <ScalarProperty Name="VideoConferencingSupplier" ColumnName="VideoConferencingSupplier" />
+          <ScalarProperty Name="VideoConferencingVenue" ColumnName="VideoConferencingVenue" />
+          <ScalarProperty Name="VideoConferencing" ColumnName="VideoConferencing" />
+          <ScalarProperty Name="ScrutineerStaff" ColumnName="ScrutineerStaff" />
+          <ScalarProperty Name="ScrutineerFirm" ColumnName="ScrutineerFirm" />
+          <ScalarProperty Name="LoEDate" ColumnName="LoEDate" />
+          <ScalarProperty Name="StaffRequired" ColumnName="StaffRequired" />
+          <ScalarProperty Name="RegistrationCounters" ColumnName="RegistrationCounters" />
+          <ScalarProperty Name="ProposalDate" ColumnName="ProposalDate" />
+          <ScalarProperty Name="MeetingProposal" ColumnName="MeetingProposal" />
+          <ScalarProperty Name="ExtraHandset" ColumnName="ExtraHandset" />
+          <ScalarProperty Name="HandsetsRequired" ColumnName="HandsetsRequired" />
+          <ScalarProperty Name="NoofResolution" ColumnName="NoofResolution" />
+          <ScalarProperty Name="EstimatedAttendees" ColumnName="EstimatedAttendees" />
+          <ScalarProperty Name="ChargeCode" ColumnName="ChargeCode" />
+          <ScalarProperty Name="VotingSystem" ColumnName="VotingSystem" />
+          <ScalarProperty Name="MeetingProcessing" ColumnName="MeetingProcessing" />
+          <ScalarProperty Name="MeetingwithCorpDate" ColumnName="MeetingwithCorpDate" />
+          <ScalarProperty Name="IsMeetingCorpRequired" ColumnName="IsMeetingCorpRequired" />
+          <ScalarProperty Name="SeniorMgtAlertedDate" ColumnName="SeniorMgtAlertedDate" />
+          <ScalarProperty Name="IsSeniorMgtAlerted" ColumnName="IsSeniorMgtAlerted" />
+          <ScalarProperty Name="IsContentious" ColumnName="IsContentious" />
+          <ScalarProperty Name="PrintingHouseOthers" ColumnName="PrintingHouseOthers" />
+          <ScalarProperty Name="PrintingbyBR" ColumnName="PrintingbyBR" />
+          <ScalarProperty Name="MailingAgentOthers" ColumnName="MailingAgentOthers" />
+          <ScalarProperty Name="MailingAgent" ColumnName="MailingAgent" />
+          <ScalarProperty Name="MailingbyBR" ColumnName="MailingbyBR" />
+          <ScalarProperty Name="NoticeCircular" ColumnName="NoticeCircular" />
+          <ScalarProperty Name="DespatchDate" ColumnName="DespatchDate" />
+          <ScalarProperty Name="AnnualReportDate" ColumnName="AnnualReportDate" />
+          <ScalarProperty Name="CPFHolders" ColumnName="CPFHolders" />
+          <ScalarProperty Name="CDPHolders" ColumnName="CDPHolders" />
+          <ScalarProperty Name="ScripHolders" ColumnName="ScripHolders" />
+          <ScalarProperty Name="BusinessDev" ColumnName="BusinessDev" />
+          <ScalarProperty Name="StatisticsOIC" ColumnName="StatisticsOIC" />
+          <ScalarProperty Name="DeliveryOfficer" ColumnName="DeliveryOfficer" />
+          <ScalarProperty Name="DeliveryMgr" ColumnName="DeliveryMgr" />
+          <ScalarProperty Name="ReportingVenue" ColumnName="ReportingVenue" />
+          <ScalarProperty Name="ReportingTime" ColumnName="ReportingTime" />
+          <ScalarProperty Name="MeetingTime3" ColumnName="MeetingTime3" />
+          <ScalarProperty Name="MeetingTime2" ColumnName="MeetingTime2" />
+          <ScalarProperty Name="MeetingTime" ColumnName="MeetingTime" />
+          <ScalarProperty Name="MeetingDate" ColumnName="MeetingDate" />
+          <ScalarProperty Name="ClientMgr" ColumnName="ClientMgr" />
+          <ScalarProperty Name="ClientSeniorMgr" ColumnName="ClientSeniorMgr" />
+          <ScalarProperty Name="CorpFirm" ColumnName="CorpFirm" />
+          <ScalarProperty Name="bg_tags" ColumnName="bg_tags" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value3" ColumnName="bg_project_custom_dropdown_value3" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value2" ColumnName="bg_project_custom_dropdown_value2" />
+          <ScalarProperty Name="bg_project_custom_dropdown_value1" ColumnName="bg_project_custom_dropdown_value1" />
+          <ScalarProperty Name="bg_user_defined_attribute" ColumnName="bg_user_defined_attribute" />
+          <ScalarProperty Name="bg_last_updated_date" ColumnName="bg_last_updated_date" />
+          <ScalarProperty Name="bg_last_updated_user" ColumnName="bg_last_updated_user" />
+          <ScalarProperty Name="bg_assigned_to_user" ColumnName="bg_assigned_to_user" />
+          <ScalarProperty Name="bg_project" ColumnName="bg_project" />
+          <ScalarProperty Name="bg_category" ColumnName="bg_category" />
+          <ScalarProperty Name="bg_org" ColumnName="bg_org" />
+          <ScalarProperty Name="bg_priority" ColumnName="bg_priority" />
+          <ScalarProperty Name="bg_status" ColumnName="bg_status" />
+          <ScalarProperty Name="bg_reported_date" ColumnName="bg_reported_date" />
+          <ScalarProperty Name="bg_reported_user" ColumnName="bg_reported_user" />
+          <ScalarProperty Name="bg_short_desc" ColumnName="bg_short_desc" />
+          <ScalarProperty Name="bg_id" ColumnName="bg_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwNews">
+      <EntityTypeMapping TypeName="SRSG2.vwNew">
+        <MappingFragment StoreEntitySet="vwNews">
+          <ScalarProperty Name="vcLastUpdatedBy" ColumnName="vcLastUpdatedBy" />
+          <ScalarProperty Name="dtLastUpdatedOn" ColumnName="dtLastUpdatedOn" />
+          <ScalarProperty Name="vcDescription" ColumnName="vcDescription" />
+          <ScalarProperty Name="vcTitle" ColumnName="vcTitle" />
+          <ScalarProperty Name="intNewsID" ColumnName="intNewsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

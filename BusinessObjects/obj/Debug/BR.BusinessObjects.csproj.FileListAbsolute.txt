@@ -1,0 +1,50 @@
+D:\SourceCode\ProjectSRS\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll
+D:\SourceCode\ProjectSRS\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.pdb
+D:\SourceCode\ProjectSRS\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.dll
+D:\SourceCode\ProjectSRS\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.pdb
+D:\SourceCode\ProjectSRS\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.csprojResolveAssemblyReference.cache
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll.config
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.pdb
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Ionic.Zip.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Common.Domain.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.Repositories.EntityFramework.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.xml
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.xml
+D:\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.xml
+D:\SourceCode\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.dll
+D:\SourceCode\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.pdb
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll.config
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.pdb
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Ionic.Zip.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Common.Domain.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.Repositories.EntityFramework.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.xml
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.xml
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.dll
+C:\Users\William\Google Drive\Boardroom\SourceCode\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.pdb
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll.config
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\BR.BusinessObjects.pdb
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\Ionic.Zip.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Common.Domain.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\NTier.Server.Domain.Repositories.EntityFramework.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.dll
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.xml
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\EntityFramework.SqlServer.xml
+C:\SRSGen2\BR.BusinessObjects\bin\Debug\Remote.Linq.xml
+C:\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.dll
+C:\SRSGen2\BR.BusinessObjects\obj\Debug\BR.BusinessObjects.pdb
