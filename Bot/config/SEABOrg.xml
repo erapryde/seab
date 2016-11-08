@@ -1,0 +1,1677 @@
+<Organisation ID="SEAB" Name="Singapore Examinations and Assessment Board">
+  
+  <Person>
+    <Name>Tan Lay Choo (Ms)</Name>
+    <Sex>F</Sex>
+    <Des>Chief Executive</Des>
+    <Loc>#A4-06</Loc>
+    <Tel>63777698</Tel>
+    <Im>SEAB/TanLayChoo.jpg</Im>
+  </Person>
+  <Person>
+    <Name>See Poh Tin Lynn (Ms)</Name>
+    <Sex>F</Sex>
+    <Des>Personal Assistant to Chief Executive</Des>
+    <Loc>#A4-05</Loc>
+    <Tel>63777698</Tel>
+    <Im>SEAB/LynnSee.jpg</Im>
+  </Person>
+  <Division Name="Corporate Services Division" ID="CSD">
+    <Person>
+      <Name>Yeo Su-Lin Selena (Ms)</Name>
+      <Sex>F</Sex>
+      <Des>Director</Des>
+      <Loc>#A1-10</Loc>
+      <Tel>63777705</Tel>
+      <Im>CSD/SelenaYeo.jpg</Im>
+    </Person>
+    <Department Name="Corporate Communications Department">
+      <Person>
+        <Name>Wong Hui Woon Irene (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Director</Des>
+        <Loc>#A1-14</Loc>
+        <Tel>63777742</Tel>
+        <Im>CSD/IreneWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Meng Lee (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#A1-16</Loc>
+        <Tel>63777814</Tel>
+        <Im>CSD/TanMengLee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lin Shuangchun</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#A1-15</Loc>
+        <Tel>63777801</Tel>
+        <Im>CSD/LinShuangchun.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Corporate Development Department">
+      <Person>
+        <Name>Ooi Siang Ting Evelyn (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#A1-07A</Loc>
+        <Tel>63777817</Tel>
+        <Im>CSD/EvelynOoi.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leow Yin Li Grace (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#A1-09</Loc>
+        <Tel>63777758</Tel>
+        <Im>CSD/LeowYinLiGrace.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Finance Department">
+      <Person>
+        <Name>Ee Yuen Hui (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Deputy Director</Des>
+        <Loc>#A1-03</Loc>
+        <Tel>63777635</Tel>
+        <Im>CSD/EeYuenHui.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Kien Meng</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (Financial Services)</Des>
+        <Loc>#A1-04</Loc>
+        <Tel>63777634</Tel>
+        <Im>CSD/LeeKienMeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Woon Kham Jasmine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Accountant</Des>
+        <Loc>#A1-04A</Loc>
+        <Tel>63777711</Tel>
+        <Im>CSD/JasmineLee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Cheam Wee Seng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Financial Services)</Des>
+        <Loc>#A1-02</Loc>
+        <Tel>63777637</Tel>
+        <Im>CSD/CheamWeeSeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Leng Leng Tricia (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Financial Services)</Des>
+        <Loc>#A1-01</Loc>
+        <Tel>63777791</Tel>
+        <Im>CSD/TriciaNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lin Min Qun Andy</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Financial Services)</Des>
+        <Loc>#A1-01A</Loc>
+        <Tel>63777846</Tel>
+        <Im>CSD/AndyLinMinQun.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Cheah Ling Yean Adeline (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Procurement)</Des>
+        <Loc>#A1-02B</Loc>
+        <Tel>63777733</Tel>
+        <Im>CSD/AdelineCheah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Betty Sjamsudin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Procurement)</Des>
+        <Loc>#A1-02A</Loc>
+        <Tel>63777707</Tel>
+        <Im>CSD/BettySjamsudin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Rumini Abu Bakar (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (Financial Services)</Des>
+        <Loc>#A1-06</Loc>
+        <Tel>63777638</Tel>
+        <Im>CSD/Rumini.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yeo Bee Choo (Mrs)</Name>
+        <Sex>M</Sex>
+        <Des>Executive (Financial Services)</Des>
+        <Loc>#A1-05</Loc>
+        <Tel>63777638</Tel>
+        <Im>CSD/YeoBeeChoo.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Human Resource Department">
+      <Person>
+        <Name>Ong Ai-Di (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Deputy Director</Des>
+        <Loc>#A1-18</Loc>
+        <Tel>63777628</Tel>
+        <Im>CSD/OngAiDi.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Gwee Hong Sung (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Manager</Des>
+        <Loc>#A1-19</Loc>
+        <Tel>63777713</Tel>
+        <Im>CSD/GweeHongSung.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Huang Yuezhuang (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#A1-19A</Loc>
+        <Tel>63777721</Tel>
+        <Im>CSD/HuangYuezhuang.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leong Wai Han Elissa (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#A1-18A</Loc>
+        <Tel>63777623</Tel>
+        <Im>CSD/ElissaLeong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Koh Xin Shuo Ariel (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#A1-17</Loc>
+        <Tel>63777668</Tel>
+        <Im>CSD/KohXinShuoAriel.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Nyit Yoon Doris (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive</Des>
+        <Loc>#A1-21</Loc>
+        <Tel>63777631</Tel>
+        <Im>CSD/DorisWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Sok Ying (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive</Des>
+        <Loc>#A1-20</Loc>
+        <Tel>63777631</Tel>
+        <Im>CSD/TanSokYing.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Information Systems Department">
+      <Person>
+        <Name>Woon Tien Kim Louis</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Director</Des>
+        <Loc>#A1-31</Loc>
+        <Tel>63777624</Tel>
+        <Im>CSD/LouisWoon.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Shafei Jomohat</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (IT Projects)</Des>
+        <Loc>#A1-26</Loc>
+        <Tel>63777656</Tel>
+        <Im>CSD/Shafei.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chia Bok Lim Eric</Name>
+        <Sex>M</Sex>
+        <Des>Manager (IT Projects)</Des>
+        <Loc>#A1-30</Loc>
+        <Tel>63777790</Tel>
+        <Im>CSD/ChiaBokLimEric.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Teck Cheng Matthew</Name>
+        <Sex>M</Sex>
+        <Des>Manager (IT Projects)</Des>
+        <Loc>#A1-32</Loc>
+        <Tel>63777807</Tel>
+        <Im>CSD/MatthewTanTeckCheng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Karthigesan s/o Perumallu</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager (IT Projects)</Des>
+        <Loc>#A1-33</Loc>
+        <Tel>63777618</Tel>
+        <Im>CSD/Karthigesan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tong Ying-Ping (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (IT Projects)</Des>
+        <Loc>#A1-28</Loc>
+        <Tel>63777806</Tel>
+        <Im>CSD/TongYingPing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Cheong Leng</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager (IT Projects)</Des>
+        <Loc>#A1-27</Loc>
+        <Tel>63777763</Tel>
+        <Im>CSD/WongCheongLeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kam Ming Wei Marilyn (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Digital Media)</Des>
+        <Loc>#A1-36</Loc>
+        <Tel>63777753</Tel>
+        <Im>CSD/KamMingWei.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Nurfazilah Binte Ibrahim (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Digital Media)</Des>
+        <Loc>#A1-34</Loc>
+        <Tel>63777647</Tel>
+        <Im>CSD/Nurfazilah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Yan Qi Sylvia (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Digital Media)</Des>
+        <Loc>#A1-35</Loc>
+        <Tel>63777622</Tel>
+        <Im>CSD/TanYanQiSylvia.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Hou Nam Soon Phillip</Name>
+        <Sex>M</Sex>
+        <Des>Executive (IT Support Services)</Des>
+        <Loc>#A1-29</Loc>
+        <Tel>63777625</Tel>
+        <Im>CSD/PhillipHou.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Office and Estate Management Department">
+      <Person>
+        <Name>Pang Kah Siong</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Director</Des>
+        <Loc>#B1-63</Loc>
+        <Tel>63777627</Tel>
+        <Im>CSD/PangKahSiong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tay Lay Peng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#B1-61</Loc>
+        <Tel>63777808</Tel>
+        <Im>CSD/TayLayPeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Toh Zhi Hao Kelvin</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#B1-67</Loc>
+        <Tel>63777633</Tel>
+        <Im>CSD/KelvinToh.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leow Danli Karen (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive</Des>
+        <Loc>#B1-60</Loc>
+        <Tel>63777648</Tel>
+        <Im>csd/KarenLeow.jpg</Im>
+      </Person>
+    </Department>
+  </Division>
+  <Division Name="Assessment Services Division" ID="ASD">
+    <Person>
+      <Name>Toh Poh Guan</Name>
+      <Sex>M</Sex>
+      <Des>Director</Des>
+      <Loc>#D1-10</Loc>
+      <Tel>63777703</Tel>
+      <Im>ASD/TohPohGuan.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Adeline Teng (Ms)</Name>
+      <Sex>F</Sex>
+      <Des>Assessment Specialist</Des>
+      <Loc>#D1-09</Loc>
+      <Tel>63777812</Tel>
+      <Im>RDD/AdelineTeng.jpg</Im>
+    </Person>
+    <Department Name="Assessment Services">
+      <Person>
+        <Name>Ng Sze Yin Margaret (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Director</Des>
+        <Loc>#D1-03</Loc>
+        <Tel>63777718</Tel>
+        <Im>ASD/MargaretNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Hui Bee Ivy (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#D1-04</Loc>
+        <Tel>63777760</Tel>
+        <Im>ASD/IvyWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leong Fang Meng Mandy (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#D1-05</Loc>
+        <Tel>63777678</Tel>
+        <Im>ASD/MandyLeong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leow Gek Tiang (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#D1-08</Loc>
+        <Tel>63777659</Tel>
+        <Im>ASD/LeowGekTiang.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yeo Ching Yin Adeline (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager</Des>
+        <Loc>#D1-06</Loc>
+        <Tel>63777816</Tel>
+        <Im>ASD/AdelineYeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Liew Mee Lin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive</Des>
+        <Loc>#D1-02</Loc>
+        <Tel>63777761</Tel>
+        <Im>ASD/LiewMeeLin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chua Teng Teng Wendy (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive</Des>
+        <Loc>#D1-07</Loc>
+        <Tel>63777838</Tel>
+        <Im>ASD/ChuaTengTengWendy.jpg</Im>
+      </Person>
+    </Department>
+  </Division>
+  <Division Name="Assessment Planning &amp; Development Division" ID="APDD">
+    <Person>
+      <Name>Yue Lip Sin</Name>
+      <Sex>M</Sex>
+      <Des>Director</Des>
+      <Loc>#A4-02</Loc>
+      <Tel>63777709</Tel>
+      <Im>APDD/YueLipSin.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Lee Ah Huat</Name>
+      <Sex>M</Sex>
+      <Des>Director</Des>
+      <Loc>#A4-01</Loc>
+      <Tel>63777708</Tel>
+      <Im>APDD/LeeAhHuat.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Looi Sok Chan Serene (Mdm)</Name>
+      <Sex>F</Sex>
+      <Des>Personal Assistant</Des>
+      <Loc>#A4-03</Loc>
+      <Tel>63777699</Tel>
+      <Im>APDD/SereneLooi.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Norahfizawati Bte Hassan (Ms)</Name>
+      <Sex>F</Sex>
+      <Des>Executive</Des>
+      <Loc>#A4-04</Loc>
+      <Tel>63777658</Tel>
+      <Im>RDD/Norah.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Doreen Goh (Mrs)</Name>
+      <Sex>M</Sex>
+      <Des>Deputy Director</Des>
+      <Loc>#A2-15</Loc>
+      <Tel>63777706</Tel>
+      <Im>APDD/DoreenGoh.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Lim Bee Hiong Bernadette Jane (Ms)</Name>
+      <Sex>F</Sex>
+      <Des>Deputy Director</Des>
+      <Loc>#A3-03</Loc>
+      <Tel>63777880</Tel>
+      <Im>APDD/Bernadette.jpg</Im>
+    </Person>
+    <Department Name="Aesthetics">
+      <Person>
+        <Name>Larry Wong Kai</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-21</Loc>
+        <Tel>63777810</Tel>
+        <Im>APDD/LarryWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tay Sock Weei Luanne (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-19</Loc>
+        <Tel>63777664</Tel>
+        <Im>APDD/LuanneTaySockWeei.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Goh Lin Ngin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Graphic Artist</Des>
+        <Loc>#A2-14</Loc>
+        <Tel>63777673</Tel>
+        <Im>RDD/GohLinNgin.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Languages and Literature">
+      <Person>
+        <Name>Syed Mohamed s/o Abdul Gaffoor</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-10</Loc>
+        <Tel>63777675</Tel>
+        <Im>APDD/Syed.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Seng Swee Hoon Connie (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-02</Loc>
+        <Tel>63777731</Tel>
+        <Im>APDD/ConnieSeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Cheong Yin Yuen (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-03</Loc>
+        <Tel>63777674</Tel>
+        <Im>APDD/CheongYinYuen.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Rajenthiran s/o Sellan (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-09</Loc>
+        <Tel>63777682</Tel>
+        <Im>APDD/Rajenthiran.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Low Ying Ping (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-05</Loc>
+        <Tel>63777680</Tel>
+        <Im>APDD/LowYingPing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Gim Hong Joys (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-27</Loc>
+        <Tel>63777679</Tel>
+        <Im>APDD/JoysNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ang Yit Ho Joshua</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-04</Loc>
+        <Tel>63777681</Tel>
+        <Im>APDD/JoshuaAng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yeow Phey Ying Alicia (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A2-06</Loc>
+        <Tel>63777759</Tel>
+        <Im>APDD/AliciaYeow.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Leo Khee Mong Andrew</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A2-20</Loc>
+        <Tel>63777819</Tel>
+        <Im>APDD/AndrewLeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kuek Wee Sean Charmaine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A2-08</Loc>
+        <Tel>63777602</Tel>
+        <Im>APDD/CharmaineKuek.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Humanities">
+      <Person>
+        <Name>Chong Kwei Kuen Karen (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Deputy Director + Lead Assessment Specialist</Des>
+        <Loc>#A2-28</Loc>
+        <Tel>63777652</Tel>
+        <Im>APDD/KarenChong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chow Hong Kheng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-24</Loc>
+        <Tel>63777654</Tel>
+        <Im>APDD/MohHongKheng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Sharifah Mufidah Bte Syed Mohamed Aljunied (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-18</Loc>
+        <Tel>63777764</Tel>
+        <Im>APDD/SharifahMufidah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Goh Wei Ling Christine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-25</Loc>
+        <Tel>63777653</Tel>
+        <Im>APDD/ChristineGoh.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lim Ing Yee Rachelle (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-26</Loc>
+        <Tel>63777745</Tel>
+        <Im>APDD/RachelleLim.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Mathematics">
+      <Person>
+        <Name>Toh Hoon Sin (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Deputy Director + Lead Assessment Specialist</Des>
+        <Loc>#A3-12</Loc>
+        <Tel>63777646</Tel>
+        <Im>APDD/TohHoonSin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chen - Theng Geak Seng (Mrs)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A3-13</Loc>
+        <Tel>63777640</Tel>
+        <Im>APDD/ThengGeakSeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Pang Wai-Kit Alwyn</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-15</Loc>
+        <Tel>63777670</Tel>
+        <Im>APDD/AlwynPang.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Teo Hongjian Jeff</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-11</Loc>
+        <Tel>63777629</Tel>
+        <Im>APDD/JeffTeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Pau Lin Pauline (Miss)</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-10A</Loc>
+        <Tel>63777821</Tel>
+        <Im>APDD/PaulineWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ong Ai Lingg (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-14</Loc>
+        <Tel>63777743</Tel>
+        <Im>APDD/OngAiLingg.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Sciences">
+      <Person>
+        <Name>Ow Mun Hoe</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A3-17</Loc>
+        <Tel>63777782</Tel>
+        <Im>APDD/OwMunHoe.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Lee Sze</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-07</Loc>
+        <Tel>63777768</Tel>
+        <Im>APDD/TanLeeSze.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Ting Ting Sharon (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-18</Loc>
+        <Tel>63777645</Tel>
+        <Im>APDD/SharonTan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ma Meijun Diana (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-02</Loc>
+        <Tel>63777642</Tel>
+        <Im>APDD/DianaMa.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Shan Shan Annabella (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-08</Loc>
+        <Tel>63777825</Tel>
+        <Im>APDD/AnnabellaLee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Low Kiah Woon (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-09</Loc>
+        <Tel>63777643</Tel>
+        <Im>APDD/LowKiahWoon.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Siew Kheng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-01</Loc>
+        <Tel>63777834</Tel>
+        <Im>APDD/NgSiewKheng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Daphane Tan (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-10</Loc>
+        <Tel>63777665</Tel>
+        <Im>APDD/DaphaneTan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Choon Kiong</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-07</Loc>
+        <Tel>63777620</Tel>
+        <Im>APDD/LeeChoonKiong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wendy Koh (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-04B</Loc>
+        <Tel>63777842</Tel>
+        <Im>APDD/WendyKoh.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Chinese Language">
+      <Person>
+        <Name>Lim Boon Gim (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A3-24</Loc>
+        <Tel>63777690</Tel>
+        <Im>APDD/LimBoonGim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yio Puay Ching (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A3-27</Loc>
+        <Tel>63777626</Tel>
+        <Im>APDD/YioPuayChing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chua Lay Keng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A2-37</Loc>
+        <Tel>63777641</Tel>
+        <Im>APDD/ChuaLayKeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Oh Ek Wah</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-04</Loc>
+        <Tel>63777793</Tel>
+        <Im>APDD/OhEkWah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Meow Yin Adeline (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-35</Loc>
+        <Tel>63777804</Tel>
+        <Im>APDD/AdelineNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lau Meow Hwa (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-28</Loc>
+        <Tel>63777785</Tel>
+        <Im>APDD/LauMeowHwa.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Soon Cheng (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-26</Loc>
+        <Tel>63777740</Tel>
+        <Im>APDD/TanSoonCheng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chin Siew Hong (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-25</Loc>
+        <Tel>63777692</Tel>
+        <Im>APDD/ChinSiewHong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Too Jye Yuin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-30</Loc>
+        <Tel>63777818</Tel>
+        <Im>APDD/TooJyeYuin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wang Xinwu</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-04A</Loc>
+        <Tel>63777835</Tel>
+        <Im>APDD/WangXinwu.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kam Yong Chuan</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-26</Loc>
+        <Tel>63777691</Tel>
+        <Im>APDD/KamYongChuan.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Tamil Language">
+      <Person>
+        <Name>Rasappan s/o Karuppa Goundar (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A3-34</Loc>
+        <Tel>63777694</Tel>
+        <Im>APDD/Rasappan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kanasan s/o Sundararaju</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-33</Loc>
+        <Tel>63777695</Tel>
+        <Im>APDD/Kanasan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Premalatha d/o Parasuraman (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A2-34</Loc>
+        <Tel>63777696</Tel>
+        <Im>APDD/Premalatha.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ramachandran s/o Sankaran</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-19</Loc>
+        <Tel>63777603</Tel>
+        <Im>APDD/Ramachandran.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Murugeswathy d/o Ramasamy (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A2-36</Loc>
+        <Tel>63777604</Tel>
+        <Im>APDD/Murugeswathy.jpg</Im>
+      </Person>
+      <Person>
+        <Name>A Valar Molee (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A2-35</Loc>
+        <Tel>63777552</Tel>
+        <Im>APDD/AValarMolee.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Malay Language">
+      <Person>
+        <Name>Siti Zahara Bte Sukaimi (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-20</Loc>
+        <Tel>63777684</Tel>
+        <Im>APDD/SitiZahara.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Hafiza Bte Aseken (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A3-23</Loc>
+        <Tel>63777686</Tel>
+        <Im>APDD/Hafiza.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Roslinda Bte Sahamad (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A4-21</Loc>
+        <Tel>63777685</Tel>
+        <Im>APDD/Roslinda.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Murni Binte Osman (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-24</Loc>
+        <Tel>63777811</Tel>
+        <Im>APDD/Murni.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Razilah Bte Yahya (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-31</Loc>
+        <Tel>63777784</Tel>
+        <Im>APDD/Razilah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Reduan B Ibrahim</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Officer</Des>
+        <Loc>#A3-22</Loc>
+        <Tel>63777805</Tel>
+        <Im>APDD/ReduanBinIbrahim.jpg</Im>
+      </Person>
+    </Department>
+  </Division>
+  <Division Name="Research &amp; Development Division" ID="RDD">
+    <Person>
+      <Name>Cheah Mei Ling (Mrs)</Name>
+      <Sex>M</Sex>
+      <Des>Director</Des>
+      <Loc>#A1-25</Loc>
+      <Tel>63777601</Tel>
+      <Im>RDD/KangMeiLing.jpg</Im>
+    </Person>
+    <Person>
+      <Name>Ng Siow Chin (Dr)</Name>
+      <Sex>M</Sex>
+      <Des>Deputy Director</Des>
+      <Loc>#A4-19</Loc>
+      <Tel>63777833</Tel>
+      <Im>RDD/NgSiowChin.jpg</Im>
+    </Person>
+    <Department Name="Assessment Research and Technology Department">
+      <Person>
+        <Name>Leong See Cheng (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Lead Assessment Specialist</Des>
+        <Loc>#A4-13</Loc>
+        <Tel>63777723</Tel>
+        <Im>RDD/LeongSeeCheng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yim Wai Keung Louis (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A4-15</Loc>
+        <Tel>63777736</Tel>
+        <Im>RDD/LouisYim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yee Wai Theng Esther (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A4-18</Loc>
+        <Tel>63777724</Tel>
+        <Im>RDD/EstherYee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Hwa Mei (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A4-14</Loc>
+        <Tel>63777786</Tel>
+        <Im>RDD/TanHwaMei.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lim Jih Koon Lyndon</Name>
+        <Sex>M</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#A4-17</Loc>
+        <Tel>63777794</Tel>
+        <Im>RDD/LyndonLim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Xuanli Hazel (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#B1-80</Loc>
+        <Tel>63777683</Tel>
+        <Im>RDD/HazelTan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wee Tian Lu (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#A4-19</Loc>
+        <Tel>63777612</Tel>
+        <Im>RDD/WeeTianLu.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Jean Phua Yin Chiun (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#A4-23</Loc>
+        <Tel>63777661</Tel>
+        <Im>RDD/PhuaYinChiunJean.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Goh Ying Ying (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#A4-16</Loc>
+        <Tel>63777655</Tel>
+        <Im>RDD/GohYingYing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Luo Kangshun Andy</Name>
+        <Sex>M</Sex>
+        <Des>Research and Development Officer</Des>
+        <Loc>#A4-20</Loc>
+        <Tel>63777800</Tel>
+        <Im>RDD/LuoKangShunAndy.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kum Lye Peng Christina (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager</Des>
+        <Loc>#B1-77</Loc>
+        <Tel>63777689</Tel>
+        <Im>rdd/ChristinaKum.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Mohammad Faizal Bin Zainal</Name>
+        <Sex>M</Sex>
+        <Des>Manager</Des>
+        <Loc>#B1-71</Loc>
+        <Tel>63777815</Tel>
+        <Im>RDD/Faizal.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Measurement and Analytics Department">
+      <Person>
+        <Name>Wong Cheow Cher</Name>
+        <Sex>M</Sex>
+        <Des>Lead Assessment Specialist</Des>
+        <Loc>#A4-08</Loc>
+        <Tel>63777716</Tel>
+        <Im>RDD/WongCheowCher.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Siok Leng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A4-11</Loc>
+        <Tel>63777720</Tel>
+        <Im>RDD/NgSiokLeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Keith John Lenden-Hitchcock</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A4-09</Loc>
+        <Tel>63777725</Tel>
+        <Im>RDD/KeithJohnLenden.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tay Poh Hua (Dr)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Assessment Specialist</Des>
+        <Loc>#A4-21</Loc>
+        <Tel>63777783</Tel>
+        <Im>RDD/TayPohHua.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ho Sok Wai Noelle (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A4-12</Loc>
+        <Tel>63777719</Tel>
+        <Im>RDD/NoelleHo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Teo Khee Shoon</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#B1-79</Loc>
+        <Tel>63777792</Tel>
+        <Im>RDD/TeoKheeShoon.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Fong Yick Chee</Name>
+        <Sex>M</Sex>
+        <Des>Assessment Specialist</Des>
+        <Loc>#A4-10</Loc>
+        <Tel>63777795</Tel>
+        <Im>APDD/FongYickChee.jpg</Im>
+      </Person>
+    </Department>
+  </Division>
+  <Division Name="Exam Operations Division" ID="EOD">
+    <Person>
+      <Name>Pang Chong Han</Name>
+      <Sex>M</Sex>
+      <Des>Director</Des>
+      <Loc>#B1-06</Loc>
+      <Tel>63777704</Tel>
+      <Im>EOD/PangChongHan.jpg</Im>
+    </Person>
+    <Department Name="Exam Planning &amp; Administration Department">
+      <Person>
+        <Name>Sia Kian Teck</Name>
+        <Sex>M</Sex>
+        <Des>Deputy Director</Des>
+        <Loc>#B1-07</Loc>
+        <Tel>63777710</Tel>
+        <Im>EOD/SiaKianTeck.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Tien Han</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Director</Des>
+        <Loc>#B1-30</Loc>
+        <Tel>63777737</Tel>
+        <Im>EOD/WongTienHan.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="O / N-Level">
+      <Person>
+        <Name>Tang Kar Tian (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Director (O / N-Level)</Des>
+        <Loc>#B1-28</Loc>
+        <Tel>63777735</Tel>
+        <Im>EOD/TangKarTian.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ramesh Sambandam</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (O / N-Level)</Des>
+        <Loc>#B1-38</Loc>
+        <Tel>63777741</Tel>
+        <Im>EOD/Ramesh.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Rokiah Mohamad (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (O / N-Level)</Des>
+        <Loc>#B1-40</Loc>
+        <Tel>63777746</Tel>
+        <Im>EOD/Rokiah.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Quek Robin</Name>
+        <Sex>M</Sex>
+        <Des>Manager (O / N-Level)</Des>
+        <Loc>#B1-25</Loc>
+        <Tel>63777732</Tel>
+        <Im>EOD/RobinQuek.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ang Eng Jin</Name>
+        <Sex>M</Sex>
+        <Des>Manager (O / N-Level)</Des>
+        <Loc>#B1-41</Loc>
+        <Tel>63777751</Tel>
+        <Im>EOD/AngEngJin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Yiow Kok Seng</Name>
+        <Sex>M</Sex>
+        <Des>Manager (O / N-Level)</Des>
+        <Loc>#B1-37</Loc>
+        <Tel>63777650</Tel>
+        <Im>EOD/YiowKokSeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Catherine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (O / N-Level)</Des>
+        <Loc>#B1-31</Loc>
+        <Tel>63777836</Tel>
+        <Im>EOD/CatherineTan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Pao J-Kai</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager (O / N-Level)</Des>
+        <Loc>#B1-39</Loc>
+        <Tel>63777771</Tel>
+        <Im>EOD/PaoJkai.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chua Ke Jun June (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (O / N-Level)</Des>
+        <Loc>#B1-32</Loc>
+        <Tel>63777839</Tel>
+        <Im>EOD/JuneChuaKeJun.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Cheng Ee Serene (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (O / N-Level)</Des>
+        <Loc>#B1-33A</Loc>
+        <Tel>63777843</Tel>
+        <Im>EOD/SereneTanChengEe.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Loh Kok Wah (Lu Guohua) Desmond</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Manager (O / N-Level)</Des>
+        <Loc>#B1-36</Loc>
+        <Tel>63777722</Tel>
+        <Im>EOD/LohKokWahDesmond.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Gopala Krishnan (Mrs)</Name>
+        <Sex>M</Sex>
+        <Des>Senior Executive (O / N-Level)</Des>
+        <Loc>#B1-42</Loc>
+        <Tel>63777697</Tel>
+        <Im>EOD/Gopala.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Norhayati Hamzah (Mrs)</Name>
+        <Sex>M</Sex>
+        <Des>Executive (O / N-Level)</Des>
+        <Loc>#B1-48</Loc>
+        <Tel>63777715</Tel>
+        <Im>EOD/Norhayati.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chong Wai Leong Bernard</Name>
+        <Sex>M</Sex>
+        <Des>Executive (O / N-Level)</Des>
+        <Loc>#B1-49</Loc>
+        <Tel>63777715</Tel>
+        <Im>EOD/BernardChong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Nur Suriati Abdul Gani (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive Assistant (O / N-Level)</Des>
+        <Loc>#B1-33</Loc>
+        <Tel>63777722</Tel>
+        <Im>EOD/NurSuriati.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Teo Elaine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive Assistant (O / N-Level)</Des>
+        <Loc>#B1-43</Loc>
+        <Tel>63777697</Tel>
+        <Im>EOD/ElaineTeo.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="A-Level / Course Work">
+      <Person>
+        <Name>Phang Mei Yin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Manager ( A-Level / Course Work)</Des>
+        <Loc>#B1-26</Loc>
+        <Tel>63777734</Tel>
+        <Im>EOD/PhangMeiYing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chang Wai Yeng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager ( A-Level / Course Work)</Des>
+        <Loc>#B1-27</Loc>
+        <Tel>63777820</Tel>
+        <Im>EOD/ChangWaiYeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Heng Peck Yhin Pearlyn (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager ( A-Level / Course Work)</Des>
+        <Loc>#B1-16</Loc>
+        <Tel>63777730</Tel>
+        <Im>EOD/PearlynHeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chiang Chee Meng David</Name>
+        <Sex>M</Sex>
+        <Des>Manager (A-Level / Course Work)</Des>
+        <Loc>#B1-15</Loc>
+        <Tel>63777770</Tel>
+        <Im>EOD/DavidChiang.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Rui Jia Catherine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (A-Level / Course Work)</Des>
+        <Loc>#B1-14</Loc>
+        <Tel>63777651</Tel>
+        <Im>EOD/CatherineNgRuiJia.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Sindy Wong (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (A-Level / Course Work)</Des>
+        <Loc>#B1-11</Loc>
+        <Tel>63777630</Tel>
+        <Im>EOD/SindyWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chua Weng Cher Molly (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Executive (A-Level / Course Work)</Des>
+        <Loc>#B1-24</Loc>
+        <Tel>63777693</Tel>
+        <Im>EOD/MollyChua.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Nurasyiqin Jumat (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (A-Level/Course Work)</Des>
+        <Loc>#B1-13</Loc>
+        <Tel>63777671</Tel>
+        <Im>EOD/Nurasyiqin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Low Hui Chin Angeline (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (A-Level / Course Work)</Des>
+        <Loc>#B1-12</Loc>
+        <Tel>63777671</Tel>
+        <Im>EOD/AngelineLow.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Sou Mui (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (A-Level / Course Work)</Des>
+        <Loc>#B1-22</Loc>
+        <Tel>63777677</Tel>
+        <Im>EOD/TanSouMui.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Abdul Rahim Bin Abdul Kader</Name>
+        <Sex>M</Sex>
+        <Des>Executive Assistant (A-Level / Course Work)</Des>
+        <Loc>#B1-23</Loc>
+        <Tel>63777677</Tel>
+        <Im>EOD/AbdulRahim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Kee Hui Ngo Doreen (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive Assistant ( A-Level / Course Work)</Des>
+        <Loc>#B1-21</Loc>
+        <Tel>63777693</Tel>
+        <Im>EOD/DoreenKee.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Exam Systems">
+      <Person>
+        <Name>Oliver Osman Junus</Name>
+        <Sex>M</Sex>
+        <Des>Assistant Director (Exam Systems)</Des>
+        <Loc>#B1-29</Loc>
+        <Tel>63777728</Tel>
+        <Im>RDD/OliverOsmanJunus.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Seh Chong Seng</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (Exam Systems)</Des>
+        <Loc>#B1-17</Loc>
+        <Tel>63777750</Tel>
+        <Im>EOD/SehChongSeng.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lim Teng Yi Irfaan Lim</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (Exam Systems)</Des>
+        <Loc>#B1-17A</Loc>
+        <Tel>63777845</Tel>
+        <Im>EOD/LimTengYi_IrfaanLim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ng Teck Kie Anthony</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (Exam Systems)</Des>
+        <Loc>#B1-18</Loc>
+        <Tel>63777621</Tel>
+        <Im>EOD/AnthonyNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chang Kwok Kin David</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Exam Systems)</Des>
+        <Loc>#B1-53</Loc>
+        <Tel>63777636</Tel>
+        <Im>EOD/DavidChang.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Tze Chian Jonathan</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Exam Systems)</Des>
+        <Loc>#B1-54</Loc>
+        <Tel>63777619</Tel>
+        <Im>EOD/JonathanLeeTzeChian.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tong Chiew Beng Audrey (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Exam Systems)</Des>
+        <Loc>#B1-51</Loc>
+        <Tel>63777829</Tel>
+        <Im>EOD/AudreyTong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Jee Sze Sze Jenny (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Exam Systems)</Des>
+        <Loc>#B1-52</Loc>
+        <Tel>63777748</Tel>
+        <Im>EOD/JeeSzeSzeJenny.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Exam Operations &amp; Logistics Department">
+      <Person>
+        <Name>Ng Tuan Kiat Jimmy</Name>
+        <Sex>M</Sex>
+        <Des>Deputy Director</Des>
+        <Loc>#B2-01</Loc>
+        <Tel>63777714</Tel>
+        <Im>EOD/JimmyNg.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tony Chin Sheng Tyng</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager</Des>
+        <Loc>#B2-17</Loc>
+        <Tel>63777755</Tel>
+        <Im>EOD/TonyChin.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Exam Compliance &amp; Services">
+      <Person>
+        <Name>Tan Kah Ee Karen (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-44</Loc>
+        <Tel>63777747</Tel>
+        <Im>EOD/KarenTan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Rachel Ho Yin Teng (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-45</Loc>
+        <Tel>63777672</Tel>
+        <Im>EOD/HoYinTengRachel.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Jareena Salih (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-34</Loc>
+        <Tel>63777803</Tel>
+        <Im>EOD/JareenaSalih.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Neo Meng Wah Joshua</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B2-09A</Loc>
+        <Tel>63777729</Tel>
+        <Im>EOD/JoshuaNeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ong Joo Lim</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B2-10</Loc>
+        <Tel>63777663</Tel>
+        <Im>RDD/OngJooLim.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chee Siew Lee Jenny (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-47</Loc>
+        <Tel>63777726</Tel>
+        <Im>EOD/JennyCheeSiewLee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Nur Khairunnisa Binte Jamaludin (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-46</Loc>
+        <Tel>63777837</Tel>
+        <Im>EOD/NurKhairunnisaBinteJamaludin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Siew Lai Yee Sally (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Executive (Exam Compliance &amp; Services)</Des>
+        <Loc>#B1-35</Loc>
+        <Tel>63777688</Tel>
+        <Im>EOD/SallySiew.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Teo Puay Kiang Cherral (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Senior Manager (PSLE)</Des>
+        <Loc>#B2-18</Loc>
+        <Tel>63777756</Tel>
+        <Im>EOD/CherralTeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tay Siew Hoon (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (PSLE)</Des>
+        <Loc>#B2-13</Loc>
+        <Tel>63777809</Tel>
+        <Im>EOD/TaySiewHoon.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Cheong Han Leong</Name>
+        <Sex>M</Sex>
+        <Des>Manager (PSLE)</Des>
+        <Loc>#B2-15</Loc>
+        <Tel>63777752</Tel>
+        <Im>EOD/CheongHanLeong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lin Huiqi Lorraine (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (PSLE)</Des>
+        <Loc>#B2-14</Loc>
+        <Tel>63777775</Tel>
+        <Im>EOD/LorraineLinHuiqi.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lee Hui Gek (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (PSLE)</Des>
+        <Loc>#B2-16</Loc>
+        <Tel>63777844</Tel>
+        <Im>EOD/LeeHuiGek.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Tan Hui Ling (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Assistant Manager (PSLE)</Des>
+        <Loc>#B2-12</Loc>
+        <Tel>63777660</Tel>
+        <Im>EOD/TanHuiLing.jpg</Im>
+      </Person>
+      <Person>
+        <Name>G Santha Mary (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (PSLE)</Des>
+        <Loc>#B2-07</Loc>
+        <Tel>63777781</Tel>
+        <Im>EOD/GSanthaMary.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ang Geok Tin (Mdm)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (PSLE)</Des>
+        <Loc>#B2-04</Loc>
+        <Tel>63777780</Tel>
+        <Im>EOD/AngGeokTin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Thamil Sekar s/o Adakalam</Name>
+        <Sex>M</Sex>
+        <Des>Executive (PSLE)</Des>
+        <Loc>#B2-05</Loc>
+        <Tel>63777780</Tel>
+        <Im>EOD/ThamilSekar.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Lim Yuxuan</Name>
+        <Sex>M</Sex>
+        <Des>Executive Assistant (PSLE)</Des>
+        <Loc>#B2-04</Loc>
+        <Tel>63777781</Tel>
+        <Im>EOD/LimYuxuan.jpg</Im>
+      </Person>
+    </Department>
+    <Department Name="Operations Support">
+      <Person>
+        <Name>Phua Puay Hiong</Name>
+        <Sex>M</Sex>
+        <Des>Senior Manager (Ops Support)</Des>
+        <Loc>TB-BLKC</Loc>
+        <Tel>62730379</Tel>
+        <Im>EOD/PhuaPuayHiong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Ong Yee Hwee Bryan</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Ops Support)</Des>
+        <Loc>TB-BLKA</Loc>
+        <Tel>62712126</Tel>
+        <Im>EOD/OngYeeHwee.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Teo Ee Teen Evelyn (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Manager (Ops Support)</Des>
+        <Loc>#B2-03</Loc>
+        <Tel>63777738</Tel>
+        <Im>EOD/EvelynTeo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Chew Ying Choy</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Ops Support)</Des>
+        <Loc>TB-BLKA</Loc>
+        <Tel>62788586</Tel>
+        <Im>EOD/ChewYingChoy.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Woo Mun Kong Terence</Name>
+        <Sex>M</Sex>
+        <Des>Manager (Ops Support)</Des>
+        <Loc>#B2-02</Loc>
+        <Tel>63777644</Tel>
+        <Im>EOD/TerenceWoo.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Wong Chee Meng Abel</Name>
+        <Sex>M</Sex>
+        <Des>Executive (Ops Support)</Des>
+        <Loc>TB-BLKA</Loc>
+        <Tel>62712126</Tel>
+        <Im>EOD/AbelWong.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Juliestianingseh Binte Md Zahdi (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive (Ops Support)</Des>
+        <Loc>#B2-06</Loc>
+        <Tel>63777754</Tel>
+        <Im>RDD/Juliestianinqseh.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Nordin Bin Salleh</Name>
+        <Sex>M</Sex>
+        <Des>Executive (Ops Support)</Des>
+        <Loc>TB-BLKA</Loc>
+        <Tel>62712126</Tel>
+        <Im>EOD/Nordin.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Koh Hoe Kuan</Name>
+        <Sex>M</Sex>
+        <Des>Executive Assistant (Ops Support)</Des>
+        <Loc>#C1-02</Loc>
+        <Tel>63777762</Tel>
+        <Im>EOD/KohHoeGuan.jpg</Im>
+      </Person>
+      <Person>
+        <Name>Haslindah Atan (Ms)</Name>
+        <Sex>F</Sex>
+        <Des>Executive Assistant (Ops Support)</Des>
+        <Loc>TB-BLKA</Loc>
+        <Tel>62788586</Tel>
+        <Im>EOD/HaslindahAtan.jpg</Im>
+      </Person>
+    </Department>
+  </Division>
+</Organisation>
