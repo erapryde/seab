@@ -84,6 +84,10 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aqua, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\aqua-core.3.0.0\lib\net45\Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -95,17 +99,21 @@
     <Reference Include="Ionic.Zip">
       <HintPath>..\ThirdPartyDLL\Ionic.Zip.dll</HintPath>
     </Reference>
-    <Reference Include="NTier.Common.Domain">
-      <HintPath>..\packages\NTierEntityFramework.Common.1.6.0\lib\net40-Client\NTier.Common.Domain.dll</HintPath>
+    <Reference Include="NTier.Common.Domain, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NTierEntityFramework.Common.1.9.0\lib\net40-Client\NTier.Common.Domain.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NTier.Server.Domain">
-      <HintPath>..\packages\NTierEntityFramework.Server.1.6.0\lib\net40-Client\NTier.Server.Domain.dll</HintPath>
+    <Reference Include="NTier.Server.Domain, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NTierEntityFramework.Server.1.9.0\lib\net40-Client\NTier.Server.Domain.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NTier.Server.Domain.Repositories.EntityFramework">
-      <HintPath>..\packages\NTierEntityFramework.Server.EntityFramework6_0.1.6.0\lib\net40-Client\NTier.Server.Domain.Repositories.EntityFramework.dll</HintPath>
+    <Reference Include="NTier.Server.Domain.Repositories.EntityFramework, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NTierEntityFramework.Server.EntityFramework6_0.1.9.0\lib\net40-Client\NTier.Server.Domain.Repositories.EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Remote.Linq">
-      <HintPath>..\packages\Remote.Linq.4.1.0\lib\net45\Remote.Linq.dll</HintPath>
+    <Reference Include="Remote.Linq, Version=5.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remote.Linq.5.3.1\lib\net45\Remote.Linq.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -125,6 +133,30 @@
   <ItemGroup>
     <Compile Include="Agency.cs" />
     <Compile Include="Constants\Constants.cs" />
+    <Compile Include="DAL\ExamDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ExamDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ExamDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SEAB_EXAM.cs">
+      <DependentUpon>ExamDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SEAB_SCHOOL.cs">
+      <DependentUpon>ExamDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SEAB_SUBJECT.cs">
+      <DependentUpon>ExamDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,10 +164,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="DAL\ExamDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ExamDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\ExamDB.edmx.diagram">
+      <DependentUpon>ExamDB.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DAL\" />
+    <Content Include="DAL\ExamDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ExamDB.edmx</DependentUpon>
+      <LastGenOutput>ExamDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAL\ExamDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ExamDB.edmx</DependentUpon>
+      <LastGenOutput>ExamDB.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

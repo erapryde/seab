@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="productdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SEAB_EXAM">
+    <Key>
+      <PropertyRef Name="EXAM_ID" />
+      <PropertyRef Name="SCH_ID" />
+      <PropertyRef Name="SUBJ_CODE" />
+      <PropertyRef Name="SEAT_MAX" />
+      <PropertyRef Name="EXAM_DATE" />
+      <PropertyRef Name="START_TIME" />
+      <PropertyRef Name="END_TIME" />
+    </Key>
+    <Property Name="EXAM_ID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SCH_ID" Type="Int32" Nullable="false" />
+    <Property Name="SUBJ_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEAT_MAX" Type="Int32" Nullable="false" />
+    <Property Name="SEAT_USED" Type="Int32" />
+    <Property Name="EXAM_DATE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="START_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="END_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EXAM_TIMETABLE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SEAB_SCHOOL">
+    <Key>
+      <PropertyRef Name="SCH_ID" />
+      <PropertyRef Name="SCH_NAME" />
+      <PropertyRef Name="SCH_LOC_LAT" />
+      <PropertyRef Name="SCH_LOC_LONG" />
+    </Key>
+    <Property Name="SCH_ID" Type="Int32" Nullable="false" />
+    <Property Name="SCH_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SCH_LOC_LAT" Type="Decimal" Precision="10" Scale="5" Nullable="false" />
+    <Property Name="SCH_LOC_LONG" Type="Decimal" Precision="10" Scale="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SEAB_SUBJECT">
+    <Key>
+      <PropertyRef Name="SUBJ_CODE" />
+      <PropertyRef Name="SUBJ_NAME" />
+    </Key>
+    <Property Name="SUBJ_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBJ_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SYLLABUS" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="productdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SEAB_EXAM" EntityType="Self.SEAB_EXAM" />
+    <EntitySet Name="SEAB_SCHOOL" EntityType="Self.SEAB_SCHOOL" />
+    <EntitySet Name="SEAB_SUBJECT" EntityType="Self.SEAB_SUBJECT" />
+  </EntityContainer>
+</Schema>

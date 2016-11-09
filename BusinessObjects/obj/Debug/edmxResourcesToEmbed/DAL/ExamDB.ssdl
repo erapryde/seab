@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="productdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'productdb.dbo.SEAB_EXAM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SEAB_EXAM">
+    <Key>
+      <PropertyRef Name="EXAM_ID" />
+      <PropertyRef Name="SCH_ID" />
+      <PropertyRef Name="SUBJ_CODE" />
+      <PropertyRef Name="SEAT_MAX" />
+      <PropertyRef Name="EXAM_DATE" />
+      <PropertyRef Name="START_TIME" />
+      <PropertyRef Name="END_TIME" />
+    </Key>
+    <Property Name="EXAM_ID" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="SCH_ID" Type="int" Nullable="false" />
+    <Property Name="SUBJ_CODE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SEAT_MAX" Type="int" Nullable="false" />
+    <Property Name="SEAT_USED" Type="int" />
+    <Property Name="EXAM_DATE" Type="date" Nullable="false" />
+    <Property Name="START_TIME" Type="datetime" Nullable="false" />
+    <Property Name="END_TIME" Type="datetime" Nullable="false" />
+    <Property Name="EXAM_TIMETABLE" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'productdb.dbo.SEAB_SCHOOL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SEAB_SCHOOL">
+    <Key>
+      <PropertyRef Name="SCH_ID" />
+      <PropertyRef Name="SCH_NAME" />
+      <PropertyRef Name="SCH_LOC_LAT" />
+      <PropertyRef Name="SCH_LOC_LONG" />
+    </Key>
+    <Property Name="SCH_ID" Type="int" Nullable="false" />
+    <Property Name="SCH_NAME" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="SCH_LOC_LAT" Type="numeric" Precision="10" Scale="5" Nullable="false" />
+    <Property Name="SCH_LOC_LONG" Type="numeric" Precision="10" Scale="5" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'productdb.dbo.SEAB_SUBJECT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SEAB_SUBJECT">
+    <Key>
+      <PropertyRef Name="SUBJ_CODE" />
+      <PropertyRef Name="SUBJ_NAME" />
+    </Key>
+    <Property Name="SUBJ_CODE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SUBJ_NAME" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="SYLLABUS" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityContainer Name="productdbModelStoreContainer">
+    <EntitySet Name="SEAB_EXAM" EntityType="Self.SEAB_EXAM" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SEAB_EXAM].[EXAM_ID] AS [EXAM_ID], 
+    [SEAB_EXAM].[SCH_ID] AS [SCH_ID], 
+    [SEAB_EXAM].[SUBJ_CODE] AS [SUBJ_CODE], 
+    [SEAB_EXAM].[SEAT_MAX] AS [SEAT_MAX], 
+    [SEAB_EXAM].[SEAT_USED] AS [SEAT_USED], 
+    [SEAB_EXAM].[EXAM_DATE] AS [EXAM_DATE], 
+    [SEAB_EXAM].[START_TIME] AS [START_TIME], 
+    [SEAB_EXAM].[END_TIME] AS [END_TIME], 
+    [SEAB_EXAM].[EXAM_TIMETABLE] AS [EXAM_TIMETABLE]
+    FROM [dbo].[SEAB_EXAM] AS [SEAB_EXAM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SEAB_SCHOOL" EntityType="Self.SEAB_SCHOOL" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SEAB_SCHOOL].[SCH_ID] AS [SCH_ID], 
+    [SEAB_SCHOOL].[SCH_NAME] AS [SCH_NAME], 
+    [SEAB_SCHOOL].[SCH_LOC_LAT] AS [SCH_LOC_LAT], 
+    [SEAB_SCHOOL].[SCH_LOC_LONG] AS [SCH_LOC_LONG]
+    FROM [dbo].[SEAB_SCHOOL] AS [SEAB_SCHOOL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SEAB_SUBJECT" EntityType="Self.SEAB_SUBJECT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SEAB_SUBJECT].[SUBJ_CODE] AS [SUBJ_CODE], 
+    [SEAB_SUBJECT].[SUBJ_NAME] AS [SUBJ_NAME], 
+    [SEAB_SUBJECT].[SYLLABUS] AS [SYLLABUS]
+    FROM [dbo].[SEAB_SUBJECT] AS [SEAB_SUBJECT]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
