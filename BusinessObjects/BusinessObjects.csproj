@@ -157,6 +157,9 @@
     <Compile Include="DAL\SEAB_SUBJECT.cs">
       <DependentUpon>ExamDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="ExamEnquiryResult.cs" />
+    <Compile Include="ExamEnquiry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
