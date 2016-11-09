@@ -77,11 +77,8 @@ namespace Bot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                //WebApiApplication.Telemetry.TrackTrace("UserMessageReceived",
-                //    Microsoft.ApplicationInsights.DataContracts.SeverityLevel.Verbose,
-                //    new Dictionary<string, string> { { "Message", activity.Text } });
+              
                 await Conversation.SendAsync(activity, () => new RecLicDialog());
-                //await Conversation.SendAsync(activity, () => new dumbo());
             }
             else
             {

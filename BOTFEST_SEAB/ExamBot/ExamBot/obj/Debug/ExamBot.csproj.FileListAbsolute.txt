@@ -1,0 +1,39 @@
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Bot Application1.dll.config
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Bot Application1.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Bot Application1.pdb
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Autofac.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Chronic.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Bot.Builder.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Bot.Connector.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Rest.ClientRuntime.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.WindowsAzure.Configuration.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Newtonsoft.Json.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.IdentityModel.Tokens.Jwt.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Net.Http.Formatting.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Web.Http.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Web.Http.WebHost.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Autofac.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Bot.Builder.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Bot.Connector.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.Rest.ClientRuntime.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Microsoft.WindowsAzure.Configuration.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\Newtonsoft.Json.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.IdentityModel.Tokens.Jwt.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Net.Http.Formatting.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Web.Http.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\System.Web.Http.WebHost.xml
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\en\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\es\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\obj\Debug\ExamBot.csprojResolveAssemblyReference.cache
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\obj\Debug\Bot Application1.dll
+c:\users\demounot\documents\visual studio 2015\Projects\ExamBot\ExamBot\obj\Debug\Bot Application1.pdb

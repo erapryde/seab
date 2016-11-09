@@ -59,3 +59,4 @@ C:\Users\William\Source\Repos\seab\BusinessObjects\obj\Debug\BusinessObjects.dll
 C:\Users\William\Source\Repos\seab\BusinessObjects\obj\Debug\BusinessObjects.pdb
 C:\Users\William\Source\Repos\seab\BusinessObjects\bin\Debug\Aqua.dll
 C:\Users\William\Source\Repos\seab\BusinessObjects\bin\Debug\Aqua.xml
+C:\Users\William\Source\Repos\seab\BusinessObjects\obj\Debug\BusinessObjects.csprojResolveAssemblyReference.cache

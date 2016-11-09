@@ -172,8 +172,8 @@ namespace Bot.Dialogs
             Microsoft.Bot.Connector.Entity ent = new Microsoft.Bot.Connector.Entity("Place");
             ent.SetAs<Place>(pl);
             //menuMessage.Entities.Add(ent);
-            menuMessage.Attachments = new List<Attachment> { CreateMainMenu().ToAttachment() };
-            await context.PostAsync(menuMessage);
+            //menuMessage.Attachments = new List<Attachment> { CreateMainMenu().ToAttachment() };
+            await context.PostAsync(CreateMainMenu(context));
         }
 
         /// <summary>
@@ -461,36 +461,60 @@ You can try again or enter more fines to pay now.");
 
             await context.PostAsync(cmsg);
         }
-        internal static HeroCard CreateMainMenu()
+
+        internal static IMessageActivity CreateMainMenu(IDialogContext context)
         {
             StringBuilder b = new StringBuilder();
             b.AppendLine();
-            b.Append("Hi there! I am Tifa!");
+            b.Append("Hi there! I am Staffie!");
             b.AppendLine();
             b.Append("Here are a few things I can help you with:");
+            b.Append("1. Get exam information");
+            b.Append("2. Show location of schools offering a subject");
+            b.Append("3. Enquire nearest exam centre");
+            b.Append("4. Book seat from exam centre");
+            b.Append("5. Enquire staff directory");
 
-            var menu = new HeroCard()
-            {
-                Images = new List<CardImage>()
-                {
-                     new CardImage("https://licence1.business.gov.sg/frontier-theme/images/custom/LicenceOne-Logo.jpg")
-                },
-                Title = "Welcome to LicenceOne!",
-                Text = b.ToString(),
-                Buttons = new List<CardAction>()
-                {
-                    //new CardAction(null, title: @"Recommend licence(s) relevant for your business. Please indicate your business intent e.g. *setup foodstall business*", value: @"RecommendLicence"),
-                    new CardAction(ActionTypes.PostBack, title: @"Recommend licence(s) for my business.", value: @"Recommend Licence"),
-                    new CardAction(ActionTypes.PostBack, title: @"Enquire status of my application", value: @"Enquire Application"),
-                    new CardAction(ActionTypes.PostBack, title: @"Enquire status of my licence", value: @"Enquire Licence"),
-                }
-            };
-           
+            var cmsg = context.MakeMessage();
+            cmsg.TextFormat = "markdown";
+            cmsg.Text = b.ToString();
+            return cmsg;
+        }
+
+        internal static string CreateMainMenu()
+        {
+            StringBuilder b = new StringBuilder();
+            b.AppendLine();
+            b.Append("Hi there! I am Staffie!");
+            b.AppendLine();
+            b.Append("Here are a few things I can help you with:");
+            b.Append("1. Get exam information");
+            b.Append("2. Show location of schools offering a subject");
+            b.Append("3. Enquire nearest exam centre");
+            b.Append("4. Book seat from exam centre");
+            b.Append("5. Enquire staff directory");
+            //var menu = new HeroCard()
+            //{
+            //    Images = new List<CardImage>()
+            //    {
+            //         new CardImage("https://licence1.business.gov.sg/frontier-theme/images/custom/LicenceOne-Logo.jpg")
+            //    },
+            //    Title = "Welcome to LicenceOne!",
+            //    Text = b.ToString(),
+            //    Buttons = new List<CardAction>()
+            //    {
+            //        //new CardAction(null, title: @"Recommend licence(s) relevant for your business. Please indicate your business intent e.g. *setup foodstall business*", value: @"RecommendLicence"),
+            //        new CardAction(ActionTypes.PostBack, title: @"Recommend licence(s) for my business.", value: @"Recommend Licence"),
+            //        new CardAction(ActionTypes.PostBack, title: @"Enquire status of my application", value: @"Enquire Application"),
+            //        new CardAction(ActionTypes.PostBack, title: @"Enquire status of my licence", value: @"Enquire Licence"),
+            //    }
+            //};
+
             //CardImage img = 
             // menu.Buttons.Add(new CardAction(ActionTypes.PostBack, title: @"Recommend me Licence(s) by Business Intent", value: @"Recommend me Licence(s) by Business Intent"));
             //menu.Buttons.Add(new CardAction(ActionTypes.PostBack, title: @"Apply for a new license", value: @"Apply for a new license"));
             //menu.Buttons.Add(new CardAction(ActionTypes.PostBack, title: @"Renew a license", value: @"Renew a license"));
-            return menu;
+            return b.ToString();
         }
 
 #endregion
