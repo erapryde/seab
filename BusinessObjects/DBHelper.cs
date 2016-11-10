@@ -25,13 +25,18 @@ namespace BusinessObjects
                 {
                     var query =
                         from ex in db.SEAB_EXAM
-                        from sch in db.SEAB_SCHOOL.Where(x => ex.SCH_ID == x.SCH_ID)
-                        from sub in db.SEAB_SUBJECT.Where(y => ex.SUBJ_CODE == ex.SUBJ_CODE)
+                        from sch in db.SEAB_SCHOOL
+                        from sub in db.SEAB_SUBJECT
                         .DefaultIfEmpty()
-                        where (
-                            (enquiry.Subject == null || enquiry.Subject == sub.SUBJ_NAME)
-                            && (enquiry.SchoolName == null || enquiry.SchoolName == sch.SCH_NAME)
-                            && ((enquiry.StartDate == null && enquiry.EndDate == null) || (ex.EXAM_DATE <= enquiry.EndDate && ex.EXAM_DATE >= enquiry.StartDate))
+                        where 
+                            (
+                                ex.SCH_ID == sch.SCH_ID && sub.SUBJ_CODE == ex.SUBJ_CODE
+                            )
+                            && 
+                            (
+                                (enquiry.Subject == null || enquiry.Subject == sub.SUBJ_NAME)
+                                && (enquiry.SchoolName == null || enquiry.SchoolName == sch.SCH_NAME)
+                                && ((enquiry.StartDate == null || enquiry.EndDate == null) || (ex.EXAM_DATE <= enquiry.EndDate && ex.EXAM_DATE >= enquiry.StartDate))
                             )
 
                         select new ExamEnquiryResult()
@@ -47,6 +52,7 @@ namespace BusinessObjects
                             SchLon = sch.SCH_LOC_LONG,
                             SubjectName = sub.SUBJ_NAME,
                             Syllabus = sub.SYLLABUS
+                            //ex.EXAM_TIMETABLE
                         };
 
                     return query.ToList();
