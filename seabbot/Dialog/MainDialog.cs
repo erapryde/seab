@@ -752,14 +752,26 @@ namespace SeabBot.Dialog
                 for (int i = 0; i < schli.Count() && i < 3; ++i)
                 {
                     schoolstat x = schli[i];
-                    message = string.Format(count + ". {0} is **{1} km** away. \n\n", x.NAME, Math.Round(x.dist, 2));
-                    
-
                     schoolstat res = schoolist.FirstOrDefault(y => y.NAME == x.NAME);
-
                     
                     string tmp = baseurlquery + string.Format("{0},{1}/15??mapSize=500,500&pp={0},{1};21;{2}&key={3}", 180 * res.LAT / Math.PI , 180 * res.LON/Math.PI , count, key);
-                    count++;
+                   
+
+                    #region get location details 
+                    //http://dev.virtualearth.net/REST/v1/Locations/47.64054,-122.12934?o=xml&key=BingMapsKey
+                    Uri rr1 = new Uri(string.Format("http://dev.virtualearth.net/REST/v1/Locations/{0},{1}?key={2}", 180 * res.LAT / Math.PI, 180 * res.LON / Math.PI, key));
+
+                    Response rr2 = GetResponse(rr1);
+                    string addr = null;
+                    if (rr2 != null && rr2.ResourceSets.Count() > 0 && rr2.ResourceSets.FirstOrDefault().Resources.Count() > 0)
+                    {
+                        BingRestServices.DataContracts.Location loc = (BingRestServices.DataContracts.Location)rr2.ResourceSets.FirstOrDefault().Resources.FirstOrDefault();
+                        
+                        addr = loc.Address.AddressLine + "," + loc.Address.CountryRegion;
+                        message = string.Format(count + ". {0} is **{1} km** away @ {2} \n\n", x.NAME, Math.Round(x.dist, 2), addr);
+                    }
+                    #endregion 
+
                     List<CardImage> imgs = new List<CardImage>()
                     {
                         new CardImage(tmp,null,null)
@@ -767,6 +779,7 @@ namespace SeabBot.Dialog
                     var msg = context.MakeMessage();
                     msg.Attachments = new List<Attachment> { new HeroCard(null, null, message, imgs).ToAttachment() };
                     await context.PostAsync(msg);
+                    count++;
                 };
             }
             context.Wait(MessageReceived);
