@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MessageCollection>
+<Messages>
+  <Message id="TooManyFailedAttempts">I am sorry! You have exceeded the maximum number of tries.</Message>
+  <Message id="ApplyLicences">We are pleased to recommend you the following licences: </Message>
+  <Message id="SuccessURL">https://goo.gl/RAUgcP</Message>
+  <Message id="LicenceOneURL">https://goo.gl/UQ0ZJl</Message>
+  <Message id="ClickToApplyLicence">Click [here](https://goo.gl/UQ0ZJl) to apply at LicenceOne </Message>
+  <Message id="NoApplicableLicences">I am sorry! There are no applicable licences found for your profile. You may wish to contact helpdesk for more info</Message>
+  <Message id="NoQuestionaireFound">I am sorry! There are no questionaires found relating to the business you specified.</Message>
+  <Message id="Level1Questionaire">Please specify the business intent:</Message>
+  <Message id="IntentNotFound">Eh...don't get what you mean leh ???</Message>
+  <Message id="IntentFound">Please be reminded that the following request(s) are pending your approval:</Message>
+  <Message id="WelcomeMsg">Hi there! I am Staffie! I can help you with the following:</Message>
+  <Message id="L1_ExamInfoMsg">Get exam info by:</Message>
+  <Message id="LocationNotFound">Location {0} not found ... are you sure you didnt holand ?</Message>
+</Messages>
+</MessageCollection>

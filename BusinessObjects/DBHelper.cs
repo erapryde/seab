@@ -17,6 +17,22 @@ namespace BusinessObjects
             return helper;
         }
 
+        public List<Tuple<string, double, double> > GetSchoolList()
+        {
+            try
+            {
+                using (productdbEntities db = new productdbEntities())
+                {
+                    return db.SEAB_SCHOOL.ToList().Select(res => Tuple.Create(res.SCH_NAME, (double)res.SCH_LOC_LAT, (double)res.SCH_LOC_LONG)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return new List<Tuple<string, double, double> >();
+        }
+
         public List<ExamEnquiryResult> GetExamList(ExamEnquiry enquiry)
         {
             try
