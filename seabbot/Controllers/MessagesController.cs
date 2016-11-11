@@ -35,11 +35,8 @@ namespace SeabBot
                 {
                     if (activity.MembersAdded.Count > 0)
                     {
-                        //var replyMessage = activity.CreateReply("Yo, what's up?");
-                        //var connector = new ConnectorClient(new Uri(activity.ServiceUrl), ConfigurationManager.AppSettings["MicrosoftAppId"].ToString(), ConfigurationManager.AppSettings["MicrosoftAppPassword"].ToString());
-                        //var replyMessage = incomingMessage.CreateReply("Yo, I heard you.", "en");
-                        //await connector.Conversations.ReplyToActivityAsync(replyMessage);
-
+                        
+                        
                         //var cmsg = .MakeMessage();
 
                         //HeroCard c = new HeroCard(null, null, "hi there! I am Staffie!\nHere are a few things I can help you with:\n");
@@ -91,6 +88,10 @@ namespace SeabBot
             }
             else if (message.Type == ActivityTypes.Ping)
             {
+                //var connector = new ConnectorClient(new Uri(activity.ServiceUrl), ConfigurationManager.AppSettings["MicrosoftAppId"].ToString(), ConfigurationManager.AppSettings["MicrosoftAppPassword"].ToString());
+                //var replyMessage = activity.CreateReply("Yo, I heard you.", "en");
+                //await connector.Conversations.ReplyToActivityAsync(replyMessage);
+
             }
 
             return null;
