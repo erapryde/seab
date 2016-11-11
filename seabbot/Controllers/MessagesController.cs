@@ -76,6 +76,9 @@ namespace SeabBot
                 // Handle conversation state changes, like members being added and removed
                 // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
                 // Not available in all channels
+                var connector = new ConnectorClient(new Uri(message.ServiceUrl), ConfigurationManager.AppSettings["MicrosoftAppId"].ToString(), ConfigurationManager.AppSettings["MicrosoftAppPassword"].ToString());
+                var replyMessage = message.CreateReply("Yo!! ", "en");
+                await connector.Conversations.ReplyToActivityAsync(replyMessage);
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
             {
@@ -85,12 +88,13 @@ namespace SeabBot
             else if (message.Type == ActivityTypes.Typing)
             {
                 // Handle knowing tha the user is typing
+                var connector = new ConnectorClient(new Uri(message.ServiceUrl), ConfigurationManager.AppSettings["MicrosoftAppId"].ToString(), ConfigurationManager.AppSettings["MicrosoftAppPassword"].ToString());
+                var replyMessage = message.CreateReply("I am waiting ...", "en");
+                await connector.Conversations.ReplyToActivityAsync(replyMessage);
             }
             else if (message.Type == ActivityTypes.Ping)
             {
-                //var connector = new ConnectorClient(new Uri(activity.ServiceUrl), ConfigurationManager.AppSettings["MicrosoftAppId"].ToString(), ConfigurationManager.AppSettings["MicrosoftAppPassword"].ToString());
-                //var replyMessage = activity.CreateReply("Yo, I heard you.", "en");
-                //await connector.Conversations.ReplyToActivityAsync(replyMessage);
+                
 
             }
 
